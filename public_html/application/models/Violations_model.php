@@ -12,7 +12,7 @@ class Violations_model extends CI_Model {
 	{
 		if($search_type == 'name')
 		$this->db->where('violations', $keyword);
-		$query = $this->db->get('reservations');
+		$query = $this->db->get('');
 		$searchResult = $query->result();
 		return $searchResult;
 	}
