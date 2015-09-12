@@ -18,13 +18,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<h2>Search by:</h2>
+				<h1>Search by:</h1>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-lg-6">
 				<input type="text" name="keyword" />
 			</div>
+		</div>
+		<div class="row">
+			
+			<div class="container">
+				
 			<label for="year" class="control-label input-group">Search by:</label>
 			<div class="btn-group" data-toggle="buttons">
 				<div class="col-lg-2">
@@ -48,6 +51,8 @@
 					<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
 				</div>
 			</div>
+			</div>
+
 		</div>
 	</div>
     </form>

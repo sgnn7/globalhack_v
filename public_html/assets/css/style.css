@@ -101,6 +101,7 @@ header {
 #search h1{
 	display: block;
 	font-size: 4em;
+	font-weight:bolder;
 }
 
 header .container {
