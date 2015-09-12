@@ -49,7 +49,7 @@ class Violations extends CI_Controller {
 		$keyword = $this->security->xss_clean($this->input->post('keyword'));
 		$search_type = $this->security->xss_clean($this->input->post('search_type'));
 		
-		$config['Violations'] = $this->Violations_model->getViolations();
+		$config['Violations'] = $this->Violations_model->getViolations($search_type,$keyword);
 		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
