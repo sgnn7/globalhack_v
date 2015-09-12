@@ -6,6 +6,7 @@ $('#click_search').click(function() {
                     'data' : $('#search_form').serialize(),
                     'success' : function(data){ //probably this request will return anything, it'll be put in var "data"
                         if(data){
+							$('#header').hide();
 							$('#search').hide();
 							$('#result').html(data);
                         }
