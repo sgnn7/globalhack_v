@@ -51,18 +51,22 @@ public function send_text($to,$message)
         "+13142788933"=>"Paul",
         "+3143688889"=>"Michelle",
     	);
+		$Input = $_REQUEST['Body'];
 		
-		if(!$name = $people[$_REQUEST['From']]) {
-        $name = "Monkey";
-    	}
- 
+		if($_REQUEST['HELP']) {
+        
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
-		<Response>
-			<Message><?php echo $name ?>, thanks for the message!</Message>
+			<Response>
+			<Message>To Use our automated!</Message>
 		</Response>
+		<?	
+    	}
+ 
+		?>
+		
 		
 <?
 	}
