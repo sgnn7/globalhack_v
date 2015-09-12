@@ -58,8 +58,10 @@ class Violations extends CI_Controller {
 		
 		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword);
 		
+		$this->load->view('includes/header', $config);
+		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_search', $config);
-
+		$this->load->view('includes/footer');
 	}
 	
 	public function Violation_details($id)
