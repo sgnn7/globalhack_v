@@ -75,9 +75,9 @@ public function send_text($to,$message)
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
 			//$response = new Array();
-			$response = $this->Violations_model->getViolationName($lastName,$SSN);
+			$messages = $this->Violations_model->getViolationName($lastName,$SSN);
 			
-			foreach($response as $resp){
+			foreach($messages as $resp){
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
