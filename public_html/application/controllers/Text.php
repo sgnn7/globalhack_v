@@ -70,7 +70,7 @@ public function send_text($to,$message)
 			
     	}
 		else{
-			$InputArray = explode('*',$Input);
+			$InputArray[] = explode('*',$Input);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
 			$response = $this->Violations_model->getViolationName($lastName,$SSN);
@@ -80,7 +80,7 @@ public function send_text($to,$message)
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
 		<Response>
-			<Message>Citation#:<?=$response->citation_number;?></Message>
+			<Message>Citation#:<?=$response[0]->citation_number;?></Message>
 		</Response>
 		
 <?

@@ -7,10 +7,10 @@
     <title>Globalhack App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="apple-touch-icon" href="assets/img/ico/60.png" alt="something">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/ico/76.png" alt="something else">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/ico/120.png" alt="anything">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ico/152.png" alt="anything at all">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" alt="and another thing"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
