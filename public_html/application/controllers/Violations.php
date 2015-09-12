@@ -28,6 +28,7 @@ class Violations extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('url');	
 		$this->load->model('Violations_model');
+		$this->load->library('Twilio');
 	}
 	
 	public function index()
@@ -66,7 +67,7 @@ class Violations extends CI_Controller {
 	
 	public function Violation_details($id)
 	{
-		$config['Violations'] = $this->Violations_model->getCitationByID($id);
+		$config['Violations'] = $this->Violations_model->getViolationByID($id);
 		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
