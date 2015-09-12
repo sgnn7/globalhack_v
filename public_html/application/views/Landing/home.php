@@ -17,15 +17,17 @@
 	<form role="form" name="search_form" id="search_form">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5">
+			<div class="col-lg-3">
 				<h2 style="color:#E5630C">Search by:</h2>
 			</div>
-			<div c
+			<div class="col-lg-7">
+				<input type="text" name="keyword" class="form-control"/>
+			</div>
+			<div class="col-lg-2">
+				<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6">
-				<input type="text" name="keyword" />
-			</div>
 			<div class="btn-group" data-toggle="buttons">
 				<div class="col-lg-2">
 					<label class="btn btn-default">
@@ -41,7 +43,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-2">
-					<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
+					
 				</div>
 			</div>
 		</div>
