@@ -35,9 +35,9 @@
 			</td>
 			<td class='clickable'>
 				<center class='small-text'>
-					<nobr><?=$violation->citation_number;?>
-						<a class='btn btn-xs btn-info link-button' href='somelink' title='Get stuff'>
-        				<i class="fa fa-link"></i>
+					<nobr>
+						<a class='btn btn-xs btn-info' href='somelink' title='View details'>
+        				<?=$violation->citation_number;?>
 						</a>
 					</nobr>
 				</center>
