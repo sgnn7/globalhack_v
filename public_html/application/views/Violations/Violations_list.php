@@ -36,7 +36,7 @@
 			<td class='clickable'>
 				<center class='small-text'>
 					<nobr>
-						<a class='btn btn-xs btn-info' href='somelink' title='View details'>
+						<a class='btn btn-xs btn-info' href='Violation/details/<?=$violation->citation_number;?>' title='View details'>
         				<?=$violation->citation_number;?>
 						</a>
 					</nobr>
