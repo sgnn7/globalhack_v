@@ -6,13 +6,13 @@
     <div class="panel">
         <span>Name:</span> <span id="name"><?php echo $Violations[0]->first_name.' '.$Violations[0]->last_name;  ?></span><br>
         <div class="defendant_address">
-            <span id="address_line"><?php echo $Violations[0]->defendant_address ?></span><br>
-            <span id="address_line"><?php echo $Violations[0]->defendant_city.', '.$Violations[0]->defendant_state.', '; ?></span><br>
+            <span id="address_line"><?php echo $Violations[0]->defendant_address; ?></span><br>
+<!--            <span id="address_line">--><?php //echo $Violations[0]->defendant_city.', '.$Violations[0]->defendant_state.', '; ?><!--</span><br>-->
         </div>
-        <div class="court_address">
-            <span id="address_line"><?php echo $Violations[0]->court_address ?></span><br>
-            <span id="address_line"><?php echo $Violations[0]->defendant_city.', '.$Violations[0]->defendant_state.', '; ?></span><br>
-        </div>
+<!--        <div class="court">-->
+<!--            <span>Court date:</span> <span id="court_date">--><?php //echo $Violations[0]->court_date; ?><!--</span>-->
+<!--            <span id="address_line">--><?php //echo $Violations[0]->court_address.', '.$Violations[0]->court_location.', '; ?><!--</span><br>-->
+<!--        </div>-->
     </div>
     <div class='panel panel-default'>
         <pre><?php var_dump($Violations)  ?>

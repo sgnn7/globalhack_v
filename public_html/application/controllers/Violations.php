@@ -29,7 +29,6 @@ class Violations extends CI_Controller {
 		$this->load->helper('url');	
 		$this->load->model('Violations_model');
 		$this->load->library('Twilio');
-		$this->load->library('twilio');
 	}
 	
 	public function index()
@@ -91,6 +90,7 @@ class Violations extends CI_Controller {
 	
 	public function receive_text()
 		{
-		
+			$response = $this->twilio->account->messages();
+			echo $response;
 	}
 }
