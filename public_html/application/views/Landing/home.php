@@ -35,17 +35,17 @@
 			<div class="btn-group" data-toggle="buttons">
 				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" class="btn" checked="checked" name="search_type" value="name" class="form-control">Name</input>
+						<input type="radio" class="btn" checked="checked" name="search_type" value="name">Name</input>
 					</label>
 				</div>
 				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" name="search_type" value="citation_id" class="form-control">Citation/Ticket #</input>
+						<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
 					</label>
 				</div>
 				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" name="search_type" value="drivers_license" class="form-control">Driver's License</input>
+						<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
 					</label>
 				</div>
 			</div>
