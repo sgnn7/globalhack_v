@@ -37,52 +37,30 @@
 	<table class='table table-striped table-hover table-condensed'>
 	<tr class='row-fluid small'>
 	<th>
-	<center>ID</center>
+	<center>Date</center>
 	</th>
 	<th>
-	<center>Version</center>
+	<center>Violation Type</center>
 	</th>
 	<th>
-	<center>OS</center>
+	<center>Citation #</center>
 	</th>
 	<th>
-	<center>Locale</center>
+	<center>Municipality</center>
 	</th>
 	<th>
-	<center>Arch</center>
+	<center>Amount</center>
 	</th>
-	<th>
-	<center>Link</center>
-	</th>
-	<th>
-	<center>SHA</center>
-	</th>
-	<th>
-	<center>Signature</center>
-	</th>
-	<th>
-	<center>Personality</center>
-	</th>
-	<th>
-	<center>Installed Size</center>
-	</th>
-	<th>
-	<center>Updated at</center>
-	</th>
-	<th>
-	<center>Disabled</center>
-	</th>
-	<th></th>
 	</tr>
-	<tr class='row-fluid rowlink' data-target='/upload/bundle/54209213e4b0742725a5ea93' title='Armagetron'>
+	<tr class='row-fluid rowlink' data-target='/link/to/violation' title='Violation'>
 	<td class='rowlink-skip'>
 	<center class='small-text'>
-	<nobr>armagetronad</nobr>
+	<nobr>somedate</nobr>
 	</center>
 	</td>
 	<td class='rowlink-skip'>
 	<center class='small-text'>
-	<nobr>0.2.8.3.2-1endless1beos2.2</nobr>
+	<nobr>Really awful driving</nobr>
 	</center>
 	</td>
 	<td class='clickable'>
@@ -97,10 +75,9 @@
 	<td class='rowlink-skip'>
 	<center>
 	<nobr>
-	<a class='btn btn-xs btn-info link-button' href='https://d10gnxo2okxo8t.cloudfront.net/uploads/bundle/561c3d8b9957e170270f7381d8b52e6bb09d8c42835bf2ae782d6cf38f55373c.bundle' title='Download file'>
+	<a class='btn btn-xs btn-info link-button' href='somelink' title='Get stuff'>
 	<i class="fa fa-link"></i>
 	</a>
-	<button class='btn btn-xs btn-default offset-button link-button clipboard-copy-button' data-clipboard-text='https://d10gnxo2okxo8t.cloudfront.net/uploads/bundle/561c3d8b9957e170270f7381d8b52e6bb09d8c42835bf2ae782d6cf38f55373c.bundle' data-copied-text='Copied' title='Copy to clipboard...'>
 	<i class="fa fa-copy"></i>
 	</button>
 	</nobr>

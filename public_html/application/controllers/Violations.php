@@ -46,6 +46,9 @@ class Violations extends CI_Controller {
 	
 	public function violation_list()
 	{
+		$this->input->post('keyword');
+		$this->input->post('search_type');
+		
 		$config['Violations'] = $this->Violations_model->getViolations();
 		
 		$this->load->view('includes/header', $config);
