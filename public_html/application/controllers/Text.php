@@ -28,6 +28,7 @@ class Text extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('url');	
 		$this->load->library('Twilio');
+		$this->load->model('')
 	}
 
 public function send_text($to,$message)
