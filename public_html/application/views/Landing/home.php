@@ -14,6 +14,7 @@
 
 </header>
 <section id="search">
+	<label for="search_form">Search Criteria</label>
 	<form role="form" name="search_form" class="form" id="search_form">
 		
 	<div class="container">
@@ -24,7 +25,6 @@
 			</div>
 			<div class="col-lg-3">
 				<div class="row" style="margin-top:25px">
-					<label for="keyword">Search Criteria</label>
 					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
 				<div class="row col-lg-offset-2" style="margin-top:15px">
