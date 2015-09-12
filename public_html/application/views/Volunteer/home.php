@@ -1,7 +1,7 @@
 <div class='container fuelux' style="padding-top:170px">
     <script>
         $(function () {
-            $('#exampleModal').on('show.bs.modal', function (event) {
+            $('#exampleModal').bind('show.bs.modal', function (event) {
                 alert("foo!!!!");
                 var button = $(event.relatedTarget) // Button that triggered the modal
                 var recipient = button.data('whatever') // Extract info from data-* attributes

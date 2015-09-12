@@ -86,7 +86,7 @@ public function send_text($to,$message)
 			$totalAmount = ($fine_amount + $court_cost);
 		?>
 		<Response>
-			<Message>Hi <?=$resp->first_name.' '.$resp->last_name;?>| Citation#:<?=$resp->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp->court_location;?>| Court Date:<?=$resp->court_date;?></Message>
+			<Message>Hi <?=$resp->first_name;?> <?=$resp->last_name;?>| Citation#:<?=$resp->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp->court_location;?>| Court Date:<?=$resp->court_date;?></Message>
 		</Response>
 		
 <?

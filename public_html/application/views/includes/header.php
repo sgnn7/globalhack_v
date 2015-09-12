@@ -22,7 +22,7 @@
 	  <link href="http://www.pashle.com/assets/css/style.css" rel="stylesheet" type="text/css" />
 
 	  <!-- Latest compiled and minified CSS -->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
 	  <link href="https://www.fuelcdn.com/fuelux/3.11.0/css/fuelux.min.css" rel="stylesheet">
 	<!-- Optional theme -->
 <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
