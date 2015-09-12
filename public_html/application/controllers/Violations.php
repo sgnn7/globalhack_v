@@ -68,6 +68,7 @@ class Violations extends CI_Controller {
 	{
 		$config['Citations'] = $this->Violations_model->getCitationByID($id);
 		$config['Violations'] = $this->Violations_model->getViolationByCitationID($id);
+		$config['Courts'] = $this->Violations_model->getCourtByViolationID($id);
 
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);

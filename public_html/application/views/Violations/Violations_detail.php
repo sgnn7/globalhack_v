@@ -27,6 +27,12 @@
 
     <div class="court">
         <h3>Court</h3>
+        <div class="court_address">
+            <span id="municipality"><?php echo $Courts[0]->Municipality; ?></span> <span id="court_map"><a href="https://maps.google.com/maps?q=<?php echo $Courts[0]->Y.','.$Courts[0]->X.'&z=17'; ?>">(map)</a></span><br>
+            <span id="address_line"><?php echo $Courts[0]->Address; ?></span><br>
+            <span
+                id="address_city_state"><?php echo $Courts[0]->City . ', ' . $Courts[0]->State . ', ' . $Courts[0]->Zip_Code; ?></span><br>
+        </div>
         <span id="violation_description"><?php $Violations[0]->violation_description; ?></span><br>
         <span id="violation_fine_label">Fine:</span>
         <span id="violation_fine"><?php echo $Violations[0]->fine_amount; ?></span><br>
@@ -39,7 +45,5 @@
             ?></span><br><br>
         <span id="court_date_label">Court date:</span> <span
             id="court_date"><?php echo $Citations[0]->court_date; ?></span><br>
-        <span
-            id="address_line"><?php echo $Citations[0]->court_address . ', ' . $Citations[0]->court_location; ?></span><br>
     </div>
 </div>

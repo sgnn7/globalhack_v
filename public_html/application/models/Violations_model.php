@@ -74,6 +74,11 @@ class Violations_model extends CI_Model {
 		$citations = $query->result();
 		return $citations;
 	}
+
+	function getCourtByViolationID($id) {
+		$query =  $this->db->query('select cl.* from violations v, citations c, courtlocations cl where v.citation_number = c.citation_number and c.court_address=cl.Address and c.citation_number='.$id);
+		return $query->result();
+	}
 	
 //end file	
 }
