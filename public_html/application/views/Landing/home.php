@@ -14,9 +14,7 @@
 
 </header>
 <section id="search">
-	<label>Search Criteria
 	<form role="form" name="search_form" class="form" id="search_form">
-		</label>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
