@@ -73,14 +73,14 @@ public function send_text($to,$message)
 			$InputArray = explode('*',$Input);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
-			$response = $this-Violations_model->getViolationName($lastName,$SSN);
+			$response = $this->Violations_model->getViolationName($lastName,$SSN);
 			
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
 		<Response>
-			<Message>Thank </Message>
+			<Message>Citation#:<?=$response->citation_number;?></Message>
 		</Response>
 		
 <?
