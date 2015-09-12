@@ -1,7 +1,7 @@
 <div class='container' style="padding-top:170px">
   <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
-	<thead
+	<thead>
 		<tr class='row-fluid small'>
 			<th>
 				<center>Date</center>

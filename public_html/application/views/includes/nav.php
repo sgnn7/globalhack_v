@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Globalhack app</a>
+                <a class="navbar-brand" href="<?=base_url();?>">Globalhack app</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
