@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-lg-3">
 				<div class="row" style="margin-top:25px">
-					<input type="text" name="keyword" class="form-control input-lg"/>
+					<input type="text" name="keyword" class="form-control input-lg" alt="Enter your search criteria here"/>
 				</div>
 				<div class="row col-lg-offset-2" style="margin-top:15px">
 					<div class="container">
@@ -34,7 +34,7 @@
 									Last Name
 								</label>
 								<label class="btn btn-default">
-									<input type="radio" name="search_type" value="citation_id" alt="search by Citation Number"></input>
+									<input type="radio" name="search_type" value="citation_id"></input>
 									Citation/Ticket #
 								</label>
 								<label class="btn btn-default">
