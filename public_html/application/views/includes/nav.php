@@ -24,7 +24,7 @@
                         <a href="<?=base_url();?>">Search</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?=base_url();?>tickets">Tickets</a>
+                        <a href="<?=base_url();?>volunteer">Volunteer</a>
                     </li>
                     <li class="page-scroll">
                         <a href="<?=base_url();?>information">Information</a>
