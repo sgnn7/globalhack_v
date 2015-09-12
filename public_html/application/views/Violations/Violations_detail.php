@@ -11,7 +11,7 @@
         <span
             id="name"><?php echo $Citations[0]->first_name . ' ' . $Citations[0]->last_name; ?></span><br>
         <?php if (strcmp("TRUE", $Violations[0]->warrant_status) == 0) {?>
-            <span id="warrant_status" style="color: #ff0000; font-weight: bold"><?php echo $Violations[0]->status; ?></span><br>
+            <span id="warrant_status" style="color: #ff0000; font-weight: bold"><?php echo $Violations[0]->status; ?></span> <span id="warrant_info"><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/">(more info)</a></span><br>
         <?php } ?>
         <?php if (strlen($Citations[0]->drivers_license_number) > 0) { ?>
             <span id="drivers_license_label">Driver's license #:</span> <span
