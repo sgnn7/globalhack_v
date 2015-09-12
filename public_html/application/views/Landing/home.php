@@ -16,10 +16,17 @@
 <section id="search">
 	<div class="container">
 		<div class="row">
-			<
+			<div class="col-lg-4">
+				<h3>Search by:</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				
+			</div>
 		</div>
 	</div>
-	<h3>Search by:</h3>
+	
     <form role="form" name="search_form" id="search_form">
       <input type="radio" name="search_type" value="name">Name</input>
       <br />
