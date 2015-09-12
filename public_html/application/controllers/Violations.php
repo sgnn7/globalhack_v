@@ -28,7 +28,6 @@ class Violations extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('url');	
 		$this->load->model('Violations_model');
-		$this->load->library('Twilio');
 	}
 	
 	public function index()
@@ -67,7 +66,7 @@ class Violations extends CI_Controller {
 	
 	public function Violation_details($id)
 	{
-		$config['Violations'] = $this->Violations_model->getViolationByID($id);
+		$config['Violations'] = $this->Violations_model->getCitationByID($id);
 		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
@@ -79,7 +78,7 @@ class Violations extends CI_Controller {
 		{
 			$this->load->library('twilio');
 			$from = '3142549725';
-			$to = '13142788933';
+			$to = '3143688889';
 			$message = 'This is a test...';
 			$response = $this->twilio->sms($from, $to, $message);
 			if($response->IsError)
