@@ -58,17 +58,32 @@ class Violations extends CI_Controller {
 		
 		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword);
 		
+		$this->load->view('includes/header', $config);
+		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_search', $config);
-
+		$this->load->view('includes/footer');
 	}
 	
 	public function Violation_details($id)
 	{
-		$config['Violations'] = $this->Violations_model->getCitationByID($id);
+		$config['Violations'] = $this->Violations_model->getViolationByID($id);
 		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_detail', $config);
 		$this->load->view('includes/footer');
-	}	
+	}
+	
+	public function send_text()
+		{
+			$this->load->library('twilio');
+			$from = '3142549725';
+			$to = '3143688889';
+			$message = 'This is a test...';
+			$response = $this->twilio->sms($from, $to, $message);
+			if($response->IsError)
+				echo 'Error: ' . $response->ErrorMessage;
+			else
+				echo 'Sent message to ' . $to;
+	}
 }

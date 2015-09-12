@@ -1,6 +1,7 @@
 <div class='container' style="padding-top:170px">
     <div class="panel panel-default">
-        <h1><span>Citation date:</span><span id="citation_date"><?php echo $Violations[0]->citation_date; ?></span></h1>
+        <h1>Citation Details</h1>
+        <h3><span>Citation date:</span> <span id="citation_date"><?php echo $Violations->citation_date; ?></span></h3>
     </div><br>
     <div class='panel panel-default'>
         <pre><?php var_dump($Violations)  ?>
