@@ -49,7 +49,7 @@ public function send_text($to,$message)
 		$data = array(
 			'To=' => '13142788933',
 			'From=' => '3142549725',
-			'DateSent='
+			'DateSent=' => date('Y-m-d'));
 		
 			$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",$data);
 			var_dump($response);
