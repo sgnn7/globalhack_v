@@ -21,13 +21,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#search">Search</a>
+                        <a href="<?=base_url();?>">Search</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#tickets">Tickets</a>
+                        <a href="<?=base_url();?>tickets">Tickets</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#information">Information</a>
+                        <a href="<?=base_url();?>information">Information</a>
                     </li>
                 </ul>
             </div>
