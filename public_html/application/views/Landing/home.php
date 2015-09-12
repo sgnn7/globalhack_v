@@ -18,10 +18,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<h1>Search by:</h1>
+				<h1 style="color:#E5630C">Search by:</h1>
 			</div>
 			<div class="col-lg-6">
-				<input type="text" name="keyword" />
+				<input type="text" name="keyword" class="form-control"/>
 			</div>
 		</div>
 		<div class="row">
