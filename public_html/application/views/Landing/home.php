@@ -26,7 +26,7 @@
 				<input type="text" name="keyword" />
 			</div>
 			<div class="col-lg-2">
-				<input type="radio" name="search_type" value="name">Name</input>
+				<input type="radio" class="active" name="search_type" value="name">Name</input>
 			</div>
 			<div class="col-lg-2">
 				<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
