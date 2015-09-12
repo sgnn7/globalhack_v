@@ -27,7 +27,6 @@
 				</div>
 				<div class="row">
 					<div class="container">
-						<div>
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
@@ -42,7 +41,6 @@
 									Driver's License
 								</label>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>
