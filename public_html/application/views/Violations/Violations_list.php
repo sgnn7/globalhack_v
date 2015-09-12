@@ -1,4 +1,4 @@
-<div class='container' style="padding-top:70px">
+<div class='container' style="padding-top:170px">
   <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
 	<tr class='row-fluid small'>
@@ -18,7 +18,9 @@
 	<center>Amount</center>
 	</th>
 	</tr>
-	<tr class='row-fluid rowlink' data-target='/link/to/violation' title='Violation'>
+	<tbody>
+		<?php foreach($deposits as $deposit){?>
+		<tr class='row-fluid rowlink' data-target='/link/to/violation' title='Violation'>
 	<td class='rowlink-skip'>
 	<center class='small-text'>
 	<nobr>somedate</nobr>
@@ -47,6 +49,7 @@
 	</nobr>
 	</center>
 	</td>
+	</tbody>
     </table>
   </div>
 </div>
