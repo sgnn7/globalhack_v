@@ -83,7 +83,7 @@ public function send_text($to,$message)
 			    $court_cost = $response[0]->court_cost;
 /* 				$fine_amount = substr($fine_amount,1);
 				$court_cost = substr($court_cost,1); */
-				$totalAmount = $fine_amount + $court_cost; ?>
+				$totalAmount = $fine_amount + $court_cost;
 		?>
 		<Response>
 			<Message>Citation#:<?=$response[0]->citation_number;?>|Amount Owed:$<?=$totalAmount;?>|Court Name:<?=$response[0]->court_location;?>|Court Date:<?=$response[0]->court_date;?></Message>
