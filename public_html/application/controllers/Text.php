@@ -74,7 +74,7 @@ public function send_text($to,$message)
 			$InputArray = explode('*',$Input);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
-			$response = $this->Violations_model->getViolationName($lastName,$SSN);
+			$response[] = $this->Violations_model->getViolationName($lastName,$SSN);
 			
 			foreach($response as $resp){
 			// now greet the sender
@@ -90,9 +90,9 @@ public function send_text($to,$message)
 		
 <?
 			
-			}
+			
 		}
-	
+		
 			}
 		}
 			
