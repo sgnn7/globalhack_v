@@ -8,6 +8,13 @@ class Violations_model extends CI_Model {
 		parent::__construct();
 	}
 
+	function getViolations()
+	{
+		$this->db->where('reservation_type', 'reservation');
+		$query = $this->db->get('reservations');
+		$searchResult = $query->result();
+		return $searchResult;
+	}
 	
 //end file	
 }
