@@ -1,6 +1,6 @@
 <div class='container' style="padding-top:170px">
     <div class='panel panel-default'>
-        <pre><?php var_dump($violation)  ?></pre>
+        <pre><?php var_dump($Violations)  ?></pre>
         <hr>
         <table class='table table-striped table-hover table-condensed'>
             <thead>
