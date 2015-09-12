@@ -89,6 +89,20 @@ class Violations_model extends CI_Model {
 		return $searchResult;
 	}
 	
+	function getViolationCount($last,$SSN)
+		{
+		$this->db->select('*');
+		$this->db->from('citations');
+		$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+		$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+		//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+		$this->db->where('socialsecurityauth.last_name', $last);
+		$this->db->where('socialsecurityauth.last4ssn', $SSN);
+		$query = $this->db->get();
+		$searchResult = $query->num_rows();
+		return $searchResult;
+	}
+	
 	function getCourtByViolationID($id) {
 		$query =  $this->db->query('select cl.* from violations v, citations c, courtlocations cl where v.citation_number = c.citation_number and c.court_address=cl.Address and c.citation_number='.$id);
 		return $query->result();
