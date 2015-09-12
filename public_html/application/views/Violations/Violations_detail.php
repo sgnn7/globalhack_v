@@ -27,6 +27,12 @@
 
     <div class="court">
         <h3>Court</h3>
+        <div class="court_address">
+            <span id="municipality"><?php echo $Courts[0]->Municipality; ?></span><br>
+            <span id="address_line"><?php echo $Courts[0]->Address; ?></span><br>
+            <span
+                id="address_city_state"><?php echo $Courts[0]->City . ', ' . $Courts[0]->State . ', ' . $Courts[0]->Zip_Code; ?></span><br>
+        </div>
         <span id="violation_description"><?php $Violations[0]->violation_description; ?></span><br>
         <span id="violation_fine_label">Fine:</span>
         <span id="violation_fine"><?php echo $Violations[0]->fine_amount; ?></span><br>
@@ -39,11 +45,6 @@
             ?></span><br><br>
         <span id="court_date_label">Court date:</span> <span
             id="court_date"><?php echo $Citations[0]->court_date; ?></span><br>
-        <div class="court_address">
-            <span id="address_line"><?php echo $Courts[0]->Address; ?></span><br>
-            <span
-                id="address_city_state"><?php echo $Courts[0]->City . ', ' . $Courts[0]->State . ', ' . $Courts[0]->State; ?></span><br>
-        </div>
     </div>
 
     <pre><?php var_dump($Courts);  ?></pre>
