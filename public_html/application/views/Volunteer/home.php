@@ -1,4 +1,4 @@
-<div class='container' style="padding-top:170px">
+<div class='container fuelux' style="padding-top:170px">
 
     <!<div class="container fuelux">
         <div class="wizard" data-initialize="wizard" id="myWizard">
@@ -225,4 +225,4 @@
             </div>
         </div>
     </div>
-</div>
+</div><br><br><br><br>

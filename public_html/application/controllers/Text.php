@@ -69,8 +69,9 @@ public function send_text($to,$message)
 <?
 			
     	}
-		else{
-			$InputArray[] = explode('*',$Input);
+		else
+		{
+			$InputArray = explode('*',$Input);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
 			$response = $this->Violations_model->getViolationName($lastName,$SSN);
@@ -87,7 +88,6 @@ public function send_text($to,$message)
 		}
 			
 			
-		}
 	}
 	
 //end file	
