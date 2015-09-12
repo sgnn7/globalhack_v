@@ -46,6 +46,11 @@ class Violations extends CI_Controller {
 	
 	public function violation_list()
 	{
+		$config['Violations'] = $this->Violations_model->getViolations();
 		
+		$this->load->view('includes/header', $config);
+		$this->load->view('includes/nav', $config);
+		$this->load->view('Violations/Violations_list', $config);
+		$this->load->view('includes/footer');
 	}
 }

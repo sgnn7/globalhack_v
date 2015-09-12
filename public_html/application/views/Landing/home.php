@@ -44,4 +44,6 @@
     </form>
 </section>
 
-<
+<div id="result">
+	
+</div>
