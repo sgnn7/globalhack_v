@@ -26,19 +26,16 @@ class Landing extends CI_Controller {
 		$this->load->database();
 		$this->load->library('email');
 		$this->load->helper('form');
-		$this->load->helper('url');		
+		$this->load->helper('url');	
+		$this->load->library('Twilio');
 	}
-	
 
-
-
-
-public function send_text()
+public function send_text($to,$message)
 		{
 			
 			$from = '3142549725';
-			$to = '13142788933';
-			$message = 'This is a test...';
+/* 			$to = '13142788933'; */
+/* 			$message = 'This is a test...'; */
 			$response = $this->twilio->sms($from, $to, $message);
 			if($response->IsError)
 				echo 'Error: ' . $response->ErrorMessage;
@@ -52,3 +49,6 @@ public function send_text()
 			$response = $this->twilio->request("/$ApiVersion/Accounts/$AccountSid/Messages", "POST", $data);
 			echo $response;
 	}
+	
+//end file	
+}
