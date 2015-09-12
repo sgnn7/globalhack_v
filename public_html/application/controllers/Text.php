@@ -54,9 +54,7 @@ public function send_text($to,$message)
 		$Input = $_REQUEST['Body'];
 		
 		
-		if($people[$_REQUEST['From']] == 'PAS') {
-        $name = "Monkey";
-    	}
+		if($people[$_REQUEST['From']] == "PASHLE") {
  
 			// now greet the sender
 			header("content-type: text/xml");
@@ -67,6 +65,8 @@ public function send_text($to,$message)
 		</Response>
 		
 <?
+			
+    	}
 	}
 	
 //end file	
