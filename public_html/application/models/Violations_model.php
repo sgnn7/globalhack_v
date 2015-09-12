@@ -8,6 +8,14 @@ class Violations_model extends CI_Model {
 		parent::__construct();
 	}
 
+	function getAllViolations()
+	{
+			//$this->db->where('violations', $keyword);
+			$query = $this->db->get('violations');
+			$searchResult = $query->result();
+			return $searchResult;
+	}
+	
 	function getViolations($search_type,$keyword)
 	{
 		if($search_type == 'name'){
