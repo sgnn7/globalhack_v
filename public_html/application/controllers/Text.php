@@ -54,7 +54,7 @@ public function send_text($to,$message)
 		
 		if(!$name = $people[$_REQUEST['From']]) {
         $name = "Monkey";
-    }
+    	}
  
 			// now greet the sender
 			header("content-type: text/xml");
@@ -64,8 +64,9 @@ public function send_text($to,$message)
 			<Message><?php echo $name ?>, thanks for the message!</Message>
 		</Response>
 		
-
+<?
 	}
 	
 //end file	
 }
+?>
