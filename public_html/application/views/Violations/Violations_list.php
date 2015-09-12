@@ -25,7 +25,7 @@
 		<tr class='row-fluid rowlink' data-target='Violation_details/<?=$violation->citation_number;?>' title='Violation'>
 			<td class='rowlink-skip'>
 				<center class='small-text'>
-					<nobr><?=$violation->status_date;?></nobr>
+					<nobr><?=str_replace(' 00:00:00', '', $violation->status_date);?></nobr>
 				</center>
 			</td>
 			<td class='rowlink-skip'>
@@ -43,7 +43,7 @@
 				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'>All</center>
+				<center class='small-text'>-</center>
 			</td>
 			<?  $fine_amount = $violation->fine_amount;
 			    $court_cost = $violation->court_cost;
