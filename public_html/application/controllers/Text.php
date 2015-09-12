@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Landing extends CI_Controller {
+class Text extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -45,7 +45,6 @@ public function send_text($to,$message)
 	
 	public function receive_text()
 		{
-			$this->load->library('Twilio');
 			$response = $this->twilio->request("/$ApiVersion/Accounts/$AccountSid/Messages", "POST", $data);
 			echo $response;
 	}
