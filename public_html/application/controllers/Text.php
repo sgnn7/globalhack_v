@@ -75,10 +75,10 @@ public function send_text($to,$message)
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
 			//$response = new Array();
-			$messages = $this->Violations_model->getViolationName($lastName,$SSN);
+			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
 			$i = 0;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
-			while($xi<= $msgCount){
+			while($i <= $msgCount){
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
@@ -93,7 +93,7 @@ public function send_text($to,$message)
 		
 <?
 				$i++;
-			}
+			
 		
 			}
 		}
