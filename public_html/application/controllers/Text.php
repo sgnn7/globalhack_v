@@ -77,7 +77,7 @@ public function send_text($to,$message)
 			$response = $this->Violations_model->getViolationName($lastName,$SSN);
 			
 			$i = 0;
-			foreach ($response as $resp)
+			foreach($response as $resp)
           {
 			// now greet the sender
 			header("content-type: text/xml");

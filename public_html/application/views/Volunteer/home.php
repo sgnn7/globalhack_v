@@ -1,12 +1,14 @@
 <div class='container fuelux' style="padding-top:170px">
-    <script language="JavaScript"><!--
-        $('#exampleModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var recipient = button.data('whatever') // Extract info from data-* attributes
-            var modal = $(this);
-            modal.find('.modal-title').text('New message to ' + recipient)
-            modal.find('.modal-body').text(recipient)
-        })// -->
+    <script>
+        $(function () {
+            $('#exampleModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                var modal = $(this);
+                modal.find('.modal-title').text('New message to ' + recipient)
+                modal.find('.modal-body').text(recipient)
+            });
+        });
     </script>
     <div class="container fuelux">
         <div class="wizard" data-initialize="wizard" id="myWizard">
@@ -74,7 +76,11 @@
                                     </td>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
-                                            <nobr><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="<?= $volunteer->Name ?>"><?= $volunteer->Name ?></button></nobr>
+                                            <nobr>
+                                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                        data-whatever="<?= $volunteer->Name ?>"><?= $volunteer->Name ?></button>
+                                            </nobr>
                                         </center>
                                     </td>
                                     <td class='clickable'>
