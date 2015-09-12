@@ -67,7 +67,7 @@ class Violations extends CI_Controller {
 	
 	public function Violation_details($id)
 	{
-		$config['Violations'] = $this->Violations_model->getViolationByID($id);
+		$config['Violations'] = $this->Violations_model->getCitationByID($id);
 		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
@@ -90,7 +90,8 @@ class Violations extends CI_Controller {
 	
 	public function receive_text()
 		{
-			$response = $this->twilio->account->messages();
+			$this->load->library('Twilio');
+			$response = $this->twilio->request("/$ApiVersion/Accounts/$AccountSid/Messages", "POST", $data);
 			echo $response;
 	}
 }
