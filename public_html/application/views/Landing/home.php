@@ -25,13 +25,9 @@
 			<div class="col-lg-6">
 				<input type="text" name="keyword" />
 			</div>
-			<div class="col-lg-2">
+			<div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio" >
 				<input type="radio" class="btn" checked="checked" name="search_type" value="name">Name</input>
-			</div>
-			<div class="col-lg-2">
 				<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
-			</div>
-			<div class="col-lg-2">
 				<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
 			</div>
 		</div>
