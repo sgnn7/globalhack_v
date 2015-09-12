@@ -1,5 +1,4 @@
 <div class='container' style="padding-top:170px">
-<input type="button" class="btn btn-lg btn-info" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
 	<thead>
@@ -23,10 +22,10 @@
 	</thead>
 	<tbody>
 		<?php foreach($Violations as $violation){?>
-		<tr class='row-fluid rowlink' data-target='/link/to/violation' title='Violation'>
+		<tr class='row-fluid rowlink' data-target='Violation_details/<?=$violation->citation_number;?>' title='Violation'>
 			<td class='rowlink-skip'>
 				<center class='small-text'>
-					<nobr><?=$violation->status_date;?></nobr>
+					<nobr><?=str_replace(' 00:00:00', '', $violation->status_date);?></nobr>
 				</center>
 			</td>
 			<td class='rowlink-skip'>
@@ -35,10 +34,16 @@
 				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'><?=$violation->citation_number;?></center>
+				<center class='small-text'>
+					<nobr>
+						<a class='btn btn-xs btn-info' href='Violation_details/<?=$violation->citation_number;?>' title='View details'>
+        				<?=$violation->citation_number;?>
+						</a>
+					</nobr>
+				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'>All</center>
+				<center class='small-text'>-</center>
 			</td>
 			<?  $fine_amount = $violation->fine_amount;
 			    $court_cost = $violation->court_cost;
@@ -46,14 +51,13 @@
 				$court_cost = substr($court_cost,1);
 				$totalAmount = $fine_amount + $court_cost; ?>
 			<td class='clickable'>
-				<center class='small-text'>$<?=$totalAmount;?></center>
-			</td>
-			<td class='rowlink-skip'>
-				<center>
+				<center class='small-text'>
 					<nobr>
-						<a class='btn btn-xs btn-info link-button' href='somelink' title='Get stuff'>
-        				<i class="fa fa-link"></i>
-						</a>
+						<?php 
+							if ($totalAmount > 0) {
+								echo "\$$totalAmount";
+							}
+						?>
 					</nobr>
 				</center>
 			</td>
