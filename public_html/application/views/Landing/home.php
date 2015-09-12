@@ -5,7 +5,7 @@
 			<div class="col-lg-12">
 				<div class="intro-text">
                         <span class="name">Find your Ticket Information</span>
-                        <hr class="star-light">
+                        <hr class="star-light" style="color:#FFFF00">
                         <span class="skills">Search Tickets - Get Court Information - Pay Court Costs</span>
                     </div>
 			</div>
