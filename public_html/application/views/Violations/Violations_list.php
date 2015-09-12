@@ -51,7 +51,15 @@
 				$court_cost = substr($court_cost,1);
 				$totalAmount = $fine_amount + $court_cost; ?>
 			<td class='clickable'>
-				<center class='small-text'>$<?=$totalAmount;?></center>
+				<center class='small-text'>
+					<nobr>
+						<?php 
+							if ($totalAmount > 0) {
+								echo('$', $totalAmount);
+							}
+						?>
+					</nobr>
+				</center>
 			</td>
 			<td class='rowlink-skip'>
 				<center>
