@@ -78,7 +78,7 @@ class Violations_model extends CI_Model {
 	function getViolationName($last,$SSN)
 	{
 		$this->db->where('last_name', $last);
-		$this->db->where('')
+		//$this->db->where('')
 		$query = $this->db->get('citations');
 		$citations = $query->result();
 		return $citations;
