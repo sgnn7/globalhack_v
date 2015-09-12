@@ -20,7 +20,7 @@
 		<div class="row">
 			<div class="col-lg-4">
 <!-- 				<label for="search_type">Search by:</label> -->
-				<h1 style="color:#E5630C">Search by:</h1>
+				<h1 style="color:#E5630C" alt="Enter search criteria here">Search by:</h1>
 			</div>
 			<div class="col-lg-3">
 				<div class="row" style="margin-top:25px">
