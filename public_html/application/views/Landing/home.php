@@ -25,6 +25,7 @@
 			</div>
 			<div class="col-lg-3">
 				<div class="row" style="margin-top:25px">
+					<label for="keyword">Search Criteria</label>
 					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
 				<div class="row col-lg-offset-2" style="margin-top:15px">

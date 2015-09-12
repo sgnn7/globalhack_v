@@ -94,8 +94,11 @@ public function send_text($to,$message)
 			}
 		}
 			else
-				{
-				else 
+				{ ?>
+				<Response>
+			<Message>No Data Found</Message>
+		</Response>
+<?
 			}
 		}
 			
