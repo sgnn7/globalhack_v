@@ -1,8 +1,8 @@
 <div class='container fuelux' style="padding-top:170px">
     <script>
         $(function () {
-            alert("foo!!!!")
             $('#exampleModal').on('show.bs.modal', function (event) {
+                alert("foo!!!!");
                 var button = $(event.relatedTarget) // Button that triggered the modal
                 var recipient = button.data('whatever') // Extract info from data-* attributes
                 var modal = $(this);
@@ -119,7 +119,7 @@
         </div>
     </div>
 </div><br><br><br><br>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
