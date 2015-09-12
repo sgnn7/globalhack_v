@@ -79,23 +79,23 @@ public function send_text($to,$message)
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
 			
-			if($msgCount > 0){
-				while($i <= ($msgCount - 1)){
+/* 			if($msgCount > 0){
+				while($i <= ($msgCount - 1)){ */
 					// now greet the sender
 					header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-					$fine_amount = $resp[$i]->fine_amount;
-					$court_cost = $resp[$i]->court_cost;
+					$fine_amount = $resp[0]->fine_amount;
+					$court_cost = $resp[0]->court_cost;
 					$totalAmount = $fine_amount + $court_cost;
 
 				?>
 				<Response>
-					<Message>Hi <?=$resp[$i]->first_name;?> <?=$resp[$i]->last_name;?>| Citation#:<?=$resp[$i]->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp[$i]->court_location;?>| Court Date:<?=$resp[$i]->court_date;?> | Count :<?=$msgCount;?></Message>
+					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?>| Citation#:<?=$resp[0]->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp[0]->court_location;?>| Court Date:<?=$resp[0]->court_date;?> | Count :<?=$msgCount;?></Message>
 				</Response>
 				<?
-					$i++;
+/* 					$i++;
 				}
-			}
+			} */
 			
 			
 		}
