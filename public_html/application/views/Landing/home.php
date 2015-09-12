@@ -17,9 +17,10 @@
 	<form role="form" name="search_form" id="search_form">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4">
-				<h2>Search by:</h2>
+			<div class="col-lg-5">
+				<h2 style="color:#E5630C">Search by:</h2>
 			</div>
+			<div c
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
