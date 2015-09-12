@@ -35,12 +35,11 @@
         <span id="total_owed_label">Total owed:</span>
         <span id="total_owed_label"><?php
             $total = floatval($Violations[0]->fine_amount) + floatval($Violations[0]->court_cost);
-            echo $total;
-            ?></span><br>
+            echo number_format($total, 2);
+            ?></span><br><br>
         <span id="court_date_label">Court date:</span> <span
             id="court_date"><?php echo $Citations[0]->court_date; ?></span><br>
         <span
             id="address_line"><?php echo $Citations[0]->court_address . ', ' . $Citations[0]->court_location; ?></span><br>
     </div>
-    <pre><?php var_dump($Violations); ?></pre>
 </div>
