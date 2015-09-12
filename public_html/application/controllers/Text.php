@@ -47,10 +47,10 @@ public function send_text($to,$message)
 		{
 		$AccountSid = 'ACec7530ecb3ad04e72a617b10c47dd8b5';
 		$people = array(
-        "+13146012731"=>"Dj Ojo",
-        "+13142788933"=>"Paul",
-		"+3146051326" => "John"
-        "+13143688889"=>"Michelle"
+        "+13146012731" => "Dj Ojo",
+        "+13142788933" => "Paul",
+		"+3146051326" => "John",
+        "+3143688889" => "Michelle"
     	);
 		$Input = $_REQUEST['Body'];
 		
