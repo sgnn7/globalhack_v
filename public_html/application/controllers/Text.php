@@ -53,7 +53,7 @@ public function send_text($to,$message)
 		"+3146051326" => "John",
         "+3143688889" => "Michelle"
     	);
-		$Input = $_REQUEST['Body'];
+		$Input = $this->security->xss_clean($_REQUEST['Body']);
 		
 		
 		if($Input == "Pashle") {
@@ -76,6 +76,7 @@ public function send_text($to,$message)
 			$SSN = $InputArray[1];
 			$response = $this->Violations_model->getViolationName($lastName,$SSN);
 			
+			
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
@@ -86,7 +87,7 @@ public function send_text($to,$message)
 				$totalAmount = $fine_amount + $court_cost;
 		?>
 		<Response>
-			<Message>Hi <?=$response[0]->first_name.' '.$response[0]->laCitation#:<?=$response[0]->citation_number;?>|Amount Owed:$<?=$totalAmount;?>|Court Name:<?=$response[0]->court_location;?>|Court Date:<?=$response[0]->court_date;?></Message>
+			<Message>Hi <?=$response[0]->first_name.' '.$response[0]->last_name;?>| Citation#:<?=$response[0]->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$response[0]->court_location;?>| Court Date:<?=$response[0]->court_date;?></Message>
 		</Response>
 		
 <?

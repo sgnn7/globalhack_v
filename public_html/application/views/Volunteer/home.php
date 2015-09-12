@@ -94,10 +94,9 @@
                 <div class="step-pane sample-pane bg-danger alert" data-step="3">
                     <h4>Design Template</h4>
 
-                    <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts
-                        black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water
-                        chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko
-                        chicory celtuce parsley jÃ­cama salsify. </p>
+                    <p>Bacon ipsum dolor amet fatback chicken cow cupim ham landjaeger. Landjaeger alcatra biltong jerky hamburger. Corned beef shoulder porchetta pig turducken short loin shank t-bone bresaola landjaeger. Salami pork meatball pork belly ground round jerky chicken swine, filet mignon alcatra pork loin boudin.</p>
+
+                    <p>Sausage short ribs pork chop, pig hamburger biltong jerky meatball landjaeger salami. Tenderloin pastrami cupim swine shank. Picanha pancetta pig, ball tip kielbasa alcatra pork belly bresaola shank short loin beef capicola. Frankfurter hamburger ham hock corned beef. </p>
                 </div>
             </div>
         </div>
