@@ -1,5 +1,4 @@
 <div class='container' style="padding-top:170px">
-<input type="button" class="btn btn-lg btn-info" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
 	<thead>
@@ -35,7 +34,13 @@
 				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'><?=$violation->citation_number;?></center>
+				<center class='small-text'>
+					<nobr><?=$violation->citation_number;?>
+						<a class='btn btn-xs btn-info link-button' href='somelink' title='Get stuff'>
+        				<i class="fa fa-link"></i>
+						</a>
+					</nobr>
+				</center>
 			</td>
 			<td class='clickable'>
 				<center class='small-text'>All</center>
@@ -50,11 +55,7 @@
 			</td>
 			<td class='rowlink-skip'>
 				<center>
-					<nobr>
-						<a class='btn btn-xs btn-info link-button' href='somelink' title='Get stuff'>
-        				<i class="fa fa-link"></i>
-						</a>
-					</nobr>
+
 				</center>
 			</td>
 			<? } ?>
