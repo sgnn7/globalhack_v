@@ -14,6 +14,7 @@
 
 </header>
 <section id="search">
+	<form role="form" name="search_form" id="search_form">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
@@ -22,20 +23,23 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
-				
+				<input type="text" name="keyword" />
+			</div>
+			<div class="col-lg-2">
+				<input type="radio" name="search_type" value="name">Name</input>
+			</div>
+			<div class="col-lg-2">
+				<input type="radio" name="search_type" value="citation_id">Citation/Ticket ID</input>
+			</div>
+			<div class="col-lg-2">
+				<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
 			</div>
 		</div>
+		<div class="row">
+			
 	</div>
-	
-    <form role="form" name="search_form" id="search_form">
-      <input type="radio" name="search_type" value="name">Name</input>
-      <br />
-      <input type="radio" name="search_type" value="citation_id">Citation/Ticket ID</input>
-      <br />
-      <input type="radio" name="search_type" value="drivers_license">Driver's License</input>
-      <br />
-      <br />
-      <input type="text" name="keyword" />
+	</div>
+
       <input type="button" id="click_search" />
     </form>
 </section>
