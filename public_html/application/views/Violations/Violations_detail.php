@@ -42,4 +42,6 @@
         <span
             id="address_line"><?php echo $Citations[0]->court_address . ', ' . $Citations[0]->court_location; ?></span><br>
     </div>
+
+    <pre><?php var_dump($Courts);  ?></pre>
 </div>
