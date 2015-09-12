@@ -1,7 +1,9 @@
 <div class='container' style="padding-top:170px">
+    <div class="panel panel-default">
+        <h1><span>Citation date:</span><span id="citation_date"><?php echo $Violations[0]->citation_date; ?></span></h1>
+    </div><br>
     <div class='panel panel-default'>
         <pre><?php var_dump($Violations)  ?>
-
         <hr>
         <table class='table table-striped table-hover table-condensed'>
             <thead>
