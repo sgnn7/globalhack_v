@@ -10,11 +10,19 @@ class Violations_model extends CI_Model {
 
 	function getViolations($search_type,$keyword)
 	{
-		if($search_type == 'name')
-		$this->db->where('violations', $keyword);
-		$query = $this->db->get('violations');
-		$searchResult = $query->result();
-		return $searchResult;
+		if($search_type == 'name'){
+			$this->db->where('violations', $keyword);
+			$query = $this->db->get('violations');
+			$searchResult = $query->result();
+			return $searchResult;
+		}
+		
+		if($search_type == 'name'){
+			$this->db->where('violations', $keyword);
+			$query = $this->db->get('violations');
+			$searchResult = $query->result();
+			return $searchResult;
+		}
 	}
 	
 //end file	
