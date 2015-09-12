@@ -1,6 +1,16 @@
 <div class='container fuelux' style="padding-top:170px">
-
-    <!
+    <script>
+        $(function () {
+            $('#exampleModal').bind('show.bs.modal', function (event) {
+                alert("foo!!!!");
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                var modal = $(this);
+                modal.find('.modal-title').text('New message to ' + recipient)
+                modal.find('.modal-body').innerHTML('<p>'+recipient+'</p>')
+            });
+        });
+    </script>
     <div class="container fuelux">
         <div class="wizard" data-initialize="wizard" id="myWizard">
             <div class="steps-container">
@@ -68,8 +78,10 @@
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
                                             <nobr>
-                                                <a class='btn btn-xs btn-info my_popup_open'
-                                                   href='#' name="<?= $volunteer->Name; ?>" title='View details'><?= $volunteer->Name ?></a></nobr>
+                                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                        data-whatever="<?= $volunteer->Name ?>"><?= $volunteer->Name ?></button>
+                                            </nobr>
                                         </center>
                                     </td>
                                     <td class='clickable'>
@@ -94,11 +106,35 @@
                 <div class="step-pane sample-pane bg-danger alert" data-step="3">
                     <h4>Design Template</h4>
 
-                    <p>Bacon ipsum dolor amet fatback chicken cow cupim ham landjaeger. Landjaeger alcatra biltong jerky hamburger. Corned beef shoulder porchetta pig turducken short loin shank t-bone bresaola landjaeger. Salami pork meatball pork belly ground round jerky chicken swine, filet mignon alcatra pork loin boudin.</p>
+                    <p>Bacon ipsum dolor amet fatback chicken cow cupim ham landjaeger. Landjaeger alcatra biltong jerky
+                        hamburger. Corned beef shoulder porchetta pig turducken short loin shank t-bone bresaola
+                        landjaeger. Salami pork meatball pork belly ground round jerky chicken swine, filet mignon
+                        alcatra pork loin boudin.</p>
 
-                    <p>Sausage short ribs pork chop, pig hamburger biltong jerky meatball landjaeger salami. Tenderloin pastrami cupim swine shank. Picanha pancetta pig, ball tip kielbasa alcatra pork belly bresaola shank short loin beef capicola. Frankfurter hamburger ham hock corned beef. </p>
+                    <p>Sausage short ribs pork chop, pig hamburger biltong jerky meatball landjaeger salami. Tenderloin
+                        pastrami cupim swine shank. Picanha pancetta pig, ball tip kielbasa alcatra pork belly bresaola
+                        shank short loin beef capicola. Frankfurter hamburger ham hock corned beef. </p>
                 </div>
             </div>
         </div>
     </div>
 </div><br><br><br><br>
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Opportunity Details</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Hello Mother</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
