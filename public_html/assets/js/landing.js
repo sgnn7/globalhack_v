@@ -1,13 +1,12 @@
-$('#showSystem').click(function() {
-				var base_url = 'http://www.myideatag.com/prezlimos';
-				var eventdate = $('#pickup_date').val();
+$('#click_search').click(function() {
+				var base_url = 'http://www.pashle.com/';
                 $.ajax({
-                    'url' : base_url + '/reservations/getReservationsforDate',
+                    'url' : base_url + '/Violations/listViolations',
                     'type' : 'POST', //the way you want to send data to your URL
-                    'data' : {'eventdate' : eventdate},
+                    'data' : $('#search_form').serialize(),
                     'success' : function(data){ //probably this request will return anything, it'll be put in var "data"
                         if(data){
-							$('#resSystem').html(data);
+							$('#result').html(data);
                         }
                     }
                 });
