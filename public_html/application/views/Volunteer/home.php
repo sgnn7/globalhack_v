@@ -67,10 +67,7 @@
                                     </td>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
-                                            <nobr>
-                                                <a class='btn btn-xs btn-info my_popup_open'
-                                                   href='#' name="<?= $volunteer->Name; ?>"
-                                                   title='View details'><?= $volunteer->Name ?></a></nobr>
+                                            <nobr><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="<?= $volunteer->Name ?>"><?= $volunteer->Name ?></button></nobr>
                                         </center>
                                     </td>
                                     <td class='clickable'>
