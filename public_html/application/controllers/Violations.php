@@ -39,12 +39,8 @@ class Violations extends CI_Controller {
 		
 	}
 	
-	public function violation_detail($id)
-	{
-		
-	}
 	
-	public function violation_list()
+	public function Violation_list()
 	{
 		$keyword = $this->security->xss_clean($this->input->post('keyword'));
 		$search_type = $this->security->xss_clean($this->input->post('search_type'));
@@ -57,7 +53,7 @@ class Violations extends CI_Controller {
 		$this->load->view('includes/footer');
 	}
 	
-	public function violation_search()
+	public function Violation_search()
 	{
 		$keyword = $this->security->xss_clean($this->input->post('keyword'));
 		$search_type = $this->security->xss_clean($this->input->post('search_type'));
@@ -70,9 +66,8 @@ class Violations extends CI_Controller {
 		$this->load->view('includes/footer');
 	}
 	
-	public function violation_detail($id)
+	public function Violation_details($id)
 	{
-		
 		$config['Violations'] = $this->Violations_model->getViolationByID($id);
 		
 		$this->load->view('includes/header', $config);

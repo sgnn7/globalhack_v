@@ -22,7 +22,7 @@
 	</thead>
 	<tbody>
 		<?php foreach($Violations as $violation){?>
-		<tr class='row-fluid rowlink' data-target='/link/to/violation' title='Violation'>
+		<tr class='row-fluid rowlink' data-target='Violation_details/<?=$violation->citation_number;?>' title='Violation'>
 			<td class='rowlink-skip'>
 				<center class='small-text'>
 					<nobr><?=$violation->status_date;?></nobr>
@@ -36,7 +36,7 @@
 			<td class='clickable'>
 				<center class='small-text'>
 					<nobr>
-						<a class='btn btn-xs btn-info' href='Violation/details/<?=$violation->citation_number;?>' title='View details'>
+						<a class='btn btn-xs btn-info' href='Violation_details/<?=$violation->citation_number;?>' title='View details'>
         				<?=$violation->citation_number;?>
 						</a>
 					</nobr>
