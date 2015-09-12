@@ -15,7 +15,8 @@ $('#click_search').click(function() {
 				event.preventDefault();
             });
 
-$('#ret_Search').click(funtion(){
+$('#ret_Search').click(function(){
 				$('#result').hide();
+				$('#header').show();
 				$('#search').show();
 					   });
