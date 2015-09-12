@@ -76,7 +76,7 @@ public function send_text($to,$message)
 			$SSN = $InputArray[1];
 			$response = $this->Violations_model->getViolationName($lastName,$SSN);
 			
-			
+			if($response->num_rows() > 0){
 			foreach($response as $resp){
 			// now greet the sender
 			header("content-type: text/xml");
@@ -91,6 +91,11 @@ public function send_text($to,$message)
 		
 <?
 			
+			}
+		}
+			else
+				{
+				else 
 			}
 		}
 			
