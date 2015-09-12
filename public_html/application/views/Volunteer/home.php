@@ -74,19 +74,15 @@
                                     </td>
                                     <td class='clickable'>
                                         <center class='small-text'>
-                                            <nobr>
-                                                11/04/2015
-                                            </nobr>
+                                            <nobr><?= $volunteer->date_of_service; ?></nobr>
                                         </center>
                                     </td>
                                     <td class='clickable'>
-                                        <center class='small-text'>St. Charles</center>
+                                        <center class='small-text'><?= $volunteer->city; ?></center>
                                     </td>
                                     <td class='clickable'>
                                         <center class='small-text'>
-                                            <nobr>
-                                                5
-                                            </nobr>
+                                            <nobr><?= $volunteer->hours_offered; ?></nobr>
                                         </center>
                                     </td>
                                 </tr>
@@ -107,4 +103,3 @@
         </div>
     </div>
 </div><br><br><br><br>
-<pre><?php var_dump($Volunteers); ?></pre>
