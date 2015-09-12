@@ -25,7 +25,7 @@
 		<tr class='row-fluid rowlink' data-target='Violation_details/<?=$violation->citation_number;?>' title='Violation'>
 			<td class='rowlink-skip'>
 				<center class='small-text'>
-					<nobr><?=str_replace(' 00:00:00', '', $violation->status_date);?></nobr>
+					<nobr><?=str_replace(' 00:00:00', '', $violation->citation_date);?></nobr>
 				</center>
 			</td>
 			<td class='rowlink-skip'>
@@ -43,7 +43,7 @@
 				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'>-</center>
+				<center class='small-text'><?=$violation->court_location;?></center>
 			</td>
 			<?  $fine_amount = $violation->fine_amount;
 			    $court_cost = $violation->court_cost;
@@ -55,7 +55,7 @@
 					<nobr>
 						<?php 
 							if ($totalAmount > 0) {
-								echo "\$$totalAmount";
+								echo '$'.$totalAmount;
 							}
 						?>
 					</nobr>
