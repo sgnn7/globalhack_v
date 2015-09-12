@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<h3>Search by:</h3>
+				<h2>Search by:</h2>
 			</div>
 		</div>
 		<div class="row">

@@ -47,7 +47,7 @@
     </div>
 
 	<!-- BEGIN PAGE LEVEL JS -->
-    <!--<script src="assets/js/landing.js" type="text/javascript"></script>-->
+    <script src="assets/js/landing.js" type="text/javascript"></script>
 	
     <script src="<?= base_url();?>/assets/js/scripts.js" type="text/javascript"></script>
     <script src="<?= base_url();?>assets/js/common.js"></script>
