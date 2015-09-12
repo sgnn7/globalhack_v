@@ -37,6 +37,16 @@ class Violations_model extends CI_Model {
 			$searchResult = $query->result();
 			return $searchResult;
 		}
+		
+		if($search_type == 'drivers_license'){
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->where('citations.drivers_license_number', $keyword);
+			$query = $this->db->get();
+			$searchResult = $query->result();
+			return $searchResult;
+		}
 	}
 	
 	function getViolationByID($id)
