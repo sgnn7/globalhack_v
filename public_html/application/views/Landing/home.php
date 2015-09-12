@@ -13,7 +13,13 @@
 	</div>
 
 </header>
-<h3>Search by:</h3>
+<section id="search">
+	<div class="container">
+		<div class="row">
+			<
+		</div>
+	</div>
+	<h3>Search by:</h3>
     <form role="form" name="search_form" id="search_form">
       <input type="radio" name="search_type" value="name">Name</input>
       <br />
@@ -25,3 +31,4 @@
       <input type="text" name="keyword" />
       <input type="button" id="click_search" />
     </form>
+</section>
