@@ -1,5 +1,5 @@
 <div class='container' style="padding-top:170px">
-<input type="button" 
+<input type="button" class="btn btn-lg btn-info" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
 	<thead>
@@ -42,13 +42,11 @@
 			</td>
 			<?  $fine_amount = $violation->fine_amount;
 			    $court_cost = $violation->court_cost;
-			    $fineCount = strlen($fine_amount);
-			    $courtCount = strlen($court_cost);
-				$fine_amount = substr($fine_amount,1,($fineCount - 1));
-				$court_cost = substr($court_cost,1,($court_cost - 1));
+				$fine_amount = substr($fine_amount,1);
+				$court_cost = substr($court_cost,1);
 				$totalAmount = $fine_amount + $court_cost; ?>
 			<td class='clickable'>
-				<center class='small-text'><?=$totalAmount;?></center>
+				<center class='small-text'>$<?=$totalAmount;?></center>
 			</td>
 			<td class='rowlink-skip'>
 				<center>

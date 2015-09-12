@@ -14,3 +14,8 @@ $('#click_search').click(function() {
                 });
 				event.preventDefault();
             });
+
+$('#ret_Search').click(funtion(){
+				$('#result').hide();
+				$('#search').show();
+					   });
