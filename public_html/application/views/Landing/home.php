@@ -29,7 +29,7 @@
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default">
-									<input type="radio" checked="checked" name="search_type" value="name"></input>
+									<input type="radio" class="active" checked="checked" name="search_type" value="name"></input>
 									Last Name
 								</label>
 								<label class="btn btn-default">
