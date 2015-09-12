@@ -28,7 +28,6 @@ class Violations extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('url');	
 		$this->load->model('Violations_model');
-		$this->load->library('Twilio');
 	}
 	
 	public function index()
@@ -75,23 +74,5 @@ class Violations extends CI_Controller {
 		$this->load->view('includes/footer');
 	}
 	
-	public function send_text()
-		{
-			
-			$from = '3142549725';
-			$to = '13142788933';
-			$message = 'This is a test...';
-			$response = $this->twilio->sms($from, $to, $message);
-			if($response->IsError)
-				echo 'Error: ' . $response->ErrorMessage;
-			else
-				echo 'Sent message to ' . $to;
-	}
 	
-	public function receive_text()
-		{
-			$this->load->library('Twilio');
-			$response = $this->twilio->request("/$ApiVersion/Accounts/$AccountSid/Messages", "POST", $data);
-			echo $response;
-	}
 }
