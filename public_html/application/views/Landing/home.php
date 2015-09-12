@@ -20,17 +20,18 @@
 		<div class="row">
 			<div class="col-lg-4">
 <!-- 				<label for="search_type">Search by:</label> -->
-				<h1 style="color:#E5630C" alt="Enter search criteria here">Search by:</h1>
+				<h1 style="color:#E5630C">Search by:</h1>
 			</div>
 			<div class="col-lg-3">
 				<div class="row" style="margin-top:25px">
-					<input type="text" name="keyword" class="form-control input-lg" alt="Enter your search criteria here"/>
+					<label for="keyword">Search Criteria</label>
+					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
 				<div class="row col-lg-offset-2" style="margin-top:15px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default active">
-									<input type="radio" checked="checked" name="search_type" value="name" alt="search by Last Name"></input>
+									<input type="radio" checked="checked" name="search_type" value="name"></input>
 									Last Name
 								</label>
 								<label class="btn btn-default">
@@ -38,7 +39,7 @@
 									Citation/Ticket #
 								</label>
 								<label class="btn btn-default">
-									<input type="radio" name="search_type" value="drivers_license" alt="search by Drivers license"></input>
+									<input type="radio" name="search_type" value="drivers_license"></input>
 									Driver's License
 								</label>
 							</div>
