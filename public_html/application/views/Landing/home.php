@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" lang="en">
 <!-- Landing Header -->
 	<div class="container">
 		<div class="row">
