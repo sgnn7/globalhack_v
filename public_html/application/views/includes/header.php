@@ -18,7 +18,7 @@
     <meta content="" name="author" />
 	  
 	<!--Style Sheets -->
-	<link href="<?= base_url();?>/assets/js/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href="<?=base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
