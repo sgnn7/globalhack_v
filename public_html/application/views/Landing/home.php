@@ -29,7 +29,7 @@
 				<input type="radio" name="search_type" value="name">Name</input>
 			</div>
 			<div class="col-lg-2">
-				<input type="radio" name="search_type" value="citation_id">Citation/Ticket ID</input>
+				<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
 			</div>
 			<div class="col-lg-2">
 				<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
