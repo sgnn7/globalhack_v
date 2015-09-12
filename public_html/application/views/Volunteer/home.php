@@ -62,15 +62,14 @@
                                     title='Violation'>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
-                                            <nobr>Road Cleanup</nobr>
+                                            <nobr><?= $volunteer->OpportunityType ?></nobr>
                                         </center>
                                     </td>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
                                             <nobr>
                                                 <a class='btn btn-xs btn-info my_popup_open'
-                                                   href='Violation_details/701425162' title='View details'>Globalhack
-                                                    Inc.</a></nobr>
+                                                   href='Volunteer_details/<?= urlencode($volunteer->Name) ?>' title='View details'><?= $volunteer->Name ?></a></nobr>
                                         </center>
                                     </td>
                                     <td class='clickable'>

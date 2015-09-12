@@ -80,9 +80,9 @@ class Violations_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('citations');
 		$this->db->join('violations', 'violations.citation_number = citations.citation_number');
-		$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+		$this->db->join('socialsecurityauth',{'socialsecurityauth.last_name = citations.last_name','socialsecurityauth.first_name = citations.first_name'});
 		$this->db->where('citations.last_name', $last);
-		$this->db->where('citations.last4ssn', $SSN);
+		$this->db->where('socialsecurityauth.last4ssn', $SSN);
 		$query = $this->db->get();
 		$searchResult = $query->result();
 		return $searchResult;
