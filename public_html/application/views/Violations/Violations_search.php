@@ -1,4 +1,5 @@
 <div class='container' style="padding-top:170px">
+	<input type="button" class="btn btn-info btn-md" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
 	<thead>
