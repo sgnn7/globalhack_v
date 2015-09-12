@@ -81,7 +81,7 @@ public function send_text($to,$message)
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
 		<Response>
-			<Message>Citation#:<?=$response[0]->citation_number;?></Message>
+			<Message>Citation#:<?=$response[0]->citation_number;?>|Amount Owed:$</Message>
 		</Response>
 		
 <?
