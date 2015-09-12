@@ -24,9 +24,11 @@
 
     <div class="court">
         <h3>Court</h3>
+        <span id="violation_description"><?php $Violations[0]->violation_description; ?></span><br>
         <span id="court_date_label">Court date:</span> <span
             id="court_date"><?php echo $Citations[0]->court_date; ?></span><br>
         <span
             id="address_line"><?php echo $Citations[0]->court_address . ', ' . $Citations[0]->court_location; ?></span><br>
     </div>
+    <pre><?php var_dump($Violations); ?></pre>
 </div>
