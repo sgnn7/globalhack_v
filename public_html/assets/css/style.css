@@ -98,6 +98,11 @@ header {
     background: #18bc9c;
 }
 
+#search h1{
+	display: block;
+	font-size: 4em;
+}
+
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;

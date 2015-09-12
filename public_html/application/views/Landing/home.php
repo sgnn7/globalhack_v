@@ -17,17 +17,15 @@
 	<form role="form" name="search_form" id="search_form">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
-				<h1 style="color:#E5630C">Search by:</h1>
-			</div>
-			<div class="col-lg-7">
-				<input type="text" name="keyword" class="form-control"/>
-			</div>
-			<div class="col-lg-2">
-				<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
+			<div class="col-lg-4">
+				<h2>Search by:</h2>
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-lg-6">
+				<input type="text" name="keyword" />
+			</div>
+			<label for="year" class="control-label input-group">Search by:</label>
 			<div class="btn-group" data-toggle="buttons">
 				<div class="col-lg-2">
 					<label class="btn btn-default">
@@ -35,15 +33,19 @@
 					</label>
 				</div>
 				<div class="col-lg-2">
-					<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
+					<label class="btn btn-default">
+						<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
+					</label>
 				</div>
 				<div class="col-lg-2">
-					<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
+					<label class="btn btn-default">
+						<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
+					</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-2">
-					
+					<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
 				</div>
 			</div>
 		</div>
