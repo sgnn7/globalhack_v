@@ -64,8 +64,7 @@ public function send_text($to,$message)
 			<Message><?php echo $name ?>, thanks for the message!</Message>
 		</Response>
 		
-/* 		$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",$data);
-		var_dump($response); */
+
 	}
 	
 //end file	
