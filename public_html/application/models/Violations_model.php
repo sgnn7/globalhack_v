@@ -8,9 +8,10 @@ class Violations_model extends CI_Model {
 		parent::__construct();
 	}
 
-	function getViolations()
+	function getViolations($search_type,$keyword)
 	{
-		$this->db->where('reservation_type', 'reservation');
+		if($search_type == 'name')
+		$this->db->where('violations', $keyword);
 		$query = $this->db->get('reservations');
 		$searchResult = $query->result();
 		return $searchResult;
