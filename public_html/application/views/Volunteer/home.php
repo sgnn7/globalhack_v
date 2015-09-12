@@ -105,14 +105,14 @@
         </div>
     </div>
 </div><br><br><br><br>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel">
+<div class="modal fade" id="volunteer_modal" tabindex="-1" role="dialog"
+     aria-labelledby="volunteer_modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Opportunity Details</h4>
+                <h4 class="modal-title" id="volunteerModalLabel">Opportunity Details</h4>
             </div>
             <div class="modal-body">
                 <h3>Hello Mother</h3>
@@ -125,12 +125,13 @@
     </div>
 </div>
 <script language="JavaScript"><!--
-    $('#exampleModal').on('show.bs.modal', function (event) {
-        alert( 'Bog off!' )
+    $('#volunteer_modal').on('show.bs.modal', function (event) {
+        alert( 'Bog off!' );
         var button = $(event.relatedTarget) // Button that triggered the modal
         var recipient = button.data('whatever') // Extract info from data-* attributes
-        var modal = $(this)
+        var modal = $(this);
         modal.find('.modal-title').text('New message to ' + recipient)
         modal.find('.modal-body').text(recipient)
-    })// -->
+    });
+    // -->
 </script>

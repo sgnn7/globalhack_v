@@ -82,12 +82,12 @@ public function send_text($to,$message)
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-			$fine_amount = $resp[$i]->fine_amount;
-			$court_cost = $resp[$i]->court_cost;
+			$fine_amount = $resp[$i]['fine_amount'];
+			$court_cost = $resp[$i]['court_cost'];
 			$totalAmount = ($fine_amount + $court_cost);
 		?>
 		<Response>
-			<Message>Hi <?=$response[$i]->first_name.' '.$response[$i]->last_name;?>| Citation#:<?=$response[$i]->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$response[$i]->court_location;?>| Court Date:<?=$response[$i]->court_date;?></Message>
+			<Message>Hi <?=$resp[$i]['first_name'].' '.$resp[$i]['last_name'];?>| Citation#:<?=$resp[$i]['citation_number'];?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp[$i]['court_location'];?>| Court Date:<?=$resp[$i]->court_date;?></Message>
 		</Response>
 		
 <?
