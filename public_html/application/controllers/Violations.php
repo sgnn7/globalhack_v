@@ -79,7 +79,7 @@ class Violations extends CI_Controller {
 		{
 			$this->load->library('twilio');
 			$from = '3142549725';
-			$to = '3143688889';
+			$to = '3146012731';
 			$message = 'This is a test...';
 			$response = $this->twilio->sms($from, $to, $message);
 			if($response->IsError)
