@@ -14,7 +14,7 @@
 
 </header>
 <section id="search">
-	<form role="form" name="search_form" id="search_form">
+	<form role="form" name="search_form" class="form" id="search_form">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
@@ -31,21 +31,21 @@
 			
 			<div class="container">
 				
-			<label for="year" class="control-label input-group">Search by:</label>
+			<label for="search_type" class="control-label input-group">Search by:</label>
 			<div class="btn-group" data-toggle="buttons">
 				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" class="btn" checked="checked" name="search_type" value="name">Name</input>
+						<input type="radio" class="btn" checked="checked" name="search_type" value="name" class="form-control">Name</input>
 					</label>
 				</div>
 				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" name="search_type" value="citation_id">Citation/Ticket #</input>
+						<input type="radio" name="search_type" value="citation_id" class="form-control">Citation/Ticket #</input>
 					</label>
 				</div>
 				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" name="search_type" value="drivers_license">Driver's License</input>
+						<input type="radio" name="search_type" value="drivers_license" class="form-control">Driver's License</input>
 					</label>
 				</div>
 			</div>
