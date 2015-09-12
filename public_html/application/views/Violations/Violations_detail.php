@@ -37,7 +37,7 @@
                 <span id="address_line"><?php echo $Courts[0]->Address; ?></span><br>
             <span
                 id="address_city_state"><?php echo $Courts[0]->City . ', ' . $Courts[0]->State . ', ' . $Courts[0]->Zip_Code; ?></span><br>
-            </div><br><br>
+            </div><br>
         <?php } ?>
         <span id="violation_description"><?php echo $Violations[0]->violation_description; ?></span><br>
         <?php if (isset($Violations[0]->fine_amount)) { ?>
