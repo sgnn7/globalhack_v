@@ -28,10 +28,10 @@
     <div class="court">
         <h3>Court</h3>
         <div class="court_address">
-            <span id="municipality"><?php echo $Courts[0]->Municipality; ?></span> <span id="court_map"><a href="http://maps.google.com/?q=<?php echo $Courts[0]->X.','.$Courts[0]->Y; ?>">(map)</a></span><br>
+            <span id="municipality"><?php echo $Courts[0]->Municipality; ?></span> <span id="court_map"><a href="https://maps.google.com/maps?daddr=<?php echo $Courts[0]->Municipality; ?>@<?php echo $Courts[0]->X.','.$Courts[0]->Y; ?>">(map)</a></span><br>
             <span id="address_line"><?php echo $Courts[0]->Address; ?></span><br>
             <span
-                id="address_city_state"><?php echo $Courts[0]->City . ', ' . $Courts[0]->State . ', ' . $Courts[0]->Zip_Code; ?></span><br>
+                id="address_city_state"><?php echo $Courts[0]->City . ', ' . $Courts[0]->State . ', ' . $Courts[0]->Zip_Code; ?></span><br> 
         </div>
         <span id="violation_description"><?php $Violations[0]->violation_description; ?></span><br>
         <span id="violation_fine_label">Fine:</span>

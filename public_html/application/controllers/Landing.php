@@ -31,8 +31,9 @@ class Landing extends CI_Controller {
 	
 	public function index()
 	{
+		$config['curNav'] = 'search';
 		$this->load->view('includes/header');
-		$this->load->view('includes/nav');
+		$this->load->view('includes/nav', $config);
 		$this->load->view('Landing/home');
 		$this->load->view('includes/footer');
 		

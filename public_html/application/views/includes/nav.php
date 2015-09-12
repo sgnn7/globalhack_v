@@ -24,10 +24,10 @@
 						<a href="<?=base_url();?>" class="<? if($curNav=='search'){?>active<? }?>">Search</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?=base_url();?>volunteer">Volunteer</a>
+                        <a href="<?=base_url();?>volunteer" class="<? if($curNav=='volunteer'){?>active<? }?>">Volunteer</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?=base_url();?>information">Information</a>
+                        <a href="<?=base_url();?>information" class="<? if($curNav=='information'){?>active<? }?>">Information</a>
                     </li>
                 </ul>
             </div>
