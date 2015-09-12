@@ -31,8 +31,9 @@ class Information extends CI_Controller {
 	
 	public function index()
 	{
+		$config['curNav'] = 'information';
 		$this->load->view('includes/header');
-		$this->load->view('includes/nav');
+		$this->load->view('includes/nav', $config);
 		$this->load->view('Information/home');
 		$this->load->view('includes/footer');
 		

@@ -32,6 +32,7 @@ class Violations extends CI_Controller {
 	
 	public function index()
 	{
+		$config['curNav'] = 'search';
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav');
 		$this->load->view('Landing/home');
@@ -42,7 +43,7 @@ class Violations extends CI_Controller {
 	
 	public function Violation_list()
 	{
-		
+		$config['curNav'] = 'search';
 		$config['Violations'] = $this->Violations_model->getAllViolations();
 		
 		$this->load->view('includes/header', $config);
@@ -53,6 +54,7 @@ class Violations extends CI_Controller {
 	
 	public function Violation_search()
 	{
+		$config['curNav'] = 'search';
 		$keyword = $this->security->xss_clean($this->input->post('keyword'));
 		$search_type = $this->security->xss_clean($this->input->post('search_type'));
 		
@@ -66,6 +68,7 @@ class Violations extends CI_Controller {
 	
 	public function Violation_details($id)
 	{
+		$config['curNav'] = 'search';
 		$config['Citations'] = $this->Violations_model->getCitationByID($id);
 		$config['Violations'] = $this->Violations_model->getViolationByCitationID($id);
 		$config['Courts'] = $this->Violations_model->getCourtByViolationID($id);
