@@ -43,4 +43,9 @@ class Violations extends CI_Controller {
 	{
 		
 	}
+	
+	public function violation_list()
+	{
+		
+	}
 }

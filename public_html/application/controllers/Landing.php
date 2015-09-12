@@ -37,4 +37,6 @@ class Landing extends CI_Controller {
 		$this->load->view('includes/footer');
 		
 	}
+	
+	
 }
