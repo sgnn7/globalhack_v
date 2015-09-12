@@ -53,7 +53,7 @@ public function send_text($to,$message)
 		"+3146051326" => "John",
         "+3143688889" => "Michelle"
     	);
-		$Input = $_REQUEST['Body'];
+		$Input = $this->security->xss_clean($_REQUEST['Body']);
 		
 		
 		if($Input == "Pashle") {
@@ -74,22 +74,24 @@ public function send_text($to,$message)
 			$InputArray = explode('*',$Input);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
-			$response = $this->Violations_model->getViolationName($lastName,$SSN);
+			$responses = $this->Violations_model->getViolationName($lastName,$SSN);
 			
+			foreach($responses as $response){
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-			$fine_amount = $response[0]->fine_amount;
-			    $court_cost = $response[0]->court_cost;
+			$fine_amount = $response->fine_amount;
+			    $court_cost = $response->court_cost;
 /* 				$fine_amount = substr($fine_amount,1);
 				$court_cost = substr($court_cost,1); */
 				$totalAmount = $fine_amount + $court_cost;
 		?>
 		<Response>
-			<Message>Hi <?=$response[0]->first_name.' '.$response[0]->laCitation#:<?=$response[0]->citation_number;?>|Amount Owed:$<?=$totalAmount;?>|Court Name:<?=$response[0]->court_location;?>|Court Date:<?=$response[0]->court_date;?></Message>
+			<Message>Hi <?=$response->first_name.' '.$response->last_name;?>| Citation#:<?=$response->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$response->court_location;?>| Court Date:<?=$response->court_date;?></Message>
 		</Response>
 		
 <?
+			}
 		}
 			
 			
