@@ -55,15 +55,10 @@
 					<nobr>
 						<?php 
 							if ($totalAmount > 0) {
-								echo('$', $totalAmount);
+								echo "\$$totalAmount";
 							}
 						?>
 					</nobr>
-				</center>
-			</td>
-			<td class='rowlink-skip'>
-				<center>
-
 				</center>
 			</td>
 			<? } ?>
