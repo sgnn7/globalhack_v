@@ -76,10 +76,10 @@ public function send_text($to,$message)
 			$SSN = $InputArray[1];
 			//$response = new Array();
 			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
-			$i = 0;
+			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
 			
-			if($msgCount > 1){
+			if($msgCount > 0){
 				while($i <= ($msgCount - 1)){
 					// now greet the sender
 					header("content-type: text/xml");
