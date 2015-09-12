@@ -77,12 +77,12 @@ public function send_text($to,$message)
 			//$response = new Array();
 			$messages = $this->Violations_model->getViolationName($lastName,$SSN);
 			
-			foreach($messages->result() as $resp){
+			foreach($messages->result_array() as $resp){
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-			$fine_amount = $resp->fine_amount;
-			$court_cost = $resp->court_cost;
+			$fine_amount = $resp['fine_amount'];
+			$court_cost = $resp['court_cost;
 			$totalAmount = $fine_amount + $court_cost;
 		?>
 		<Response>
