@@ -1,0 +1,4 @@
+*user_guide/
+*.swp
+nohup.out
+database.php
