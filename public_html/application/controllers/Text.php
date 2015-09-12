@@ -47,13 +47,25 @@ public function send_text($to,$message)
 		{
 		$AccountSid = 'ACec7530ecb3ad04e72a617b10c47dd8b5';
 		$people = array(
-        "+1314601"=>"Curious George",
-        "+14158675310"=>"Boots",
-        "+14158675311"=>"Virgil",
+        "+13146012731"=>"Dj Ojo",
+        "+13142788933"=>"Paul",
+        "+3143688889"=>"Michelle",
     	);
 		
-		$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",$data);
-		var_dump($response);
+		if(!$name = $people[$_REQUEST['From']]) {
+        $name = "Monkey";
+    }
+ 
+			// now greet the sender
+			header("content-type: text/xml");
+			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+		?>
+		<Response>
+			<Message><?php echo $name ?>, thanks for the message!</Message>
+		</Response>
+		
+/* 		$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",$data);
+		var_dump($response); */
 	}
 	
 //end file	
