@@ -74,6 +74,10 @@ class Violations_model extends CI_Model {
 		$citations = $query->result();
 		return $citations;
 	}
+
+	function getCourtByViolationID($id) {
+		$this->db->
+	}
 	
 //end file	
 }
