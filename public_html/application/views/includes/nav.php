@@ -21,7 +21,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?=base_url();?>">Search</a>
+						<a href="<?=base_url();?>" class="<? if($curNav=='search'){?>active<? }?>">Search</a>
                     </li>
                     <li class="page-scroll">
                         <a href="<?=base_url();?>volunteer">Volunteer</a>
