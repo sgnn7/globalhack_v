@@ -22,10 +22,10 @@
 				<h1 style="color:#E5630C">Search by:</h1>
 			</div>
 			<div class="col-lg-6">
-				<div class="row">
-					<input type="text" name="keyword" class="form-control input-xl"/>
+				<div class="row" style="margin-top:20px">
+					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
-				<div class="rowm" style="margin-top:15px">
+				<div class="row col-lg-offset-2" style="margin-top:15px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default">
