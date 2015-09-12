@@ -76,21 +76,23 @@ public function send_text($to,$message)
 			$SSN = $InputArray[1];
 			//$response = new Array();
 			$messages = $this->Violations_model->getViolationName($lastName,$SSN);
-			$i = 0
-			while($x <= 5)
+			$i = 0;
+			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
+			while($xi<= $msgCount){
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-			$fine_amount = $resp['fine_amount'];
-			$court_cost = $resp['court_cost'];
+			$fine_amount = $resp[$i]->fine_amount;
+			$court_cost = $resp[$i]->court_cost;
 			$totalAmount = $fine_amount + $court_cost;
+			$i++;
 		?>
 		<Response>
-			<Message>Hi <?=$resp['first_name'];?> <?=$resp['last_name'];?>| Citation#:<?=$resp['citation_number'];?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp['court_location'];?>| Court Date:<?=$resp['court_date'];?></Message>
+			<Message>Hi <?=$resp[$i]->first_name;?> <?=$resp[$i]->last_name;?>| Citation#:<?=$resp[$i]->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp[$i]->court_location;?>| Court Date:<?=$resp[$i]-court_date'];?></Message>
 		</Response>
 		
 <?
-			
+			}
 		
 			}
 		}
