@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Landing extends CI_Controller {
+class Volunteer extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -31,10 +31,10 @@ class Landing extends CI_Controller {
 	
 	public function index()
 	{
-		$config['curNav'] = 'search';
+		$config['curNav'] = 'volunteer';
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
-		$this->load->view('Landing/home');
+		$this->load->view('Volunteer/home');
 		$this->load->view('includes/footer');
 		
 	}
