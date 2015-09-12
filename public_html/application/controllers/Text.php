@@ -46,7 +46,12 @@ public function send_text($to,$message)
 	public function receive_text()
 		{
 		$AccountSid = 'ACec7530ecb3ad04e72a617b10c47dd8b5';
-			$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",{'13142788933',,'9/12/2015'});
+		$data = array(
+			'To=' => '13142788933',
+			'From=' => '3142549725',
+			'DateSent='
+		
+			$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",$data);
 			var_dump($response);
 	}
 	
