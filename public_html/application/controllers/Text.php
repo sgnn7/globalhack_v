@@ -81,10 +81,8 @@ public function send_text($to,$message)
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 			$fine_amount = $response->fine_amount;
-			    $court_cost = $response->court_cost;
-/* 				$fine_amount = substr($fine_amount,1);
-				$court_cost = substr($court_cost,1); */
-				$totalAmount = $fine_amount + $court_cost;
+			$court_cost = $response->court_cost;
+			$totalAmount = $fine_amount + $court_cost;
 		?>
 		<Response>
 			<Message>Hi <?=$response->first_name.' '.$response->last_name;?>| Citation#:<?=$response->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$response->court_location;?>| Court Date:<?=$response->court_date;?></Message>
