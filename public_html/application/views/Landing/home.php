@@ -25,7 +25,7 @@
 				<div class="row">
 					<input type="text" name="keyword" class="form-control input-xl"/>
 				</div>
-				<div class="row">
+				<div class="rowm" style="margin-top:15px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default">
