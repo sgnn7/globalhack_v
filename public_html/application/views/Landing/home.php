@@ -36,10 +36,12 @@
 			</div>
 		</div>
 		<div class="row">
-			
+			<div class="col-lg-4 col-lg-offset-2">
+				<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
+			</div>
+		</div>
 	</div>
-	</div>
-
-      <input type="button" id="click_search" />
     </form>
 </section>
+
+<
