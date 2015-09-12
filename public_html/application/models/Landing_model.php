@@ -8,6 +8,9 @@ class Landing_model extends CI_Model {
 		parent::__construct();
 	}
 
-	
+	function verifySearch($name)
+	{
+			
+	}
 //end file	
 }
