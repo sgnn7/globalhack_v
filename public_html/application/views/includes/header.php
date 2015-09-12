@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href="//www.fuelcdn.com/fuelux/3.11.0/css/fuelux.min.css" rel="stylesheet">
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
 	  
 	<!-- JQuery/Fuel-->
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
