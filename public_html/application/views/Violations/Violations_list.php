@@ -37,7 +37,10 @@
 			<td class='clickable'>
 				<center class='small-text'>All</center>
 			</td>
-			<? $fine_amount = $violation->fine_amoun
+			<? $fine_amount = $violation->fine_amount;
+			   $court_cost = $violation->court_cost;
+			   $fineCount = strlen($fine_amount);
+			   $courtCount = strlen
 			<td class='clickable'>
 				<center class='small-text'><?=($violation->fine_amount + $violation->court_cost);?></center>
 			</td>
