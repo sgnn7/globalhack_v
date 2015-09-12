@@ -52,6 +52,8 @@ public function send_text($to,$message)
         "+13143688889"=>"Michelle",
     	);
 		$Input = $_REQUEST['Body'];
+		
+		
 		if(!$name = $people[$_REQUEST['From']]) {
         $name = "Monkey";
     	}
@@ -61,7 +63,7 @@ public function send_text($to,$message)
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
 		<Response>
-			<Message><?php echo $name ?>, thanks for the message!</Message>
+			<Message><?php echo $name ?>, To Query our system please use the format LAST NAME*LAST 4 SSN</Message>
 		</Response>
 		
 <?
