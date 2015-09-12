@@ -53,14 +53,14 @@ public function send_text($to,$message)
     	);
 		$Input = $_REQUEST['Body'];
 		
-		if($_REQUEST['HELP']) {
+		if($_REQUEST['pashle']) {
         
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
 			<Response>
-			<Message>To Use our automated!</Message>
+			<Message>To Use our automated system send your Last Name*Last 4 SSN!</Message>
 		</Response>
 		<?	
     	}
