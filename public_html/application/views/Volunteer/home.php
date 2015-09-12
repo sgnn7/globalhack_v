@@ -226,3 +226,4 @@
         </div>
     </div>
 </div><br><br><br><br>
+<pre><?php var_dump($Volunteers); ?></pre>

@@ -26,7 +26,8 @@ class Volunteer extends CI_Controller {
 		$this->load->database();
 		$this->load->library('email');
 		$this->load->helper('form');
-		$this->load->helper('url');		
+		$this->load->helper('url');
+		$this->load->model('Volunteer_model');
 	}
 	
 	public function index()
