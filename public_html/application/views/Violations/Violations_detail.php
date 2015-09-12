@@ -29,7 +29,7 @@
     <br>
 
     <div class="court">
-        <h3>Court</h3>
+        <h3>Court Date <?php echo $Citations[0]->court_date; ?></h3>
         <?php if (isset($Courts) && count($Courts) > 0) { ?>
             <div class="court_address">
                 <span id="municipality"><?php echo $Courts[0]->Municipality; ?></span> <span id="court_map"><a
@@ -51,7 +51,5 @@
             echo number_format($total, 2);
             ?></span><br><br>
         <?php } ?>
-        <span id="court_date_label">Court date:</span> <span
-            id="court_date"><?php echo $Citations[0]->court_date; ?></span><br>
     </div>
 </div>
