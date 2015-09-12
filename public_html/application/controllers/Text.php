@@ -28,7 +28,7 @@ class Text extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('url');	
 		$this->load->library('Twilio');
-		$this->load->model('Voilations_model');
+		$this->load->model('Violations_model');
 	}
 
 public function send_text($to,$message)
@@ -69,13 +69,25 @@ public function send_text($to,$message)
 <?
 			
     	}
-		else{
+		else
+		{
 			$InputArray = explode('*',$Input);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
+			$response = $this->Violations_model->getViolationName($lastName,$SSN);
 			
-			
+			// now greet the sender
+			header("content-type: text/xml");
+			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+		?>
+		<Response>
+			<Message>Citation#:<?=$response[0]->citation_number;?></Message>
+		</Response>
+		
+<?
 		}
+			
+			
 	}
 	
 //end file	
