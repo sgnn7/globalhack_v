@@ -76,17 +76,17 @@ public function send_text($to,$message)
 			$SSN = $InputArray[1];
 			//$response = new Array();
 			$messages = $this->Violations_model->getViolationName($lastName,$SSN);
-			
-			foreach($messages->result_array() as $resp){
+			$i = 0
+			while($x <= 5)
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 			$fine_amount = $resp['fine_amount'];
-			$court_cost = $resp['court_cost;
+			$court_cost = $resp['court_cost'];
 			$totalAmount = $fine_amount + $court_cost;
 		?>
 		<Response>
-			<Message>Hi <?=$resp->first_name;?> <?=$resp->last_name;?>| Citation#:<?=$resp->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp->court_location;?>| Court Date:<?=$resp->court_date;?></Message>
+			<Message>Hi <?=$resp['first_name'];?> <?=$resp['last_name'];?>| Citation#:<?=$resp['citation_number'];?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp['court_location'];?>| Court Date:<?=$resp['court_date'];?></Message>
 		</Response>
 		
 <?
