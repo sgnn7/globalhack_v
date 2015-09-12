@@ -30,6 +30,11 @@
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
+	 
+	<!-- DataTables-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.css"/>
+ 
+	<script type="text/javascript" src="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.js"></script>
 
 	</head>
 	<body>
