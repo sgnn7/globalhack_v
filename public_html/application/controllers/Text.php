@@ -49,12 +49,13 @@ public function send_text($to,$message)
 		$people = array(
         "+13146012731"=>"Dj Ojo",
         "+13142788933"=>"Paul",
-        "+13143688889"=>"Michelle",
+		"+3146051326" => "John"
+        "+13143688889"=>"Michelle"
     	);
 		$Input = $_REQUEST['Body'];
 		
 		
-		if($people[$_REQUEST['Body']] == "Pashle") {
+		if($Input == "Pashle") {
  
 			// now greet the sender
 			header("content-type: text/xml");
