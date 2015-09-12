@@ -16,20 +16,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
     <meta content="" name="author" />
-	  
-	<!--Style Sheets -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href="<?=base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link href="//www.fuelcdn.com/fuelux/3.11.0/css/fuelux.min.css" rel="stylesheet">
+
+	  <!--Style Sheets -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  <link href="http://www.pashle.com/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+	  <!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	  <link href="https://www.fuelcdn.com/fuelux/3.11.0/css/fuelux.min.css" rel="stylesheet">
 	<!-- Optional theme -->
 <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
-	  
-	<!-- JQuery/Fuel-->
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
+
+	  <!-- JQuery/Fuel-->
+	  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <script src="https://raw.githubusercontent.com/ExactTarget/fuelux/3.11.0/js/wizard.js"></script>
+	  <script src="https://www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
 	 
 	<!-- DataTables-->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.css"/>
