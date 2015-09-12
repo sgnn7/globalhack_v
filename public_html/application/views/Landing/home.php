@@ -28,8 +28,8 @@
 				<div class="row col-lg-offset-2" style="margin-top:15px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
-								<label class="btn btn-default">
-									<input type="radio" class="active" checked="checked" name="search_type" value="name"></input>
+								<label class="btn btn-default active">
+									<input type="radio" checked="checked" name="search_type" value="name"></input>
 									Last Name
 								</label>
 								<label class="btn btn-default">

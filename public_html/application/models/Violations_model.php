@@ -9,9 +9,11 @@ class Violations_model extends CI_Model {
 	}
 
 	function getAllViolations()
-	{
-			//$this->db->where('violations', $keyword);
-			$query = $this->db->get('violations');
+	{		
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$query = $this->db->get();
 			$searchResult = $query->result();
 			return $searchResult;
 	}
