@@ -58,7 +58,15 @@ class Violations_model extends CI_Model {
 		$violation = $query->result();
 		return $violation;
 	}
-	
+
+	function getViolationByCitationID($id)
+	{
+		$this->db->where('citation_number', $id);
+		$query = $this->db->get('violations');
+		$violation = $query->result();
+		return $violation;
+	}
+
 	function getCitationByID($id)
 	{
 		$this->db->where('citation_number', $id);
