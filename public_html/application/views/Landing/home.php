@@ -32,20 +32,16 @@
 			<div class="container">
 				
 			<label for="search_type" class="control-label input-group">Search by:</label>
+			<div class="col-lg-10">
 			<div class="btn-group" data-toggle="buttons">
-				<div class="col-lg-2">
 					<label class="btn btn-default">
-						<input type="radio" class="btn" checked="checked" name="search_type" value="name"></input>
+						<input type="radio" checked="checked" name="search_type" value="name"></input>
 						Last Name
 					</label>
-				</div>
-				<div class="col-lg-2">
 					<label class="btn btn-default">
 						<input type="radio" name="search_type" value="citation_id"></input>
 						Citation/Ticket #
 					</label>
-				</div>
-				<div class="col-lg-2">
 					<label class="btn btn-default">
 						<input type="radio" name="search_type" value="drivers_license"></input>
 						Driver's License
