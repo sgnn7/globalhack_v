@@ -69,7 +69,7 @@
                                         <center class='small-text'>
                                             <nobr>
                                                 <a class='btn btn-xs btn-info my_popup_open'
-                                                   href='Volunteer_details/<?= urlencode($volunteer->Name) ?>' title='View details'><?= $volunteer->Name ?></a></nobr>
+                                                   href='#' name="<?= $volunteer->Name; ?>" title='View details'><?= $volunteer->Name ?></a></nobr>
                                         </center>
                                     </td>
                                     <td class='clickable'>
