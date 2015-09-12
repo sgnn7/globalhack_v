@@ -17,8 +17,8 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 		}
 		
-		if($search_type == 'name'){
-			$this->db->where('violations', $keyword);
+		if($search_type == 'citation_id'){
+			$this->db->where('citation_number', $keyword);
 			$query = $this->db->get('violations');
 			$searchResult = $query->result();
 			return $searchResult;
