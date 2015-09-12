@@ -29,8 +29,11 @@ class Violations_model extends CI_Model {
 		}
 		
 		if($search_type == 'citation_id'){
-			$this->db->where('citation_number', $keyword);
-			$query = $this->db->get('violations');
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->where('citations.citation_number', $keyword);
+			$query = $this->db->get();
 			$searchResult = $query->result();
 			return $searchResult;
 		}
