@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
 	 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
     <title>Globalhack App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="apple-touch-icon" href="assets/img/ico/60.png">
+    <link rel="apple-touch-icon" href="assets/img/ico/60.png" alt="something">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/ico/76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="assets/img/ico/120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/ico/152.png">

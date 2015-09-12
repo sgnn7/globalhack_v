@@ -46,9 +46,30 @@ public function send_text($to,$message)
 	public function receive_text()
 		{
 		$AccountSid = 'ACec7530ecb3ad04e72a617b10c47dd8b5';
-			$response = $this->twilio->request("/2010-04-01/Accounts/$AccountSid/Messages", "POST",{'13142788933',,'9/12/2015'});
-			var_dump($response);
+		$people = array(
+        "+13146012731" => "Dj Ojo",
+        "+13142788933" => "Paul",
+		"+3146051326" => "John",
+        "+3143688889" => "Michelle"
+    	);
+		$Input = $_REQUEST['Body'];
+		
+		
+		if($Input == "Pashle") {
+ 
+			// now greet the sender
+			header("content-type: text/xml");
+			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+		?>
+		<Response>
+			<Message><?php echo $name ?>, To Query our system please use the format LAST NAME*LAST 4 SSN. You said <?=$Input;?></Message>
+		</Response>
+		
+<?
+			
+    	}
 	}
 	
 //end file	
 }
+?>
