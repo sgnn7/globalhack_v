@@ -1,12 +1,12 @@
-<header id="header" lang="en">
+<header id="header">
 <!-- Landing Header -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="intro-text">
-                        <span class="name">Find your Ticket Information</span>
+                        <span class="name" alt="Find your ticket information">Find your Ticket Information</span>
                         <hr class="star-light" style="color:#FFFF00">
-                        <span class="skills">Search Tickets - Get Court Information - Pay Court Costs</span>
+                        <span class="skills" alt="Here you can search tickets get court information and pay fines">Search Tickets - Get Court Information - Pay Fines</span>
                     </div>
 			</div>
 		</div>
@@ -29,15 +29,15 @@
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default active">
-									<input type="radio" checked="checked" name="search_type" value="name"></input>
+									<input type="radio" checked="checked" name="search_type" value="name" alt="search by Last Name"></input>
 									Last Name
 								</label>
 								<label class="btn btn-default">
-									<input type="radio" name="search_type" value="citation_id"></input>
+									<input type="radio" name="search_type" value="citation_id" alt="search by Citation Number"></input>
 									Citation/Ticket #
 								</label>
 								<label class="btn btn-default">
-									<input type="radio" name="search_type" value="drivers_license"></input>
+									<input type="radio" name="search_type" value="drivers_license" alt="search by Drivers license"></input>
 									Driver's License
 								</label>
 							</div>
