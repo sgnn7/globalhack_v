@@ -68,6 +68,13 @@ public function send_text($to,$message)
 <?
 			
     	}
+		else{
+			$InputArray = explode('*',$Input);
+			$lastName = $InputArray[0];
+			$SSN = $InputArray[1];
+			
+			
+		}
 	}
 	
 //end file	
