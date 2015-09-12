@@ -32,9 +32,10 @@ class Volunteer extends CI_Controller {
 	public function index()
 	{
 		$config['curNav'] = 'volunteer';
+		$config['Volunteers'] = $this->Volunteer_model->getAllOpportunities();
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
-		$this->load->view('Volunteer/home');
+		$this->load->view('Volunteer/home', $config);
 		$this->load->view('includes/footer');
 		
 	}
