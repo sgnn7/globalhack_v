@@ -22,7 +22,7 @@
 				<h1 style="color:#E5630C">Search by:</h1>
 			</div>
 			<div class="col-lg-6">
-				<div class="row" style="margin-top:20px">
+				<div class="row" style="margin-top:25px">
 					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
 				<div class="row col-lg-offset-2" style="margin-top:15px">
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-lg-2"  style="margin-top:25px">
 					<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
 			</div>
 		</div>

@@ -42,8 +42,6 @@ class Violations extends CI_Controller {
 	
 	public function Violation_list()
 	{
-		$keyword = $this->security->xss_clean($this->input->post('keyword'));
-		$search_type = $this->security->xss_clean($this->input->post('search_type'));
 		
 		$config['Violations'] = $this->Violations_model->getAllViolations();
 		
