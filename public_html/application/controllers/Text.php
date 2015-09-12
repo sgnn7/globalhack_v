@@ -49,24 +49,20 @@ public function send_text($to,$message)
 		$people = array(
         "+13146012731"=>"Dj Ojo",
         "+13142788933"=>"Paul",
-        "+3143688889"=>"Michelle",
+        "+13143688889"=>"Michelle",
     	);
 		$Input = $_REQUEST['Body'];
-		
-		if($_REQUEST['pashle']) {
-        
+		if(!$name = $people[$_REQUEST['From']]) {
+        $name = "Monkey";
+    	}
+ 
 			// now greet the sender
 			header("content-type: text/xml");
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
-			<Response>
-			<Message>To Use our automated system send your Last Name*Last 4 SSN!</Message>
+		<Response>
+			<Message><?php echo $name ?>, thanks for the message!</Message>
 		</Response>
-		<?	
-    	}
- 
-		?>
-		
 		
 <?
 	}
