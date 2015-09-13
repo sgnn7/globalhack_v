@@ -6,7 +6,7 @@
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Citations <span class="badge"><? echo count($Citations);?></span></a></li>
     <li role="presentation"><a href="#violations" aria-controls="violations" role="tab" data-toggle="tab">Violations <span class="badge"><? echo count($Violations);?></a></li>
-    <li role="presentation"><a href="#warrants" aria-controls="warrants" role="tab" data-toggle="tab">Warrants <span class="badge badge-danger"><?=$WarrantCount;?></a></li>
+    <li role="presentation"><a href="#warrants" aria-controls="warrants" role="tab" data-toggle="tab">Warrants <span class="badge badge-danger"><? echo count($Warrants);?></a></li>
   </ul>
 	
 	<!-- Tab panes -->
@@ -169,7 +169,7 @@
 						</center>
 					</td>
 					<td class='clickable'>
-						<center class='small-text'><?=$violation->court_location;?></center>
+						<center class='small-text'><?=$warrant->court_location;?></center>
 					</td>
 					<?  $fine_amount = $violation->fine_amount;
 						$court_cost = $violation->court_cost;
