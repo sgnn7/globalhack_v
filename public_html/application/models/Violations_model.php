@@ -114,6 +114,18 @@ class Violations_model extends CI_Model {
 		$violation = $query->result();
 		return $violation;
 	}
+	
+	function getComboViolationByID($id)
+	{
+		$this->db->select('*');
+		$this->db->from('violation');
+		$this->db->join('citations', 'citation.citation_number = violation.citation_number');
+		//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+		$this->db->where('violation.citation_number', $id);
+		$query = $this->db->get();
+		$searchResult = $query->result();
+		return $searchResult;
+	}
 
 	function getViolationByCitationID($id)
 	{

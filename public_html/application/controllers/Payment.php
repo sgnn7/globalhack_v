@@ -47,7 +47,7 @@ class Payment extends CI_Controller {
 		{
 		$config['curNav'] = 'search';
 		$config['CanVolunteer'] = $this->Payment_model->getCanVolunteer();
-		$config['Violation'] = $this->Violations_model->getViolationByID($id);
+		$config['Violation'] = $this->Violations_model->getComboViolationByID($id);
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Payment/home', $config);
