@@ -65,9 +65,8 @@ class Violations extends CI_Controller {
 		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
 		$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
 		$config['PersonName'] = $name;
-		$config['CitationCount'] = $this->Violations_model->getCitationCount($lastName,$firstName);
-		$config['ViolationCount'] = $this->Violations_model->ViolationCount($lastName,$firstName,$SSN);
-		$config['WarrantCount'] = $this->Violations_model->getWarrantCount($lastName,$firstName,$SSN);
+		$config['Warrants'] = $this->Violations_model->getWarrants($lastName, $firstName);
+		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_search', $config);
