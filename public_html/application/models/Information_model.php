@@ -12,7 +12,7 @@ class Information_model extends CI_Model {
 	{		
 			$this->db->select('*');
 			$this->db->from('courtlocations');
-			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->where('zipcode', $id);
 			$query = $this->db->get();
 			$searchResult = $query->result();
 			return $searchResult;

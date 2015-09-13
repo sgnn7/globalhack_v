@@ -50,6 +50,10 @@
 
 			<div><p>Please work with the state court to get recommendations, or visit the website of the Missouri BAR Association.</p></div>
 
+			<h3>What do I do if I have a warrant? </h3>
+
+			<div><p>Please click <a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" style="text-decoration: underline;" target="_blank">here</a> for additional information from the DMV</p></div>
+
 			<h3>What will happen if I ignore the ticket?</h3>
 
 			<div><p>Your case will be brought to the court system and will be tried by an assigned judge.</p></div>
