@@ -3,9 +3,9 @@
 		<?=$PersonName;?>
 	</h3>
 	<ul class="nav nav-tabs">
-	  <li role="presentation" class="active"><a href="#">Citations <span class="badge">4</span></a></li>
-	  <li role="presentation"><a href="#">Violations</a></li>
-	  <li role="presentation"><a href="#">Warrants</a></li>
+	  <li role="presentation" class="active"><a href="#">Citations <span class="badge"><?=$CitationCount;?></span></a></li>
+	  <li role="presentation"><a href="#">Violations <span class="badge"><?=$ViolationCount;?></span></a></li>
+	  <li role="presentation"><a href="#">Warrants <span class="badge badge-danger"><?=$WarrantCount;?></span></a></li>
 	</ul>
 	<input type="button" class="btn btn-info btn-md" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>

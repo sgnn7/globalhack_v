@@ -133,12 +133,15 @@
 			</div>
 			<div class="modal-body">
 				<h3 id="modal-org-name" class="volunteer-detail-header">Payment was processed successfully!</h3>
-				<a class="btn btn-lg btn-success" href="#">
-					<i class="fa fa-check fa-5x"></i>
-				</a>
+				<br />
+				<center>
+					<a class="btn btn-lg btn-success" href="#">
+						<i class="fa fa-check fa-5x"></i>
+					</a>
+				</center>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-default" data-target="pashle.com" data-dismiss="modal">Return to homepage</button>
 			</div>
 		</div>
 	</div>
