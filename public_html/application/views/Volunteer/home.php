@@ -47,23 +47,23 @@
                     <div class='panel panel-default'>
                         <table class='table table-striped table-hover table-condensed'>
                             <thead>
-                            <tr class='row-fluid small'>
-                                <th>
-                                    <center>Type</center>
-                                </th>
-                                <th>
-                                    <center>Organization</center>
-                                </th>
-                                <th>
-                                    <center>Date of Service</center>
-                                </th>
-                                <th>
-                                    <center>Location</center>
-                                </th>
-                                <th>
-                                    <center>Hours Offered</center>
-                                </th>
-                            </tr>
+								<tr class='row-fluid small'>
+									<th>
+										<center>Organization</center>
+									</th>
+									<th>
+										<center>Type</center>
+									</th>
+									<th>
+										<center>Date of Service</center>
+									</th>
+									<th>
+										<center>Location</center>
+									</th>
+									<th>
+										<center>Hours Offered</center>
+									</th>
+								</tr>
                             </thead>
                             <tbody>
                             <?php foreach ($Volunteers as $volunteer) { ?>
@@ -71,7 +71,7 @@
                                     title='Violation'>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
-                                            <nobr><?= $volunteer->OpportunityType ?></nobr>
+                                            <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" data-toggle="modal" data-target="#myModal" title='View details'> Globalhack Inc.</button><?= $volunteer->OpportunityType ?></nobr>
                                         </center>
                                     </td>
                                     <td class='rowlink-skip'>
