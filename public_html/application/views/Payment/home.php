@@ -3,19 +3,21 @@
 		<form role="form">
 			<div class="container">
 			<div class="row">
-				<div class="col-md-6" style="text-align:center;">
+				<div class="col-md-6" style="text-align:left;">
 					<? $amount = ($Violation[0]->fine_amount + $Violation[0]->court_cost); ?>
 					<h2>Amount owed: $<?=$amount;?>
+					<h4>
+						Violation #: <?=$Violation[0]->violation_number;?>	
+					</h4>
 				</div>
 				<div class="col-md-6">
-					<address>
 						<strong><?=$Violation[0]->court_location;?></strong><br>
-						<p>
+						<h6 class="text-info">
 							<?=$Violation[0]->court_address;?>
-						</p>
+						</h6>
 						<a href="">MAP IT</a>
-					</address>
 				</div>
+			<br>
 			</div>
 			<div id="accordion">
 			<h3>Credit Card</h3>
