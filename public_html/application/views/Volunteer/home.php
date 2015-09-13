@@ -100,18 +100,6 @@
                         </table>
                     </div>
                 </div>
-                <div class="step-pane sample-pane bg-danger alert" data-step="3">
-                    <h4>Design Template</h4>
-
-                    <p>Bacon ipsum dolor amet fatback chicken cow cupim ham landjaeger. Landjaeger alcatra biltong jerky
-                        hamburger. Corned beef shoulder porchetta pig turducken short loin shank t-bone bresaola
-                        landjaeger. Salami pork meatball pork belly ground round jerky chicken swine, filet mignon
-                        alcatra pork loin boudin.</p>
-
-                    <p>Sausage short ribs pork chop, pig hamburger biltong jerky meatball landjaeger salami. Tenderloin
-                        pastrami cupim swine shank. Picanha pancetta pig, ball tip kielbasa alcatra pork belly bresaola
-                        shank short loin beef capicola. Frankfurter hamburger ham hock corned beef. </p>
-                </div>
             </div>
         </div>
     </div>
@@ -127,13 +115,13 @@
 			<h4 class="modal-title" id="modal-title">Volunteering Info</h4>
 		</div>
 		<div class="modal-body">
-			<h3 class="">Some organization</h3>
+			<h3 class="volunteer-detail-header">Some organization</h3>
 			<p class="">Organizational description placeholder text</p>
-			<h3 class="">Some job position</h3>
+			<h3 class="volunteer-detail-header">Some job position</h3>
 			<p class="">Job described in more details</p>
-			<h3>County Name</h3>
+			<h3 class="volunteer-detail-header">County Name</h3>
 			<div id="map">Map</div>
-			<h3>Contact Info</h3>
+			<h3 class="volunteer-detail-header">Contact Info</h3>
 			<ul>
 			<li>Phone Number: 555-555-1234</li>
 			</ul>
