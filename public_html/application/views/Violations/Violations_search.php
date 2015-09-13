@@ -2,6 +2,13 @@
 	<h3>
 		<?=$PersonName;?>
 	</h3>
+	  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Citations</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
 	<ul class="nav nav-tabs">
 	  <li role="presentation" class="active"><a href="#">Citations <span class="badge"><?=$CitationCount;?></span></a></li>
 	  <li role="presentation"><a href="#">Violations <span class="badge"><?=$ViolationCount;?></span></a></li>
@@ -52,7 +59,7 @@
 				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'><?=$violation-></center>
+				<center class='small-text'><?=$violation->court_location;?></center>
 			</td>
 			<?  $fine_amount = $violation->fine_amount;
 			    $court_cost = $violation->court_cost;
