@@ -18,11 +18,15 @@
 		<div class="row">
 			<div class="col-lg-4">
 <!-- 				<label for="search_type">Search by:</label> -->
-				<h1 style="color:#E5630C">Search by:</h1>
+				<h1 style="color:#E5630C">Search:</h1>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 				<div class="row" style="margin-top:25px">
+					<div class="btn-group">
 					<input type="text" name="keyword" class="form-control input-lg"/>
+					<input type="submit" class="btn btn-lg btn-complete" value="SEARCH"/>
+						
+					</div>
 				</div>
 				<div class="row" style="margin-top:15px">
 					<div class="container">
@@ -42,9 +46,6 @@
 							</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2"  style="margin-top:25px">
-					<input type="submit" class="btn btn-lg btn-complete" value="SEARCH"/>
 			</div>
 		</div>
 	</div>
