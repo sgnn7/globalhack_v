@@ -18,6 +18,15 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
+	function checkSSN($id)
+		{
+			$this->db->select('*');
+			$this->db->from('socialsecurityauth');
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
+			$query = $this->db->get();
+			$searchResult = $query->num_rows();
+			return $searchResult;
+	}
 	
 	function getViolations($search_type,$keyword,$SSN)
 	{
