@@ -38,7 +38,7 @@
                 <button type="button" class="btn btn-default btn-prev"><span
                         class="glyphicon glyphicon-arrow-left" id="abc"></span>Prev
                 </button>
-                <button type="button" class="btn btn-default btn-next" data-last="Complete">Next<span
+                <button type="button" class="btn btn-default btn-next" data-last="Finished">Next<span
                         class="glyphicon glyphicon-arrow-right"></span></button>
             </div>
             <div class="step-content">
