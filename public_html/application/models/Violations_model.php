@@ -147,7 +147,8 @@ class Violations_model extends CI_Model {
 			
 			$query = $this->db->get();
 			$searchResult = $query->result();
-			return $searchResult;
+			$name = $searchResult[0]->first_name.' '.$searchResult[0]->last_name;
+			return $name;
 		}
 		
 		if($search_type == 'citation_id'){
@@ -160,7 +161,8 @@ class Violations_model extends CI_Model {
 			$this->db->where('citations.citation_number', $keyword);
 			$query = $this->db->get();
 			$searchResult = $query->result();
-			return $searchResult;
+			$name = $searchResult[0]->first_name.' '.$searchResult[0]->last_name;
+			return $name;
 		}
 		
 		if($search_type == 'drivers_license'){
@@ -172,8 +174,8 @@ class Violations_model extends CI_Model {
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->where('citations.drivers_license_number', $keyword);
 			$query = $this->db->get();
-			$searchResult = $query->result();
-			return $searchResult;
+			$name = $searchResult[0]->first_name.' '.$searchResult[0]->last_name;
+			return $name;
 		}
 	)
 	

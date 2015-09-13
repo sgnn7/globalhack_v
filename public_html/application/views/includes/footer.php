@@ -39,8 +39,8 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizesvisible-xs visible-sm) -->
-    <div class="scroll-top page-scroll ">
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
         <a href="#top">
 			<button class="btn">
 				<i class="fa fa-chevron-up"></i>
