@@ -23,13 +23,12 @@
 			</div>
 			<div class="col-lg-3">
 				<div class="row" style="margin-top:25px">
-					<label>Search Criteria
-					
 					<input type="text" name="keyword" class="form-control input-lg"/>
-						</label>
 				</div>
 				<div class="row col-lg-offset-2" style="margin-top:15px">
 					<div class="container">
+						<label>Search Criteria</label>
+
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default active">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
