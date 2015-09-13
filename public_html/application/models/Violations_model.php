@@ -117,8 +117,10 @@ class Violations_model extends CI_Model {
 		//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
 		$this->db->where('socialsecurityauth.last_name', $last);
 		$this->db->where('socialsecurityauth.last4ssn', $SSN);
+		$this->db->where('violations.warrant_status','TRUE');
 		$query = $this->db->get();
-		$searchResult = $query-result();
+		$searchResult = $query->num_rows();
+		
 		return $searchResult;
 	}
 	
