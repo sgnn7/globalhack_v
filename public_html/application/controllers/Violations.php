@@ -37,7 +37,6 @@ class Violations extends CI_Controller {
 		$this->load->view('includes/nav');
 		$this->load->view('Landing/home');
 		$this->load->view('includes/footer');
-		
 	}
 	
 	

@@ -25,7 +25,7 @@
 				<div class="row" style="margin-top:25px">
 					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
-				<div class="row" style="margin-top:15px; margin-left:-2px">
+				<div class="row" style="margin-top:15px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default active">
