@@ -5,7 +5,7 @@
 	  <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Citations <span class="badge"><? echo count($Citations);?></span></a></li>
-    <li role="presentation"><a href="#violations" aria-controls="violations" role="tab" data-toggle="tab">Violations <span class="badge"><?=$ViolationCount;?></a></li>
+    <li role="presentation"><a href="#violations" aria-controls="violations" role="tab" data-toggle="tab">Violations <span class="badge"><? echo count($Violations);?></a></li>
     <li role="presentation"><a href="#warrants" aria-controls="warrants" role="tab" data-toggle="tab">Warrants <span class="badge badge-danger"><?=$WarrantCount;?></a></li>
   </ul>
 	
@@ -94,7 +94,7 @@
 						<center class='small-text'>
 							<nobr>
 								<a class='btn btn-xs btn-info' href='<?=base_url();?>Violations/Violation_details/<?=$violation->citation_number;?>' title='View details'>
-								<?=$violation->citation_number;?>
+								<?=$violation->violation_number;?>
 								</a>
 							</nobr>
 						</center>
@@ -118,6 +118,9 @@
 							</nobr>
 						</center>
 					</td>
+					<td><a href="<?=base_url;?>" class="btn btn-complete btn-xs" id="<?=$violation->violation_number;?>">
+						
+						</button></td>
 					<? } ?>
 			</tbody>
 		</table>   

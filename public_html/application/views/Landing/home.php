@@ -31,7 +31,7 @@
 						
 					</div>
 				</div>
-				<div class="row" style="margin-top:15px; margin-left:0px">
+				<div class="row" style="margin-top:15px; margin-left:-5px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default btn-lg active">
@@ -47,6 +47,7 @@
 									Driver's License
 								</label>
 							</div>
+						</div>
 					</div>
 				</div>
 			</div>
