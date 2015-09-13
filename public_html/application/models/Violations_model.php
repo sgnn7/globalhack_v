@@ -29,6 +29,17 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
+	function getLastNameByCitationID($id)
+		{
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->where('citations.citation_number', $id);
+			$query = $this->db->get();
+			$searchResult = $query->result();
+			$last = $searchResult[0]->last_name;
+			return $last;
+	}
+	
 	function getViolations($search_type,$keyword,$SSN)
 	{
 		if($search_type == 'name'){
@@ -44,6 +55,8 @@ class Violations_model extends CI_Model {
 			$searchResult = $query->result();
 			return $searchResult;
 		}
+		
+		
 		
 		if($search_type == 'citation_id'){
 			$this->db->select('*');
