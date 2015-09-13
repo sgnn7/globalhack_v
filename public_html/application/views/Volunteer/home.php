@@ -1,5 +1,6 @@
 <script>
-	 $(document).ready(function(){
+	 //$(document).ready(function(){
+	      $(function() {
 		$('#myModal').bind('shown.bs.modal', function (event) {
 			alert("fun!");
 			var button = $(event.relatedTarget) // Button that triggered the modal

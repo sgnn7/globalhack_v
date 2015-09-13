@@ -83,7 +83,25 @@ public function send_text($to,$message)
 			$InputFilter = $InputArray[2];
 			
 			if($InputFilter == "All"){
-				
+				$resp = $this->Violations_model->getViolationName($lastName,$SSN);
+				$i = 1;
+				$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
+				$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
+
+
+						header("content-type: text/xml");
+						echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+					foreach($resp as $row){
+						$fine_amount = $row->fine_amount;
+						$court_cost = $row[->court_cost;
+						$totalAmount = $fine_amount + $court_cost;
+					
+					?>
+					<Response>
+					<Message>Citation#:<?=$row[0]->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$row[0]->court_location;?>| Court Date:<?=$row[0]->court_date;?>.</Message>
+				</Response>
+<?
+					}
 			}
 			else{
 				header("content-type: text/xml");
