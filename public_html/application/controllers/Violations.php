@@ -67,8 +67,10 @@ class Violations extends CI_Controller {
 		$config['PersonName'] = $name;
 		$config['Warrants'] = $this->Violations_model->getWarrants($lastName, $firstName);
 		
+		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_search', $config);
+		$this->load->view('includes/footer');
 	}
 	
 	public function Violation_details($id)

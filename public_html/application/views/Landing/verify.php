@@ -9,7 +9,7 @@
 </section>
 
 <section id="search" style="margin-top:-105px">
-	<form role="form" name="search_form" class="form" id="search_form" action="">
+	<form role="form" name="search_form" class="form" id="search_form" action="<?=base_url();?>Violations/Violation_search" method="post">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
