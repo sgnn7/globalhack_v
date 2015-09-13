@@ -28,6 +28,7 @@ class Payment extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('url');
 		$this->load->model('Payment_model');
+		$this->load->model('Violations_model');
 		//$this->load->model('Violation_model');
 	}
 	
@@ -35,7 +36,7 @@ class Payment extends CI_Controller {
 	{
 		$config['curNav'] = 'search';
 		$config['CanVolunteer'] = $this->Payment_model->getCanVolunteer();
-		//$config['Violation'] = $this->Violation_model->getViolationByID($id);
+		$config['Violation'] = $this->Violations_model->getViolationByID($id);
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Payment/home', $config);
