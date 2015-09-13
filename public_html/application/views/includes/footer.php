@@ -14,7 +14,7 @@
                                 <a href="https://www.facebook.com/" class="btn-social btn-outline" alt="facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
                             </li>
                             <li>
-                                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" class="btn-social btn-outline" alt="google plus"><i class="fa fa-fw fa-google-plus">Google Plus</i></a>
+                                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" class="btn-social btn-outline" alt="google plus"><i class="fa fa-fw fa-google-plus"></i>Google+</a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/" class="btn-social btn-outline" alt="twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About globalhack app</h3>
-                        <p>our app is used to search for ticket info etc... <a href="http://startbootstrap.com">GLobalHack App</a>.</p>
+                        <p>our app is used to search for ticket info etc... <a href="http://startbootstrap.com">GlobalHack App</a>.</p>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; GlobalHack app
+                        Copyright &copy; Pashle 
                     </div>
                 </div>
             </div>

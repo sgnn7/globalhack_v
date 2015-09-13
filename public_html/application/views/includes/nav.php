@@ -24,7 +24,7 @@
                         <a href="<?=base_url();?>volunteer" class="<? if($curNav=='volunteer'){?>active<? }?>" alt="Volunteer">Volunteer</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?=base_url();?>information" class="<? if($curNav=='information'){?>active<? }?>" alt="Information">Information</a>
+                        <a href="<?=base_url();?>information" class="<? if($curNav=='information'){?>active<? }?>" alt="Information">FAQ</a>
                     </li>
                 </ul>
             </div>
