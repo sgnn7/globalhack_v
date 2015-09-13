@@ -71,7 +71,7 @@
                                     title='Violation'>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
-                                            <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" data-toggle="modal" data-target="#myModal" title='View details'> Globalhack Inc.</button><?= $volunteer->OpportunityType ?></nobr>
+                                            <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" data-toggle="modal" data-target="#myModal" title='View details'>  Globalhack Inc.</button><?= $volunteer->OpportunityType ?></nobr>
                                         </center>
                                     </td>
                                     <td class='rowlink-skip'>
