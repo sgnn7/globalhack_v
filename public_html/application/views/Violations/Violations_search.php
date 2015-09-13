@@ -100,6 +100,7 @@
 									<button type="button" 
 											      data-toggle="modal"
 												  data-citation-id=<?= $violation->citation_number; ?>
+												  datat-
 											      data-target="#myModal"
 											      class='btn btn-xs btn-info'
 											      title='View details'>
@@ -217,11 +218,9 @@
 		$(function() {
 			$('#myModal').bind('show.bs.modal', function (event) {
 				var button = $(event.relatedTarget) // Button that triggered the modal
-				var citationId = button.data('citation-id');
-
 				var modal = $(this);
 
-				modal.find('#modal-citation-id').text(citationId);
+				modal.find('#modal-citation-id').text(button.data('citation-id'));
 			})
 		 });
 	</script>
@@ -241,7 +240,7 @@
 
 						<h3>
 							<span>Citation date:</span> 
-							<span id="citation_date">Loading...</span>
+							<span id="modal-citation-date">Loading...</span>
 						</h3>
 					</div>
 
