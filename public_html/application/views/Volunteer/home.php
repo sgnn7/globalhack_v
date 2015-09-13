@@ -1,16 +1,4 @@
 <div class='container fuelux' style="padding-top:170px">
-    <script>
-        $(function () {
-            $('#exampleModal').bind('show.bs.modal', function (event) {
-                alert("foo!!!!");
-                var button = $(event.relatedTarget) // Button that triggered the modal
-                var recipient = button.data('whatever') // Extract info from data-* attributes
-                var modal = $(this);
-                modal.find('.modal-title').text('New message to ' + recipient)
-                modal.find('.modal-body').innerHTML('<p>'+recipient+'</p>')
-            });
-        });
-    </script>
     <div class="container fuelux">
         <div class="wizard" data-initialize="wizard" id="myWizard">
             <div class="steps-container">
@@ -142,3 +130,16 @@
 		</div>
 	</div>
 </div>
+	
+<script>
+	$(function () {
+		$('#myModal').bind('show.bs.modal', function (event) {
+			alert("fun!");
+			var button = $(event.relatedTarget) // Button that triggered the modal
+			var recipient = button.data('whatever') // Extract info from data-* attributes
+			var modal = $(this);
+			modal.find('.modal-title').text('New message to ' + recipient)
+			modal.find('.modal-body').innerHTML('<p>'+recipient+'</p>')
+		});
+	});
+</script>
