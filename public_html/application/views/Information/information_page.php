@@ -53,6 +53,14 @@
 			<h3>What will happen if I ignore the ticket?</h3>
 
 			<div><p>Your case will be brought to the court system and will be tried by an assigned judge.</p></div>
+			<h3>
+				My plates are expired and i need to renew them, What do i do?	
+			</h3>
+			<div>
+				<p>
+					<a href="http://dor.mo.gov/motorv/renewing.php#resident">Click here to Renew your Plates</a>
+				</p>	
+			</div>
 		</div>
 	</form>
 </section>

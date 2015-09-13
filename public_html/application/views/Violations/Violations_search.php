@@ -110,9 +110,13 @@
 						<td class='clickable'>
 							<center class='small-text'>
 								<nobr>
-									<a class='btn btn-xs btn-info' data-target="#myModal" title='View details'>
+									<button type="button" 
+											      data-toggle="modal"
+											      data-target="#myModal"
+											      class='btn btn-xs btn-info'
+											      title='View details'>
 									<?=$violation->violation_number;?>
-									</a>
+									</button>
 								</nobr>
 							</center>
 						</td>
@@ -182,9 +186,13 @@
 						<td class='clickable'>
 							<center class='small-text'>
 								<nobr>
-									<a class='btn btn-xs btn-info' data-target="#myModal" title='View details'>
-									<?=$warrant->violation_number;?>
-									</a>
+									<button type="button" 
+											      data-toggle="modal"
+											      data-target="#myModal"
+											      class='btn btn-xs btn-info'
+											      title='View details'>
+									<?=$violation->violation_number;?>
+									</button>
 								</nobr>
 							</center>
 						</td>
