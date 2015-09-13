@@ -25,24 +25,24 @@
 					<div class="input-group">
 					<input type="text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
 						      <span class="input-group-btn">
-								  <input type="submit" class="btn btn-lg btn-complete" value="GO"/>
+								  <input type="submit" class="btn btn-lg btn-complete btn-default" value="GO"/>
       							</span>
 					
 						
 					</div>
 				</div>
-				<div class="row" style="margin-top:15px; margin-left:20px">
+				<div class="row" style="margin-top:15px; margin-left:0px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
-								<label class="btn btn-default active">
+								<label class="btn btn-default btn-lg active">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
 									Last Name
 								</label>
-								<label class="btn btn-default">
+								<label class="btn btn-default btn-lg">
 									<input type="radio" name="search_type" value="citation_id"></input>
 									Citation/Ticket #
 								</label>
-								<label class="btn btn-default">
+								<label class="btn btn-default btn-lg">
 									<input type="radio" name="search_type" value="drivers_license"></input>
 									Driver's License
 								</label>
