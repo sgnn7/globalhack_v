@@ -77,7 +77,7 @@ public function send_text($to,$message)
 			$SSN = $InputArray[1];
 			
 			if($inputCount > 2){
-							$resp = $this->Violations_model->getViolationName($lastName,$SSN);
+			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
 			$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
@@ -95,7 +95,24 @@ public function send_text($to,$message)
 				</Response>
 		<?
 			}
-		}
+			else{
+				$resp = $this->Violations_model->getViolationName($lastName,$SSN);
+			$i = 1;
+			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
+			$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
+			
+
+					header("content-type: text/xml");
+					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+					$fine_amount = $resp[0]->fine_amount;
+					$court_cost = $resp[0]->court_cost;
+					$totalAmount = $fine_amount + $court_cost;
+
+				?>
+				<Response>
+					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?>, you have <? if($msgCount == 1){ echo $msgCount; ?> violation <?} else{ echo $msgCount;?> violations <? } ?>and <? if($warrantCount == 1){ echo $warrantCount;?> warrant. <? } else{ echo $warrantCount; ?> warrants. <? } if($msgCount > 0){ ?>Your latest Citation is #<?=$resp[0]->citation_number;?> | Amount Owed: $<?=$totalAmount;?> | Court Name: <?=$resp[0]->court_location;?> | Court Date: <?=$resp[0]->court_date; }?> To list all violations please use format (Last Name*Last 4 SSN*All). For more information contact 573-526-2407. </Message>
+				</Response>
+			}
 
 				
 		}			

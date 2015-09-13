@@ -69,6 +69,7 @@
                                         <center class='small-text'>
                                             <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" 
 														              data-toggle="modal" data-target="#myModal"
+																	  data-volunteer-name="<?= $volunteer->Name ?>"	
 														              title='View details'><?= $volunteer->Name ?></button></nobr>
                                         </center>
                                     </td>
