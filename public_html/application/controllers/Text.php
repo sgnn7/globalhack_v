@@ -63,7 +63,7 @@ public function send_text($to,$message)
 			echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 		?>
 		<Response>
-			<Message><?php echo $name ?>, To Query our system please use the format LAST NAME*LAST 4 SSN. You said <?=$Input;?></Message>
+			<Message><?php echo $name ?>, To Query our system please use the format LAST NAME*LAST 4 SSN. </Message>
 		</Response>
 		
 <?
@@ -79,9 +79,7 @@ public function send_text($to,$message)
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
 			
-/* 			if($msgCount > 0){
-				while($i <= ($msgCount - 1)){ */
-					// now greet the sender
+
 					header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 					$fine_amount = $resp[0]->fine_amount;

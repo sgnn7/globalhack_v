@@ -7,7 +7,7 @@
     </div>
 
     <div id="defendant">
-        <h3>Defendant</h3>
+        <h4>Defendant</h4>
         <span
             id="name"><?php echo $Citations[0]->first_name . ' ' . $Citations[0]->last_name; ?></span><br>
         <?php if (strcmp("TRUE", $Violations[0]->warrant_status) == 0) { ?>
@@ -29,7 +29,7 @@
     <br>
 
     <div class="court">
-        <h3>Court Date <?php echo $Citations[0]->court_date; ?></h3>
+        <h3>Court Date: <?php echo $Citations[0]->court_date; ?></h3>
         <?php if (isset($Courts) && count($Courts) > 0) { ?>
             <div class="court_address">
                 <span id="municipality"><?php echo $Courts[0]->Municipality; ?></span> <span id="court_map"><a
