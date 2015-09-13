@@ -19,7 +19,6 @@
 
 	  <!--Style Sheets -->
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	  <link href="http://www.pashle.com/assets/css/style.css" rel="stylesheet" type="text/css" />
 
 	  <!-- Latest compiled and minified CSS -->
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
@@ -46,6 +45,7 @@
 <!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 		<script src="https://www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script> -->
+	  <link href="http://www.pashle.com/assets/css/style.css" rel="stylesheet" type="text/css" />
   
 <!-- Accordian Payment script -->
     <script>
