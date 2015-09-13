@@ -32,7 +32,7 @@
 <!-- 	  <script src="https://raw.githubusercontent.com/ExactTarget/fuelux/3.11.0/js/wizard.js"></script> -->
 	  <script src="https://www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
 
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<!-- 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script> -->
 	  
 <!-- 	  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
 

@@ -121,21 +121,22 @@
  <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
-		<div class="modal-content" />
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<h4 class="modal-title" id="modal-title">Volunteering Info</h4>
-		</div>
-		<div class="modal-body">
-			<h3 id="modal-org-name" class="volunteer-detail-header">Loading...</h3>
-			<p  id="modal-org-desc">Loading...</p>
-			<h3 id="modal-job-name" class="volunteer-detail-header">Loading...</h3>
-			<p  id="modal-job-desc">Loading...</p>
-			<h3 class="volunteer-detail-header">Contact Info</h3>
-			<p  id="modal-job-contact">Loading...</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="modal-title">Volunteering Info</h4>
+			</div>
+			<div class="modal-body">
+				<h3 id="modal-org-name" class="volunteer-detail-header">Loading...</h3>
+				<p  id="modal-org-desc">Loading...</p>
+				<h3 id="modal-job-name" class="volunteer-detail-header">Loading...</h3>
+				<p  id="modal-job-desc">Loading...</p>
+				<h3 class="volunteer-detail-header">Contact Info</h3>
+				<p  id="modal-job-contact">Loading...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
 		</div>
 	</div>
 </div>
