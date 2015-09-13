@@ -40,7 +40,7 @@
 
 		</div>
 	  
-<div id="accordion">
+<div id="accordion" active="false">
 	    
 
 	<h3>I received a speeding ticket. What's next?</h3>
