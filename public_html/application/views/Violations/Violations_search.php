@@ -118,7 +118,8 @@
 							</nobr>
 						</center>
 					</td>
-					<td><a href="<?=base_url();?>Payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <a href="<?=base_url();?>Information" class="btn btn-primary btn-xs">How to Resolve</a>
+					<td><? if($amount > 0){ ?>
+						<a href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="<?=base_url();?>Information" class="btn btn-primary btn-xs">How to Resolve</a>
 					</td>
 					<? } ?>
 			</tbody>
