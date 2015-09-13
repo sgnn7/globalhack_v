@@ -1,4 +1,6 @@
-<h3
+<h3>
+	Verify the last 4 digits of your SSN
+</h3>
 <section id="search">
 	<form role="form" name="search_form" class="form" id="search_form" action="/verify">
 	<div class="container">
@@ -9,25 +11,7 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="row" style="margin-top:25px">
-					<input type="text" name="keyword" class="form-control input-lg"/>
-				</div>
-				<div class="row" style="margin-top:15px">
-					<div class="container">
-						<div class="btn-group" data-toggle="buttons">
-								<label class="btn btn-default active">
-									<input type="radio" checked="checked" name="search_type" value="name"></input>
-									Last Name
-								</label>
-								<label class="btn btn-default">
-									<input type="radio" name="search_type" value="citation_id"></input>
-									Citation/Ticket #
-								</label>
-								<label class="btn btn-default">
-									<input type="radio" name="search_type" value="drivers_license"></input>
-									Driver's License
-								</label>
-							</div>
-					</div>
+					<input type="text" name="keyword" class="form-control input-lg" placeholder="Please enter last 4 digits of SSN"/>
 				</div>
 			</div>
 			<div class="col-lg-2"  style="margin-top:25px">
