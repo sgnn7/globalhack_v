@@ -6,10 +6,9 @@
 			</h3>
 		</div>
 	</div>
-	
 </section>
 
-<section id="search">
+<section id="search" style="margin-top:-95px">
 	<form role="form" name="search_form" class="form" id="search_form">
 	<div class="container">
 		<div class="row">
