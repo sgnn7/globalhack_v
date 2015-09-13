@@ -1,17 +1,7 @@
 <script>
-	      $(function() {
-	    $("#abc").click(function(){
-        $("#myModal").modal("show");
-    });
-		  });
-	
-        $("#myModal").on('show.bs.modal', function () {
-            alert('The modal is about to be shown.');
-    });
-	 //$(document).ready(function(){
-	      $(function() {
-		$('#myModal').bind('shown.bs.modal', function (event) {
-			alert("fun!");
+	$(function() {
+		$('#myModal').bind('show.bs.modal', function (event) {
+			alert("event");
 			var button = $(event.relatedTarget) // Button that triggered the modal
 			var volunteeringOrgName = button.data('volunteer-name') // Extract info from data-* attributes
 			var modal = $(this)
