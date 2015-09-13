@@ -11,7 +11,7 @@
 				<input type="text" name="keyword" class="form-control" Placeholder="Enter drivers License Number">
 			</div>
 			<div class="col-md-2">
-				<input type="submit" value="FIND Court" class="btn btn-primary">
+				<input type="submit" value="Check for Warrant" class="btn btn-primary">
 				</div>
 			</form>
 		</div>
