@@ -57,18 +57,20 @@ class Violations extends CI_Controller {
 		$keyword = $this->security->xss_clean($this->input->post('keyword'));
 		$search_type = $this->security->xss_clean($this->input->post('search_type'));
 		$SSN = $this->security->xss_clean($this->input->post('SSN'));
-		$name = $this->Violations_model->getName($search_type, $keyword, $SSN);
-		$nameArray = explode(' ',$name);
-		$lastName = $nameArray[1];
-		$firstName = $nameArray[0];
 		
-		if(!$this->Violations_model->getName($search_type, $keyword, $SSN);e){
+		
+		if(!$this->Violations_model->getName($search_type, $keyword, $SSN)){
 			$this->load->view('includes/header', $config);
 			$this->load->view('includes/nav', $config);
 			$this->load->view('Violations/error', $config);
 			$this->load->view('includes/footer');
 		}
 		else{
+			
+			$name = $this->Violations_model->getName($search_type, $keyword, $SSN);
+			$nameArray = explode(' ',$name);
+			$lastName = $nameArray[1];
+			$firstName = $nameArray[0];
 			$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
 			$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
 			$config['PersonName'] = $name;

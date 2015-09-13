@@ -18,6 +18,7 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
+	
 	function getViolations($search_type,$keyword,$SSN)
 	{
 		if($search_type == 'name'){
