@@ -1,6 +1,14 @@
-<h3>
-	Verify the last 4 digits of your SSN
-</h3>
+<section>
+	<div class="container">
+		<div class="row">
+			<h3>
+				Verify the last 4 digits of your SSN
+			</h3>
+		</div>
+	</div>
+	
+</section>
+
 <section id="search">
 	<form role="form" name="search_form" class="form" id="search_form">
 	<div class="container">
