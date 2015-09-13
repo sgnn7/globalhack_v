@@ -9,7 +9,7 @@
 				</div>
 				<div class="col-md-6">
 					<address>
-						<strong>Fenton Municipal Division, Judicial Circuit 21</strong><br>
+						<strong><?=$</strong><br>
 						625 New Smizer Mill Road<br>
 						Fenton, MO 63026<br>
 						<abbr title="Phone">P:</abbr> (636) 343-1007

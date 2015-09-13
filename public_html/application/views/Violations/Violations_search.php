@@ -171,12 +171,10 @@
 						<td class='clickable'>
 							<center class='small-text'>
 								<nobr>
-									<a type="button" href='<?=base_url();?>Violations/Violation_details/<?=$violation->citation_number;?>'
-											      data-toggle="modal"
-											      data-target="#myModal"
+									<a href='<?=base_url();?>Violations/Violation_details/<?=$violation->citation_number;?>'
 											      class='btn btn-xs btn-info'
 											      title='View details'>
-									<?=$violation->violation_number;?>
+										<?=$violation->violation_number;?>
 									</a>
 								</nobr>
 							</center>
