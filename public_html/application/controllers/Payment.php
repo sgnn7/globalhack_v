@@ -30,10 +30,11 @@ class Payment extends CI_Controller {
 		$this->load->model('Payment_model');
 	}
 	
-	public function index()
+	public function index($id)
 	{
 		$config['curNav'] = 'search';
 		$config['CanVolunteer'] = $this->Payment_model->getCanVolunteer();
+		$config['']
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Payment/home', $config);
