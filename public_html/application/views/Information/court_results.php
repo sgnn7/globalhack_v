@@ -16,10 +16,11 @@
 			<tbody>
 				<? foreach($Courts as $court){ ?>
 				<tr>
-					<td><?=$court->municipality;?></td>
-					<td><?=$court->address;?></td>
+					<td><?=$court->Municipality;?></td>
+					<td><?=$court->Address;?></td>
 					<td><a href="">MAP IT</a></td>
 				</tr>
+				<? } ?>
 			</tbody>
 		</table>
 	</div>
