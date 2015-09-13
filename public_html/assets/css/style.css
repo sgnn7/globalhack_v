@@ -1,22 +1,3 @@
-Skip to content
-This repository  
-Pull requests
-Issues
-Gist
- @princecharmin314
- Watch 53
-  Star 472
- Fork 565IronSummitMedia/startbootstrap-freelancer
-Branch: gh-pages  startbootstrap-freelancer/css/freelancer.css
-@davidtmillerdavidtmiller on Apr 8 recompile new CSS with LESS changes
-1 contributor
-RawBlameHistory     459 lines (387 sloc)  7.8 KB
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 body {
     overflow-x: hidden;
 }

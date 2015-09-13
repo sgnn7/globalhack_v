@@ -1,4 +1,4 @@
-<section>
+<section id="verify_txt">
 	<div class="container">
 		<div class="row">
 			<h3>
@@ -8,7 +8,7 @@
 	</div>
 </section>
 
-<section id="search" style="margin-top:-95px">
+<section id="search" style="margin-top:-105px">
 	<form role="form" name="search_form" class="form" id="search_form">
 	<div class="container">
 		<div class="row">
