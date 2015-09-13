@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; PASHLE
+                        Copyright &copy;2015 PASHLE
                     </div>
                 </div>
             </div>

@@ -88,7 +88,7 @@ public function send_text($to,$message)
 
 				?>
 				<Response>
-					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?>| Citation#:<?=$resp[0]->citation_number;?>| Amount Owed:$<?=$totalAmount;?>| Court Name:<?=$resp[0]->court_location;?>| Court Date:<?=$resp[0]->court_date;?> | Count :<?=$msgCount;?></Message>
+					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?>| Citation#:<?=$resp[0]->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$resp[0]->court_location;?>| Court Date:<?=$resp[0]->court_date;?> | Count :<?=$msgCount;?></Message>
 				</Response>
 				<?
 /* 					$i++;

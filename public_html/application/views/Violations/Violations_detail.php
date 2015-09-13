@@ -7,7 +7,7 @@
     </div>
 
     <div id="defendant">
-        <span id="name" style="font-weight: bold"><?php echo $Citations[0]->first_name . ' ' . $Citations[0]->last_name; ?></span><br>
+        <span id="name" style="font-weight: bold; font-size: large"><?php echo $Citations[0]->first_name . ' ' . $Citations[0]->last_name; ?> (Defendant)</span><br>
         <?php if (strcmp("TRUE", $Violations[0]->warrant_status) == 0) { ?>
             <span id="warrant_status"
                   style="color: #ff0000; font-weight: bold"><?php echo $Violations[0]->status; ?></span> <span
