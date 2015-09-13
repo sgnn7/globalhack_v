@@ -63,6 +63,4 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
 		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 		<link rel="stylesheet" type="text/css" href="/assets/css/stripe_payment_style.css">
-		<script type="text/javascript" src="/assets/js/stripe_local.js"></script>
-    	
 	</head>
