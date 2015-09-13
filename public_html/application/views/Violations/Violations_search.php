@@ -17,13 +17,13 @@
 				<thead>
 					<tr class='row-fluid small'>
 						<th>
-							<center>Date</center>
+							<center>Citation Date</center>
 						</th>
 						<th>
-							<center>Citation Description</center>
+							<center>Court Date</center>
 						</th>
 						<th>
-							<center>Citation #</center>
+							<center>C #</center>
 						</th>
 						<th>
 							<center>Municipality</center>
@@ -35,7 +35,7 @@
 					<tr class='row-fluid rowlink' data-target='Violation_details/<?=$citation->citation_number;?>' title='Violation'>
 						<td class='rowlink-skip'>
 							<center class='small-text'>
-								<nobr><?=str_replace(' 00:00:00', '', $citation->status_date);?></nobr>
+								<nobr><?=str_replace(' 00:00:00', '', $citation->citation_date);?></nobr>
 							</center>
 						</td>
 						<td class='rowlink-skip'>
@@ -231,72 +231,5 @@
 		 });
 	</script>
 -->
-	
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="modal-title">Citation Info</h4>
-				</div>
-				<div class="modal-body">
-					  <div id="citation-header">
-						<h1 id="modal-citation-id">Loading...</h1>
-						  
-						<h3>
-							<span>Citation date:</span> 
-							<span id="modal-citation-date">Loading...</span>
-						</h3>
-					</div>
 
-					<div id="defendant">
-						<span id="name" style="font-weight: bold; font-size: large">Loading...</span><br>
-						<?php if (strcmp("TRUE", $Violations[0]->warrant_status) == 0) { ?>
-							<span id="modal-warrant-status"
-								  style="color: #ff0000; font-weight: bold">Loading...</span> <span
-								id="modal-warrant-info"><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/">(more
-									info)</a></span><br>
-						<?php } ?>
-						<?php if (strlen($Citations[0]->drivers_license_number) > 0) { ?>
-							<span id="modal-drivers-license-label">Driver's license #:</span> <span
-								id="modal-drivers-license"><?php echo $Citations[0]->drivers_license_number; ?></span><br>
-						<?php } ?>
-						<div class="defendant_address">
-							<span id="modal-address-line">Loading...</span><br>
-							<span
-								id="modal-address-city-state">Loading...</span><br>
-						</div>
-					</div>
-					<br>
-
-					<div class="court">
-						<h3>Court Date: Loading...</h3>
-						<?php if (isset($Courts) && count($Courts) > 0) { ?>
-							<div class="court_address">
-								<span id="municipality">Loading...</span> <span id="court_map"><a
-										href="https://maps.google.com/maps?q=<?php echo $Courts[0]->Y . ',' . $Courts[0]->X . '&z=17'; ?>">(map)</a></span><br>
-								<span id="address_line">Loading...</span><br>
-							<span
-								id="address_city_state">Loading...</span><br>
-							</div><br>
-						<?php } ?>
-						<span id="violation_description">Loading...</span><br>
-						<?php if (isset($Violations[0]->fine_amount)) { ?>
-							<span id="violation_fine_label">Fine:</span>
-							<span id="violation_fine">Loading...</span><br>
-							<span id="violation_cost_label">Court cost:</span>
-							<span id="violation_cost">Loading...</span><br>
-							<span id="total_owed_label">Total owed:</span>
-							<span id="total_owed_label">Loading...</span>
-							<br><br>
-						<?php } ?>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
 </section>
