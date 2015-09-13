@@ -90,7 +90,7 @@ public function send_text($to,$message)
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 				?>
 				<Response>
-					<Message>Invalid Response, please try again. For more information contact 573-526-2407. </Message>
+					<Message>Please try again. For more information contact 573-526-2407. </Message>
 				</Response>
 <?
 			}
