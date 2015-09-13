@@ -59,30 +59,29 @@ class Violations extends CI_Controller {
 		$SSN = $this->security->xss_clean($this->input->post('SSN'));
 		
 		$ssnCheck = $this->Violations_model->checkSSN($SSN);
-		if($ssnCheck >)
-		
-		if(!$this->Violations_model->getName($search_type, $keyword, $SSN)){
-			$this->load->view('includes/header', $config);
-			$this->load->view('includes/nav', $config);
-			$this->load->view('Violations/error', $config);
-			$this->load->view('includes/footer');
-		}
-		else{
-			
-			$name = $this->Violations_model->getName($search_type, $keyword, $SSN);
-			$nameArray = explode(' ',$name);
-			$lastName = $nameArray[1];
-			$firstName = $nameArray[0];
-			$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
-			$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
-			$config['PersonName'] = $name;
-			$config['Warrants'] = $this->Violations_model->getWarrants($lastName, $firstName);
+		if($ssnCheck > 0)
+			{
+				$name = $this->Violations_model->getName($search_type, $keyword, $SSN);
+				$nameArray = explode(' ',$name);
+				$lastName = $nameArray[1];
+				$firstName = $nameArray[0];
+				$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
+				$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
+				$config['PersonName'] = $name;
+				$config['Warrants'] = $this->Violations_model->getWarrants($lastName, $firstName);
 
-			$this->load->view('includes/header', $config);
-			$this->load->view('includes/nav', $config);
-			$this->load->view('Violations/Violations_search', $config);
-			$this->load->view('includes/footer');
-		}
+				$this->load->view('includes/header', $config);
+				$this->load->view('includes/nav', $config);
+				$this->load->view('Violations/Violations_search', $config);
+				$this->load->view('includes/footer');
+			}
+			else
+			{
+				$this->load->view('includes/header', $config);
+				$this->load->view('includes/nav', $config);
+				$this->load->view('Violations/error', $config);
+				$this->load->view('includes/footer');
+			}
 		
 	}
 	

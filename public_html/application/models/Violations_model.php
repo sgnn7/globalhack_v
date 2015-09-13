@@ -18,7 +18,7 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
-	function checkSSN($id)
+	function checkSSN($SSN)
 		{
 			$this->db->select('*');
 			$this->db->from('socialsecurityauth');
