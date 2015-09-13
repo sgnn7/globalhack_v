@@ -56,8 +56,9 @@ class Violations extends CI_Controller {
 		$config['curNav'] = 'search';
 		$keyword = $this->security->xss_clean($this->input->post('keyword'));
 		$search_type = $this->security->xss_clean($this->input->post('search_type'));
+		$SSN = $this->security->xss_clean($this->input->post('SSN'));
 		
-		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword);
+		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
 		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
