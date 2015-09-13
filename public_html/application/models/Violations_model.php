@@ -26,7 +26,6 @@ class Violations_model extends CI_Model {
 			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
-			$this->db->where('citations.last_name', $last);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->like('last_name', $keyword); 
 			$query = $this->db->get();
@@ -40,7 +39,6 @@ class Violations_model extends CI_Model {
 			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
-			$this->db->where('citations.last_name', $last);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->where('citations.citation_number', $keyword);
 			$query = $this->db->get();
@@ -54,7 +52,6 @@ class Violations_model extends CI_Model {
 			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
-			$this->db->where('citations.last_name', $last);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->where('citations.drivers_license_number', $keyword);
 			$query = $this->db->get();
