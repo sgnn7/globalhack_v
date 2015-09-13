@@ -17,6 +17,9 @@
 				<thead>
 					<tr class='row-fluid small'>
 						<th>
+							<center>Citation Number</center>
+						</th>
+						<th>
 							<center>Citation Date</center>
 						</th>
 						<th>
@@ -33,6 +36,11 @@
 				<tbody>
 					<?php foreach($Citations as $citation){?>
 					<tr class='row-fluid rowlink' data-target='Violation_details/<?=$citation->citation_number;?>' title='Violation'>
+						<td class='rowlink-skip'>
+							<center class='small-text'>
+								<nobr><?=$citation->citation_number;?></nobr>
+							</center>
+						</td>
 						<td class='rowlink-skip'>
 							<center class='small-text'>
 								<nobr><?=str_replace(' 00:00:00', '', $citation->citation_date);?></nobr>
