@@ -8,6 +8,7 @@ $  while [ true ]; do echo "Grabbing..."; rsync -avz pashleco@pashle.com:public_
 
 ```
 --Random Queries
+```
 --Community Service Opportunities with Types for Opportunity review page
 SELECT cso.OpportunityType,
        cso.Name,
@@ -18,6 +19,9 @@ SELECT cso.OpportunityType,
  WHERE (cso.OpportunityType IS NOT NULL)
 ORDER BY cso.OpportunityType ASC
 ;
+```
+<br>
+```
 --Community Service Choice information for jquery popup if implemented on Opportunity Review Page
 SELECT cso.Name,
        cso.Address,
@@ -28,6 +32,9 @@ SELECT cso.Name,
   FROM pashleco_data.communityserviceopportunities cso
  WHERE (cso.Name = :Name) --Parameter entry for specific Community Service Choice
  ;
+ ```
+ <br>
+ ```
  --Social Security Authorization code to determine first_name match key from SSN last 4 entry
  SELECT C.citation_number,
       C.citation_date,
@@ -55,3 +62,4 @@ SELECT cso.Name,
          ON C.first_name = S.first_name AND C.last_name = S.last_name
       LEFT OUTER JOIN violations v ON C.citation_number = v.citation_number
       where S.last_name=$last and S.last4ssn=$ssn --dollar signs instead of colons for DJ for use in his code if necessary
+       ```
