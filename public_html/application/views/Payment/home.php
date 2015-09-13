@@ -15,7 +15,7 @@
 						<h6 class="text-info">
 							Court Address: <?=$Violation[0]->court_address;?>
 						</h6>
-						<a href="">MAP IT</a>
+						<!--<a href="">MAP IT</a>-->
 				</div>
 			<br>
 			</div>
