@@ -189,7 +189,7 @@ class Violations_model extends CI_Model {
 			$this->db->where('citations.last_name', $last);
 			$this->db->where('citations.first_name', $first);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
-			
+			$this->db->group_by("violations.citation_number"); 
 			$query = $this->db->get();
 			$searchResult = $query->num_rows();
 			return $searchResult;
