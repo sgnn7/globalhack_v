@@ -65,6 +65,14 @@
 					<a href="http://dor.mo.gov/motorv/renewing.php#resident" target="_blank">Click here to Renew your Plates</a>
 				</p>	
 			</div>
+			<h3>
+				How do i find courts	
+			</h3>
+			<div>
+				<p>
+					<a href="<?=base_url();?>/I" target="_blank">Click here to Renew your Plates</a>
+				</p>	
+			</div>
 		</div>
 	</form>
 </section>

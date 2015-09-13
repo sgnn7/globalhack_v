@@ -23,5 +23,6 @@
 				<? } ?>
 			</tbody>
 		</table>
+		<a href="<?=base_url();?>/Information/CourtFinder">Return to Search</a>
 	</div>
 </div>
