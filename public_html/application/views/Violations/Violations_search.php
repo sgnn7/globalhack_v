@@ -23,10 +23,10 @@
 							<center>Court Date</center>
 						</th>
 						<th>
-							<center>C #</center>
+							<center>Court Location</center>
 						</th>
 						<th>
-							<center>Municipality</center>
+							<center>Court Address</center>
 						</th>
 					</tr>
 				</thead>
@@ -40,18 +40,18 @@
 						</td>
 						<td class='rowlink-skip'>
 							<center class='small-text'>
-								<nobr><?=$citation->violation_description;?></nobr>
+								<nobr><?=$citation->court_date;?></nobr>
 							</center>
 						</td>
 						<td class='clickable'>
 							<center class='small-text'>
 								<nobr>
-									<?=$citation->citation_number;?>
+									<?=$citation->court_location;?>
 								</nobr>
 							</center>
 						</td>
 						<td class='clickable'>
-							<center class='small-text'><?=$citation->court_location;?></center>
+							<center class='small-text'><?=$citation->court_address;?></center>
 						</td>
 						<? }?>
 				</tbody>
