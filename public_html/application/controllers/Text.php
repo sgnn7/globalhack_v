@@ -101,7 +101,7 @@ public function send_text($to,$message)
 					
 					?>
 					
-					<Message>Citation#:<?=$row->citation_number;?> | Amount Owed: $<?=$totalAmount;?> | Court Name:<?=$row->court_location;?>| Court Date:<?=$row->court_date;?>.</Message>
+					<Message>Citation#:<?=$row->citation_number;?> | Violation#:<?=$row->violation_number;?> | Amount Owed: $<?=$totalAmount;?> | Court Name:<?=$row->court_location;?>| Court Date:<?=$row->court_date;?>.</Message>
 				
 <?
 					} ?>

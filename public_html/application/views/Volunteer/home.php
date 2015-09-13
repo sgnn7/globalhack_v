@@ -3,7 +3,7 @@
 		$('#myModal').bind('show.bs.modal', function (event) {
 			alert("event");
 			var button = $(event.relatedTarget) // Button that triggered the modal
-			var volunteeringOrgName = button.data('volunteer-name') // Extract info from data-* attributes
+			var volunteeringOrgName = button.data('volunteer-org-name') // Extract info from data-* attributes
 			var modal = $(this)
 			modal.find('.modal-title').text('New message to ' + volunteeringOrgName)
 			modal.find('.modal-title').val(volunteeringOrgName)
@@ -70,7 +70,7 @@
                                         <center class='small-text'>
                                             <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" 
 														              data-toggle="modal" data-target="#myModal"
-																	  data-volunteer-name="<?= $volunteer->Name ?>"	
+																	  data-volunteer-org-name="<?= $volunteer->Name ?>"	
 														              title='View details'><?= $volunteer->Name ?></button></nobr>
                                         </center>
                                     </td>
