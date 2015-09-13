@@ -111,7 +111,7 @@
 		<div class="modal-content">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			<h4 class="modal-title" id="modal-title">Modal title</h4>
 		</div>
 		<div class="modal-body">
 			<h3 class="">Organization Name</h3>
@@ -135,11 +135,9 @@
 		$('#myModal').bind('show.bs.modal', function (event) {
 			alert("fun!");
 			var button = $(event.relatedTarget) // Button that triggered the modal
-			var recipient = button.data('whatever') // Extract info from data-* attributes
-			// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-			// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+			var volunteeringOrgName = button.data('volunteer-name') // Extract info from data-* attributes
 			var modal = $(this)
-			modal.find('.modal-title').text('New message to ' + recipient)
-			modal.find('.modal-body input').val(recipient)
-		});
+			modal.find('.modal-title').text('New message to ' + volunteeringOrgName)
+			modal.find('.modal-title').val(volunteeringOrgName)
+		})();
 </script>
