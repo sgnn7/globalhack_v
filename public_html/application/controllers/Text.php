@@ -75,7 +75,10 @@ public function send_text($to,$message)
 			$inputCount = count($InputArray);
 			$lastName = $InputArray[0];
 			$SSN = $InputArray[1];
-			//$response = new Array();
+			
+			if($inputCount > 2){
+				
+			}
 			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
