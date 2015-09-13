@@ -128,14 +128,15 @@ public function send_text($to,$message)
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
 			$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
 			
-			if($msgCount == 0){
+			if($msgCount < 1){
 				header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";?>
 				<Response>
 					<Message>No data found, please try again. For more information contact 573-526-2407. </Message>
 				</Response>
-			<? else{
-			}
+<? } 
+				else{
+			
 					header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 					$fine_amount = $resp[0]->fine_amount;

@@ -124,18 +124,18 @@
 		<div class="modal-content" />
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<h4 class="modal-title" id="modal-title">Modal title</h4>
+			<h4 class="modal-title" id="modal-title">Volunteering Info</h4>
 		</div>
 		<div class="modal-body">
-			<h3 class="">Organization Name</h3>
-			<p class="">Organization Description. Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
-			<h3 class="">Job Name</h3>
-			<p class="">Job Description. Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.
+			<h3 class="">Some organization</h3>
+			<p class="">Organizational description placeholder text</p>
+			<h3 class="">Some job position</h3>
+			<p class="">Job described in more details</p>
 			<h3>County Name</h3>
 			<div id="map">Map</div>
 			<h3>Contact Info</h3>
 			<ul>
-			<li>Phone Number:</li>
+			<li>Phone Number: 555-555-1234</li>
 			</ul>
 		</div>
 		<div class="modal-footer">
