@@ -78,6 +78,7 @@ public function send_text($to,$message)
 			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
+			$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
 			
 
 					header("content-type: text/xml");
@@ -88,7 +89,7 @@ public function send_text($to,$message)
 
 				?>
 				<Response>
-					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?>| Citation#:<?=$resp[0]->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$resp[0]->court_location;?>| Court Date:<?=$resp[0]->court_date;?> | Count :<?=$msgCount;?></Message>
+					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?> You have <?=$msgCount;?> violations and <?=$warrantCount;?> warrants. To list all violations please use format Last Name*Last 4 SSN </Message>
 				</Response>
 				<?
 /* 					$i++;
