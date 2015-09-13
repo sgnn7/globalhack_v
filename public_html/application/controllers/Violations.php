@@ -62,6 +62,12 @@ class Violations extends CI_Controller {
 			$lastname = $keyword;
 			$ssnCheck = $this->Violations_model->checkSSN($lastname,$SSN);
 		}
+		else if($search_type == 'citation_id')
+			{
+			//get citation
+			$lastname = $this->Violations_model->getLastNameByCitationID($keyword);
+			$ssnCheck = $this->Violations_model->checkSSN($lastname,$SSN);
+		}
 		
 		if($ssnCheck > 0)
 			{
