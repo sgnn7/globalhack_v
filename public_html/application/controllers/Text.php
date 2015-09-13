@@ -101,8 +101,10 @@ public function send_text($to,$message)
 					<Message>Citation#:<?=$row->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$row->court_location;?>| Court Date:<?=$row->court_date;?>.</Message>
 				</Response>
 <?
+						
 					}
-			}
+				
+			}die;
 			else{
 				header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
