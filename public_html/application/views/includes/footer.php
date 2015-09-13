@@ -19,10 +19,14 @@
                             <li>
                                 <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier"
 								     class="btn-social btn-outline"
-								     alt="google plus" style="font-size:0px"><i  style="font-size:32px; margin-top:8px" class="fa fa-fw fa-google-plus"></i></a>
+								     alt="google plus" 
+								     style="font-size:0px"><i  style="font-size:32px; margin-top:8px" class="fa fa-fw fa-google-plus"></i>Google Plus</a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" class="btn-social btn-outline" alt="twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/"
+									class="btn-social btn-outline"
+									alt="twitter"
+									style="font-size:0px"><i  style="font-size:32px; margin-top:8px" class="fa fa-fw fa-twitter"></i>Twitter</a>
                             </li>
                         </ul>
                     </div>
@@ -44,10 +48,10 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a href="#top">
-			<button class="btn">
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizesvisible-xs visible-smddcdcdd) -->
+    <div class="scroll-top page-scroll ">
+        <a href="#top" alt="Go to top" style="font-size:0px">
+			<button style="font-size:32px; margin-top:8px" class="btn" alt="Go to top">
 				<i class="fa fa-chevron-up"></i>
 			</button>
         </a>

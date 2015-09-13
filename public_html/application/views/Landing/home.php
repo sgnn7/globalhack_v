@@ -19,7 +19,7 @@
 			<div class="col-lg-5" style="margin-top:10p">
 				<h1 style="color:#E5630C">Search for:</h1>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-xs-8">
 				<div class="row" style="margin-top:25px">
 					<div class="input-group">
 						<label for="search-input-text" class="hidden" visibility="hidden">Search for:</label>
