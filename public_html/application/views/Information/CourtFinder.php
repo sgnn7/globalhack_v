@@ -4,7 +4,7 @@
 			Court Finder
 		</h3>
 	</div>
-	<form >
+	<form name="court_finder" action="<?=base_url();?>Information/C">
 		
 	</form>
 </div>
