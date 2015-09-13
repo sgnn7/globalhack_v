@@ -40,6 +40,17 @@ class Violations_model extends CI_Model {
 			return $last;
 	}
 	
+	function getLastNameByLicense($id)
+		{
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->where('citations.drivers_license_number', $id);
+			$query = $this->db->get();
+			$searchResult = $query->result();
+			$last = $searchResult[0]->last_name;
+			return $last;
+	}
+	
 	function getViolations($search_type,$keyword,$SSN)
 	{
 		if($search_type == 'name'){

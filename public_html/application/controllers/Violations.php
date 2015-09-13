@@ -68,6 +68,11 @@ class Violations extends CI_Controller {
 			$lastname = $this->Violations_model->getLastNameByCitationID($keyword);
 			$ssnCheck = $this->Violations_model->checkSSN($lastname,$SSN);
 		}
+		else if($search_type == 'drivers_license')
+			{
+			$lastname = $this->Violations_model->getLastNameByLicense($keyword);
+			$ssnCheck = $this->Violations_model->checkSSN($lastname,$SSN);
+		}
 		
 		if($ssnCheck > 0)
 			{
