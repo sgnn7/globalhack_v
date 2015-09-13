@@ -68,7 +68,7 @@
 							<center>Violation Description</center>
 						</th>
 						<th>
-							<center>Citation #</center>
+							<center>Violations #</center>
 						</th>
 						<th>
 							<center>Municipality</center>
@@ -185,7 +185,7 @@
 							$totalAmount = $fine_amount + $court_cost; ?>
 						<td class='clickable'>
 							<center class='small-text'>
-								<nobr>
+								<nobr>$
 									<?php 
 										if ($totalAmount > 0) {
 											echo $totalAmount;
