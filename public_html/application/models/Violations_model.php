@@ -134,8 +134,8 @@ class Violations_model extends CI_Model {
 		return $searchResult;
 	}
 	
-	function getName($searchType,$keyword,$SSN)
-	(
+	function getName($search_type, $keyword, $SSN)
+	{
 		if($search_type == 'name'){
 			$this->db->select('*');
 			$this->db->from('citations');
@@ -177,7 +177,7 @@ class Violations_model extends CI_Model {
 			$name = $searchResult[0]->first_name.' '.$searchResult[0]->last_name;
 			return $name;
 		}
-	)
+	}
 	
 //end file	
 }

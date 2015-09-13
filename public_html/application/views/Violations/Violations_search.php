@@ -1,6 +1,6 @@
 <div class='container' style="padding-top:150px">
 	<h3>
-		
+		<?=$PersonName;?>
 	</h3>
 	<input type="button" class="btn btn-info btn-md" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>
