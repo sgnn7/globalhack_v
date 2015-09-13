@@ -70,7 +70,7 @@
 			</h3>
 			<div>
 				<p>
-					<a href="<?=base_url();?>/I" target="_blank">Click here to Renew your Plates</a>
+					<a href="<?=base_url();?>/Information/CourtFinder" target="_blank">Click here to Search for courts by Zip Code</a>
 				</p>	
 			</div>
 		</div>

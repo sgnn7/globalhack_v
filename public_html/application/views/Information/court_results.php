@@ -10,7 +10,7 @@
 				<tr>
 					<th>Municipality</th>
 					<th>Address</th>
-					<th>Action Item</th>
+<!-- 					<th>Action Item</th> -->
 				</tr>
 			</thead>
 			<tbody>
@@ -18,7 +18,7 @@
 				<tr>
 					<td><?=$court->Municipality;?></td>
 					<td><?=$court->Address;?></td>
-					<td><a href="">MAP IT</a></td>
+<!-- 					<td><a href="">MAP IT</a></td> -->
 				</tr>
 				<? } ?>
 			</tbody>
