@@ -1,4 +1,4 @@
-<section id="verify_txt">
+<section id="verify_text">
 	<div class="container">
 		<div class="row">
 			<h3>
