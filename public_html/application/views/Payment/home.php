@@ -4,7 +4,8 @@
 			<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="text-align:center;">
-					<h2>Amount owed: $41.42
+					<? $
+					<h2>Amount owed: <?=$Violation[0]->amount_
 				</div>
 				<div class="col-md-6">
 					<address>
