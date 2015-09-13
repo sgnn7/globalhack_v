@@ -129,10 +129,14 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="modal-title">Payment Processing Result</h4>
+				<h4 class="modal-title" id="modal-title">Payment result</h4>
 			</div>
 			<div class="modal-body">
 				<h3 id="modal-org-name" class="volunteer-detail-header">Payment was processed successfully!</h3>
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x fa-5x"></i>
+					<i class="fa fa-check fa-stack-1x fa-5x"></i>
+				</span>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
