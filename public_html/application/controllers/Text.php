@@ -100,12 +100,13 @@ public function send_text($to,$message)
 						$totalAmount = $fine_amount + $court_cost;
 					
 					?>
-					<Response>
-					<Message>Citation#:<?=$row->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$row->court_location;?>| Court Date:<?=$row->court_date;?>.</Message>
+					
+					<Message>Citation#:<?=$row->citation_number;?> | Amount Owed: $<?=$totalAmount;?> | Court Name:<?=$row->court_location;?>| Court Date:<?=$row->court_date;?>.</Message>
 				
 <?
-						
-					}
+					} ?>
+						</Response>
+					<?
 				
 			}
 			else{
@@ -127,7 +128,7 @@ public function send_text($to,$message)
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
 			$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
 			
-
+			if($)
 					header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 					$fine_amount = $resp[0]->fine_amount;
