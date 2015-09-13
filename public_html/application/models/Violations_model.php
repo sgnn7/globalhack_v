@@ -18,12 +18,16 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
-	function getViolations($search_type,$keyword)
+	function getViolations($search_type,$keyword,$SSN)
 	{
 		if($search_type == 'name'){
 			$this->db->select('*');
 			$this->db->from('citations');
 			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->where('citations.last_name', $last);
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->like('last_name', $keyword); 
 			$query = $this->db->get();
 			$searchResult = $query->result();
@@ -34,6 +38,10 @@ class Violations_model extends CI_Model {
 			$this->db->select('*');
 			$this->db->from('citations');
 			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->where('citations.last_name', $last);
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->where('citations.citation_number', $keyword);
 			$query = $this->db->get();
 			$searchResult = $query->result();
@@ -44,6 +52,10 @@ class Violations_model extends CI_Model {
 			$this->db->select('*');
 			$this->db->from('citations');
 			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->where('citations.last_name', $last);
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->where('citations.drivers_license_number', $keyword);
 			$query = $this->db->get();
 			$searchResult = $query->result();
