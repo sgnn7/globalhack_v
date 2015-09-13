@@ -62,6 +62,7 @@ class Violations extends CI_Controller {
 		$lastName = $nameArray[1];
 		$firstName = $nameArray[0];
 		
+		if(!name)
 		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
 		$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
 		$config['PersonName'] = $name;
