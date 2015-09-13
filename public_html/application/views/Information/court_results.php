@@ -9,9 +9,18 @@
 			<thead>
 				<tr>
 					<th>Municipality</th>
-					<th></th>
+					<th>Address</th>
+					<th>Action Item</th>
 				</tr>
 			</thead>
+			<tbody>
+				<? foreach($Courts as $court){ ?>
+				<tr>
+					<td><?=$court->municipality;?></td>
+					<td><?=$court->address;?></td>
+					<td><a href="">MAP IT</a></td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 </div>
