@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location Finder</h3>
-                        <p></p>
+                        <h3>About PASHLE</h3>
+                        <p>PASHLE is an app used to streamline ticket processing</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Follow us on Social Media</h3>
@@ -22,8 +22,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About PASHLE</h3>
-                        <p>our app is used to search for ticket info etc... <a href="http://www.pashle.com">PASHLE</a>.</p>
+                        <h3>Questions?</h3>
+                        <p>Find answers to commonly asked questions in our <a href="http://www.pashle.com/information">FAQ</a>s.</p>
                     </div>
                 </div>
             </div>
