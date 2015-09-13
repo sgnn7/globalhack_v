@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?=base_url();?>" alt="Homepage"><img src="assets/img/pashle.png" width="123" height="57" style="margin-top: -19px" /></a>
+                <a class="navbar-brand" href="<?=base_url();?>" alt="Homepage"><img src="/assets/img/pashle.png" width="123" height="57" style="margin-top: -19px" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
