@@ -34,6 +34,18 @@
 	  <script src="https://www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
 
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+	  
+	  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script src="https://www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
   
 <!-- Accordian Payment script -->
     <script>

@@ -1,3 +1,30 @@
+<header id="header">
+      
+<!-- Landing Header -->
+      
+<div class="container">
+	
+<div class="row">
+	  
+<div class="col-lg-12">
+	    
+<div class="intro-text">
+              
+<span class="name"><strong>FAQ</strong></span>
+              
+<hr class="star-light" style="color:#FFFF00">
+            
+</div>
+	  
+</div>
+	
+</div>
+      
+</div>
+
+    
+</header>
+    
 <section>
    
 <form role="form">
