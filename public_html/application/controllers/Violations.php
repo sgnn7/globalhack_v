@@ -62,7 +62,7 @@ class Violations extends CI_Controller {
 		$lastName = $nameArray[1];
 		$firstName = $nameArray[0];
 		
-		if(!$name){
+		if(!$this->Violations_model->getName($search_type, $keyword, $SSN);e){
 			$this->load->view('includes/header', $config);
 			$this->load->view('includes/nav', $config);
 			$this->load->view('Violations/error', $config);
