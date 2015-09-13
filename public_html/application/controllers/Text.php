@@ -89,7 +89,7 @@ public function send_text($to,$message)
 				$warrantCount = $this->Violations_model->isWarrant($lastName,$SSN);
 
 
-						header("content-type: text/xml");
+						//header("content-type: text/xml");
 						echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 					foreach($resp as $row){
 						$fine_amount = $row->fine_amount;
@@ -104,7 +104,7 @@ public function send_text($to,$message)
 						
 					}
 				
-			}die;
+			}
 			else{
 				header("content-type: text/xml");
 					echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
