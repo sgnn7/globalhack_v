@@ -48,10 +48,10 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizesvisible-xs visible-smddcdcdd) -->
-    <div class="scroll-top page-scroll ">
-        <a href="#top" alt="Go to top" style="font-size:0px">
-			<button style="font-size:32px; margin-top:8px" class="btn" alt="Go to top">
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a href="#top" alt="Go to top" style="font-size:0px">Go to top
+			<button style="font-size:24px; margin-top:4px" class="btn" alt="Go to top">
 				<i class="fa fa-chevron-up"></i>
 			</button>
         </a>

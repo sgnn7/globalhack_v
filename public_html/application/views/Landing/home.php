@@ -19,7 +19,7 @@
 			<div class="col-lg-5" style="margin-top:10p">
 				<h1 style="color:#E5630C">Search for:</h1>
 			</div>
-			<div class="col-lg-6 col-xs-8">
+			<div class="col-lg-6 col-xs-8 col-xs-offset-1">
 				<div class="row" style="margin-top:25px">
 					<div class="input-group">
 						<label for="search-input-text" class="hidden" visibility="hidden">Search for:</label>
@@ -30,6 +30,7 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top:15px; margin-left:35px">
+					<div class="col-md-12">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default btn-lg active">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
