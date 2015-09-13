@@ -50,7 +50,9 @@ class Information extends CI_Controller {
 	
 	public function search_court()
 		{
+		$zip = $this->input->post('keyword');
 		$config['curNav'] = 'Information';
+		$config['Courts'] = $this->Information_model->findByZip($zip);
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Information/CourtFinder', $config);

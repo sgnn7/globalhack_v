@@ -148,7 +148,7 @@
 				<h3 id="modal-org-name" class="volunteer-detail-header">Payment was processed successfully!</h3>
 				<br />
 				<center>
-					<a class="btn btn-lg btn-success" href="#">
+					<a class="btn btn-lg btn-success" href="/">
 						<i class="fa fa-check fa-5x"></i>
 					</a>
 				</center>
