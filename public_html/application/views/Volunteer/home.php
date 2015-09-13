@@ -6,6 +6,7 @@
 			var volunteeringOrgDesc = button.data('volunteer-org-desc');
 			var volunteeringJobName = button.data('volunteer-job-name');
 			var volunteeringJobDesc = button.data('volunteer-job-desc');
+			var volunteeringJobContact = button.data('volunteer-job-contact');
 
 			var modal = $(this);
 			
@@ -13,6 +14,7 @@
 			modal.find('#modal-org-desc').text(volunteeringOrgDesc);
 			modal.find('#modal-job-name').text(volunteeringJobName);
 			modal.find('#modal-job-desc').text(volunteeringJobDesc);
+			modal.find('#modal-job-contact').text(volunteeringJobContact);
 		})
 	 });
 </script>
@@ -80,6 +82,7 @@
 																	  data-volunteer-org-desc="<?= $volunteer->Address ?>"	
 																	  data-volunteer-job-name="<?= $volunteer->OpportunityType ?>"	
 																	  data-volunteer-job-desc="<?= $volunteer->OtherInfo ?>"	
+																	  data-volunteer-job-contact="<?= $volunteer->Contact ?>"	
 														              title='View details'><?= $volunteer->Name ?></button></nobr>
                                         </center>
                                     </td>
@@ -128,12 +131,8 @@
 			<p  id="modal-org-desc">Loading...</p>
 			<h3 id="modal-job-name" class="volunteer-detail-header">Loading...</h3>
 			<p  id="modal-job-desc">Loading...</p>
-			<h3 class="volunteer-detail-header">County Name</h3>
-			<div id="map">Map</div>
 			<h3 class="volunteer-detail-header">Contact Info</h3>
-			<ul>
-			<li>Phone Number: 555-555-1234</li>
-			</ul>
+			<p  id="modal-job-contact">Loading...</p>
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

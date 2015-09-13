@@ -14,7 +14,7 @@
 
 </header>
 <section id="search">
-	<form role="form" name="search_form" class="form" id="search_form">
+	<form role="form" name="search_form" class="form" id="search_form" action="/verify">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">

@@ -40,5 +40,10 @@ class Landing extends CI_Controller {
 	}
 	
 	public function verify()
+		{
+		$searchType = $this->input->post('search_type');
+		$keyword = $this->input->post('keyword');
+		
+	}
 	
 }
