@@ -141,7 +141,7 @@
 				</center>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-target="pashle.com" data-dismiss="modal">Return to homepage</button>
+				<a href="/" type="link" class="btn btn-default" role="button">Return to homepage</a>
 			</div>
 		</div>
 	</div>
