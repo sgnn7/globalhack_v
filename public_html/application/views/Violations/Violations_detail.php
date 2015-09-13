@@ -44,7 +44,7 @@
             <span id="violation_cost_label">Court cost:</span>
             <span id="violation_cost">$<?php echo $Violations[0]->court_cost; ?></span><br>
             <span id="total_owed_label">Total owed:</span>
-        <span id="total_owed_label">$<?php
+        	<span id="total_owed_label">$<?php
             $total = floatval($Violations[0]->fine_amount) + floatval($Violations[0]->court_cost);
             echo number_format($total, 2);
             ?></span><br><br>

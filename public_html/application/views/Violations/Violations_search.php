@@ -112,7 +112,7 @@
 								<nobr>
 									<button type="button" 
 											      data-toggle="modal"
-												  data-citation-id=<?=$violation->citation_number;?>
+												  data-citation-id=<?= $violation->citation_number; ?>
 											      data-target="#myModal"
 											      class='btn btn-xs btn-info'
 											      title='View details'>
@@ -141,7 +141,7 @@
 							</center>
 						</td>
 						<td>
-							<? if($totalAmount <= 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+							<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
 						</td>
 						<? } ?>
 				</tbody>
@@ -217,7 +217,7 @@
 							</center>
 						</td>
 						<td>
-							<? if($totalAmount <= 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a>  | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+							<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a>  | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
 						</td>
 						<? } ?>
 				</tbody>
@@ -235,7 +235,7 @@
 					<h4 class="modal-title" id="modal-title">Citation Info</h4>
 				</div>
 				<div class="modal-body">
-					<h3 id="modal-org-name" class="volunteer-detail-header">Loading...</h3>
+					<h3 id="citation-id" class="volunteer-detail-header">Loading...</h3>
 					<p  id="modal-org-desc">Loading...</p>
 				</div>
 				<div class="modal-footer">
