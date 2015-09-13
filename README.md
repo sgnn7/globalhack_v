@@ -35,8 +35,8 @@ SELECT cso.Name,
  ```
  <br>
  ```
- --Social Security Authorization code to determine first_name match key from SSN last 4 entry
- SELECT C.citation_number,
+ --Social Security Authorization code to determine first_name match key from Last Name and SSN last 4 entry
+ SELECT C.citation_number, --Choice of selection criteria may want to be limited further if not subset with application code
       C.citation_date,
       C.first_name,
       C.last_name,
