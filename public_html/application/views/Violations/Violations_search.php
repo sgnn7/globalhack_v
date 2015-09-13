@@ -19,6 +19,52 @@
 						<center>Date</center>
 					</th>
 					<th>
+						<center>Citation Description</center>
+					</th>
+					<th>
+						<center>Citation #</center>
+					</th>
+					<th>
+						<center>Municipality</center>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach($Citations as $citation){?>
+				<tr class='row-fluid rowlink' data-target='Violation_details/<?=$citation->citation_number;?>' title='Violation'>
+					<td class='rowlink-skip'>
+						<center class='small-text'>
+							<nobr><?=str_replace(' 00:00:00', '', $citation->status_date);?></nobr>
+						</center>
+					</td>
+					<td class='rowlink-skip'>
+						<center class='small-text'>
+							<nobr><?=$citation->violation_description;?></nobr>
+						</center>
+					</td>
+					<td class='clickable'>
+						<center class='small-text'>
+							<nobr>
+								<a class='btn btn-xs btn-info' href='<?=base_url();?>Violations/Violation_details/<?=$violation->citation_number;?>'>
+								<?=$citation->citation_number;?>
+								</a>
+							</nobr>
+						</center>
+					</td>
+					<td class='clickable'>
+						<center class='small-text'><?=$citation->court_location;?></center>
+					</td>
+			</tbody>
+		</table>  
+	</div>
+    <div role="tabpanel" class="tab-pane" id="violations">
+		<table class='table table-striped table-hover table-condensed'>
+			<thead>
+				<tr class='row-fluid small'>
+					<th>
+						<center>Date</center>
+					</th>
+					<th>
 						<center>Violation Description</center>
 					</th>
 					<th>
@@ -75,9 +121,8 @@
 					</td>
 					<? } ?>
 			</tbody>
-		</table>  
+		</table>   
 	</div>
-    <div role="tabpanel" class="tab-pane" id="violations">...</div>
     <div role="tabpanel" class="tab-pane" id="warrants">...</div>
   </div>
 	

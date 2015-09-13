@@ -20,15 +20,18 @@
 <!-- 				<label for="search_type">Search by:</label> -->
 				<h1 style="color:#E5630C">Search:</h1>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-5">
 				<div class="row" style="margin-top:25px">
-					<div class="btn-group">
-					<input type="text" name="keyword" class="form-control input-lg"/>
-					<input type="submit" class="btn btn-lg btn-complete" value="SEARCH"/>
+					<div class="input-group">
+					<input type="text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
+						      <span class="input-group-btn">
+								  <input type="submit" class="btn btn-lg btn-complete" value="GO"/>
+      							</span>
+					
 						
 					</div>
 				</div>
-				<div class="row" style="margin-top:15px">
+				<div class="row" style="margin-top:15px; margin-left:20px">
 					<div class="container">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default active">
