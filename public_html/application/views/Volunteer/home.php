@@ -38,12 +38,11 @@
             </div>
             <div class="step-content">
                 <div class="step-pane active sample-pane bg-info alert" data-step="1">
-                    <h4>You Are Eligible For Community Service!</h4>
-
+                    <h4 class="volunteer-page-header">You Are Eligible For Community Service!</h4>
                     <p>Press next to find community service options convenient for you.</p>
                 </div>
-                <div class="step-pane sample-pane bg-info alert" data-step="2">
-                    <h4>Available Community Service Opportunities</h4>
+                <div class="step-pane active sample-pane bg-info alert" data-step="2">
+                    <h4 class="volunteer-page-header">Available Community Service Opportunities</h4>
 
                     <div class='panel panel-default'>
                         <table class='table table-striped table-hover table-condensed'>

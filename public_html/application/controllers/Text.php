@@ -89,7 +89,7 @@ public function send_text($to,$message)
 
 				?>
 				<Response>
-					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?> You have <?=$msgCount;?> violations and <?=$warrantCount;?> warrants. To list all violations please use format (Last Name*Last 4 SSN*All). For more information contact 573-526-2407. </Message>
+					<Message>Hi <?=$resp[0]->first_name;?> <?=$resp[0]->last_name;?> You have <?=$msgCount;?> violations and <? if($warrantCount > 1){ ?> warrants. <? } else{ } =$warrantCount;?> warrants. To list all violations please use format (Last Name*Last 4 SSN*All). For more information contact 573-526-2407. </Message>
 				</Response>
 				<?
 /* 					$i++;
