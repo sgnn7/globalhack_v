@@ -82,7 +82,7 @@ public function send_text($to,$message)
 			//check 3rd input value
 			$InputFilter = $InputArray[2];
 			
-			if($InputFilter == 'All'){
+			if($InputFilter == "All"){
 				
 			}
 			else{

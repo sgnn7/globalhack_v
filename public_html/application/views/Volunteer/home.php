@@ -132,6 +132,7 @@
 </div>
 	
 <script>
+	 $(document).ready(function(){
 		$('#myModal').bind('show.bs.modal', function (event) {
 			alert("fun!");
 			var button = $(event.relatedTarget) // Button that triggered the modal
@@ -139,5 +140,6 @@
 			var modal = $(this)
 			modal.find('.modal-title').text('New message to ' + volunteeringOrgName)
 			modal.find('.modal-title').val(volunteeringOrgName)
-		})();
+		})
+	 });
 </script>
