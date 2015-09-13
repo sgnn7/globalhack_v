@@ -16,10 +16,10 @@
 	<form role="form" name="search_form" class="form" id="search_form" action="Landing/verify" method="post">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3" style="margin-top:10p">
-				<h2 style="color:#E5630C">Search:</h2>
+			<div class="col-lg-5" style="margin-top:10p">
+				<h1 style="color:#E5630C">Search for:</h1>
 			</div>
-			<div class="col-lg-6" style="margin-left: 25px">
+			<div class="col-lg-6" style="margin-left: -30px">
 				<div class="row" style="margin-top:25px">
 					<div class="input-group">
 						<input type="text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
