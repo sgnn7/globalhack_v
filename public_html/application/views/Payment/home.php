@@ -4,8 +4,8 @@
 			<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="text-align:center;">
-					<? $
-					<h2>Amount owed: <?=$Violation[0]->amount_
+					<? $amount = $Violation[0]->fine_amount + $Violation[0]->court_cost; ?>
+					<h2>Amount owed: $<?=$amount;?>
 				</div>
 				<div class="col-md-6">
 					<address>
