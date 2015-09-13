@@ -78,7 +78,7 @@
 			</div>
 			<div class="row">
 			  <div class="col-xs-12">
-				<button class="btn btn-success btn-lg btn-block" type="submit">Pay Now</button>
+				<button class="btn btn-success btn-lg btn-block" data-target="#myModal" type="submit">Pay Now</button>
 			  </div>
 			</div>
 			<div class="row" style="display:none;">
@@ -122,4 +122,22 @@
 			</div>
 		</form>
 	</div>
+	
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="modal-title">Payment Processing Result</h4>
+			</div>
+			<div class="modal-body">
+				<h3 id="modal-org-name" class="volunteer-detail-header">Payment was processed successfully!</h3>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
 </section>
