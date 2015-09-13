@@ -1,12 +1,18 @@
 <script>
 	$(function() {
 		$('#myModal').bind('show.bs.modal', function (event) {
-			alert("event");
 			var button = $(event.relatedTarget) // Button that triggered the modal
-			var volunteeringOrgName = button.data('volunteer-org-name') // Extract info from data-* attributes
+			var volunteeringOrgName = button.data('volunteer-org-name')
+			var volunteeringOrgDesc = button.data('volunteer-org-desc')
+			var volunteeringJobName = button.data('volunteer-job-name')
+			var volunteeringJobDesc = button.data('volunteer-job-name')
+
 			var modal = $(this)
-			modal.find('.modal-title').text('New message to ' + volunteeringOrgName)
-			modal.find('.modal-title').val(volunteeringOrgName)
+			
+			modal.find('.modal-org-name').text(volunteeringOrgName)
+			modal.find('.modal-org-desc').text(volunteeringOrgDesc)
+			modal.find('.modal-job-name').text(volunteeringJobName)
+			modal.find('.modal-job-desc').text(volunteeringJobDesc)
 		})
 	 });
 </script>
