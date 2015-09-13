@@ -136,7 +136,7 @@
 						<center>Violation Description</center>
 					</th>
 					<th>
-						<center>Citation #</center>
+						<center>Violation #</center>
 					</th>
 					<th>
 						<center>Municipality</center>
@@ -147,23 +147,23 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach($Violations as $violation){?>
-				<tr class='row-fluid rowlink' data-target='Violation_details/<?=$violation->citation_number;?>' title='Violation'>
+				<?php foreach($Warrants as $warrant){?>
+				<tr class='row-fluid rowlink' data-target='Violation_details/<?=$warrant->warrant_number;?>' title='Warrant Number'>
 					<td class='rowlink-skip'>
 						<center class='small-text'>
-							<nobr><?=str_replace(' 00:00:00', '', $violation->status_date);?></nobr>
+							<nobr><?=$warrant->warrant_number;?></nobr>
 						</center>
 					</td>
 					<td class='rowlink-skip'>
 						<center class='small-text'>
-							<nobr><?=$violation->violation_description;?></nobr>
+							<nobr><?=$warrant->violation_description;?></nobr>
 						</center>
 					</td>
 					<td class='clickable'>
 						<center class='small-text'>
 							<nobr>
 								<a class='btn btn-xs btn-info' href='<?=base_url();?>Violations/Violation_details/<?=$violation->citation_number;?>' title='View details'>
-								<?=$violation->violation_number;?>
+								<?=$warrant->violation_number;?>
 								</a>
 							</nobr>
 						</center>
