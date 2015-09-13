@@ -132,7 +132,7 @@
 						</td>
 						<td>
 							<center>
-								<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+								<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="/information" class="btn btn-primary btn-xs">How to Resolve</a>
 							</center>
 						</td>
 						<? } ?>
@@ -206,7 +206,7 @@
 						</td>
 						<td>
 							<center>
-								<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a>  | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+								<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a>  | <? } ?><a href="/information" class="btn btn-primary btn-xs">How to Resolve</a>
 							</center>
 						</td>
 						<? } ?>
