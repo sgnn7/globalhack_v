@@ -113,7 +113,7 @@
 			<h3>Phone</h3>
 			<div>
 				<p>
-				To pay for your citation via phone, please call the relevant municipal court through the phone number provided above.		
+				To pay for your citation via phone, please call 1-800-TICKETS (1-800-842-5387)		
 				</p>
 			</div>
 			<!--

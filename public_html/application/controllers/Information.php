@@ -48,4 +48,13 @@ class Information extends CI_Controller {
 		$this->load->view('includes/footer');
 	}
 	
+	public function search_court()
+		{
+		$config['curNav'] = 'Information';
+		$this->load->view('includes/header');
+		$this->load->view('includes/nav', $config);
+		$this->load->view('Information/CourtFinder', $config);
+		$this->load->view('includes/footer');
+	}
+	
 }
