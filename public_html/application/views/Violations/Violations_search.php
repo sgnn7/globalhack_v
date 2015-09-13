@@ -2,6 +2,11 @@
 	<h3>
 		<?=$PersonName;?>
 	</h3>
+	<ul class="nav nav-tabs">
+	  <li role="presentation" class="active"><a href="#">Citations</a></li>
+	  <li role="presentation"><a href="#">Violations</a></li>
+	  <li role="presentation"><a href="#">Warrants</a></li>
+	</ul>
 	<input type="button" class="btn btn-info btn-md" value="Return to Search" id="ret_Search">
 <div class='panel panel-default'>
     <table class='table table-striped table-hover table-condensed'>
