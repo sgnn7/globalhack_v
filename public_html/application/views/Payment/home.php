@@ -9,10 +9,11 @@
 				</div>
 				<div class="col-md-6">
 					<address>
-						<strong><?=$</strong><br>
-						625 New Smizer Mill Road<br>
-						Fenton, MO 63026<br>
-						<abbr title="Phone">P:</abbr> (636) 343-1007
+						<strong><?=$Violation[0]->court_location;?></strong><br>
+						<p>
+							<?=$Violation[0]->court_address;?>
+						</p>
+						<a href="">MAP IT</a>
 					</address>
 				</div>
 			</div>
