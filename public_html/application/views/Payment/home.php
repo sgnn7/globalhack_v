@@ -11,9 +11,9 @@
 					</h4>
 				</div>
 				<div class="col-md-6">
-						<strong><?=$Violation[0]->court_location;?></strong><br>
+						<strong>Court Name: <?=$Violation[0]->court_location;?></strong><br>
 						<h6 class="text-info">
-							<?=$Violation[0]->court_address;?>
+							Court Address: <?=$Violation[0]->court_address;?>
 						</h6>
 						<a href="">MAP IT</a>
 				</div>
