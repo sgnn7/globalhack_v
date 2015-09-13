@@ -80,10 +80,9 @@ class Violations extends CI_Controller {
 		$config['Violations'] = $this->Violations_model->getViolationByCitationID($id);
 		$config['Courts'] = $this->Violations_model->getCourtByViolationID($id);
 
-		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_detail', $config);
-		$this->load->view('includes/footer');
+
 	}
 	
 	
