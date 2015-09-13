@@ -62,16 +62,24 @@ class Violations extends CI_Controller {
 		$lastName = $nameArray[1];
 		$firstName = $nameArray[0];
 		
-		if(!name)
-		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
-		$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
-		$config['PersonName'] = $name;
-		$config['Warrants'] = $this->Violations_model->getWarrants($lastName, $firstName);
+		if(!$name){
+			$this->load->view('includes/header', $config);
+			$this->load->view('includes/nav', $config);
+			$this->load->view('Violations/error', $config);
+			$this->load->view('includes/footer');
+		}
+		else{
+			$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
+			$config['Citations'] = $this->Violations_model->getCitations($search_type, $keyword, $SSN);
+			$config['PersonName'] = $name;
+			$config['Warrants'] = $this->Violations_model->getWarrants($lastName, $firstName);
+
+			$this->load->view('includes/header', $config);
+			$this->load->view('includes/nav', $config);
+			$this->load->view('Violations/Violations_search', $config);
+			$this->load->view('includes/footer');
+		}
 		
-		$this->load->view('includes/header', $config);
-		$this->load->view('includes/nav', $config);
-		$this->load->view('Violations/Violations_search', $config);
-		$this->load->view('includes/footer');
 	}
 	
 	public function Violation_details($id)
