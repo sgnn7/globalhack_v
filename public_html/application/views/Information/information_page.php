@@ -58,7 +58,7 @@
 			</h3>
 			<div>
 				<p>
-					<a href="http://dor.mo.gov/motorv/renewing.php#resident">Click here to Renew your Plates</a>
+					<a href="http://dor.mo.gov/motorv/renewing.php#resident" target="_blank">Click here to Renew your Plates</a>
 				</p>	
 			</div>
 		</div>

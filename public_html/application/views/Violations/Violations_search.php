@@ -2,11 +2,11 @@
 	$(function() {
 		$('#myModal').bind('show.bs.modal', function (event) {
 			var button = $(event.relatedTarget) // Button that triggered the modal
-			var volunteeringOrgName = button.data('volunteer-org-name');
+			var citationId = button.data('citation-id');
 			
 			var modal = $(this);
 			
-			modal.find('#modal-job-contact').text(volunteeringJobContact);
+			//modal.find('#modal-job-contact').text(volunteeringJobContact);
 		})
 	 });
 </script>
@@ -112,10 +112,11 @@
 								<nobr>
 									<button type="button" 
 											      data-toggle="modal"
+												  data-citation-id=<?=$violation->citation_number;?>
 											      data-target="#myModal"
 											      class='btn btn-xs btn-info'
 											      title='View details'>
-									<?=$violation->violation_number;?>
+										<?=$violation->violation_number;?>
 									</button>
 								</nobr>
 							</center>
@@ -231,15 +232,11 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="modal-title">Volunteering Info</h4>
+					<h4 class="modal-title" id="modal-title">Citation Info</h4>
 				</div>
 				<div class="modal-body">
 					<h3 id="modal-org-name" class="volunteer-detail-header">Loading...</h3>
 					<p  id="modal-org-desc">Loading...</p>
-					<h3 id="modal-job-name" class="volunteer-detail-header">Loading...</h3>
-					<p  id="modal-job-desc">Loading...</p>
-					<h3 class="volunteer-detail-header">Contact Info</h3>
-					<p  id="modal-job-contact">Loading...</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
