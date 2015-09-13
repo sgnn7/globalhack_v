@@ -1,16 +1,3 @@
-<script>
-	$(function() {
-		$('#myModal').bind('show.bs.modal', function (event) {
-			var button = $(event.relatedTarget) // Button that triggered the modal
-			var citationId = button.data('citation-id');
-			
-			var modal = $(this);
-			
-			//modal.find('#modal-job-contact').text(volunteeringJobContact);
-		})
-	 });
-</script>
-
 <section>	
 	<div class='container'>
 		<h3>
@@ -226,6 +213,20 @@
 	  </div>
 	</div>
 	
+	<script>
+		$(function() {
+			$('#myModal').bind('show.bs.modal', function (event) {
+				var button = $(event.relatedTarget) // Button that triggered the modal
+				var citationId = button.data('citation-id');
+
+				var modal = $(this);
+
+				modal.find('#modal-citation-id').text(citationId);
+			})
+		 });
+	</script>
+
+	
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -236,7 +237,7 @@
 				</div>
 				<div class="modal-body">
 					  <div id="citation_header">
-						<h1 id="citation-id">Loading...</h1>
+						<h1 id="modal-citation-id">Loading...</h1>
 
 						<h3>
 							<span>Citation date:</span> 
