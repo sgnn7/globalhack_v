@@ -1,3 +1,16 @@
+<script>
+	 $(document).ready(function(){
+		$('#myModal').bind('show.bs.modal', function (event) {
+			alert("fun!");
+			var button = $(event.relatedTarget) // Button that triggered the modal
+			var volunteeringOrgName = button.data('volunteer-name') // Extract info from data-* attributes
+			var modal = $(this)
+			modal.find('.modal-title').text('New message to ' + volunteeringOrgName)
+			modal.find('.modal-title').val(volunteeringOrgName)
+		})
+	 });
+</script>
+
 <div class='container fuelux' style="padding-top:170px">
     <div class="container fuelux">
         <div class="wizard" data-initialize="wizard" id="myWizard">
@@ -130,16 +143,3 @@
 		</div>
 	</div>
 </div>
-	
-<script>
-	 $(document).ready(function(){
-		$('#myModal').bind('show.bs.modal', function (event) {
-			alert("fun!");
-			var button = $(event.relatedTarget) // Button that triggered the modal
-			var volunteeringOrgName = button.data('volunteer-name') // Extract info from data-* attributes
-			var modal = $(this)
-			modal.find('.modal-title').text('New message to ' + volunteeringOrgName)
-			modal.find('.modal-title').val(volunteeringOrgName)
-		})
-	 });
-</script>
