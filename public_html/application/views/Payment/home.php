@@ -95,7 +95,7 @@
 			<h3>Volunteer</h3>
 			<div>
 				<p>
-				Find places where you can volunteer in order to pay for your tickets <a href="/Volunteer">here</a>.
+				Find places where you can volunteer in order to pay for your tickets <a href="/Volunteer" class="btn btn-info btn-small" style="margin-top: -4px;">here</a>.
 				</p>
 			</div>
 				
