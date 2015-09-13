@@ -68,7 +68,7 @@
                             </thead>
                             <tbody>
                             <?php foreach ($Volunteers as $volunteer) { ?>
-                                <tr class='row-fluid rowlink' data-target='Violation_details/682690971'
+                                <tr class='row-fluid rowlink' data-target=''
                                     title='Violation'>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
