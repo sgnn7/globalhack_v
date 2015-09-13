@@ -10,7 +10,7 @@
                     <div class="footer-col col-md-4">
                         <h3>Follow us on Social Media</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li class="footer-media-buttons">
                                 <a href="https://www.facebook.com/" class="btn-social btn-outline" alt="facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
                             </li>
                             <li>
@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Pashle 
+                        Copyright &copy; GlobalHack app
                     </div>
                 </div>
             </div>
