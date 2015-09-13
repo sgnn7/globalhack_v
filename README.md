@@ -7,7 +7,7 @@ Auto github push script:
 $  while [ true ]; do echo "Grabbing..."; rsync -avz pashleco@pashle.com:public_html . && git add . && git commit -m "Autocommit - $(date +%y%m%d-%H%M)" && git push origin HEAD; echo "Sleeping..."; sleep 60; done
 
 ```
-2 Views exist with tables: 
+2 Views exist along with tables: 
 Master_Citation_View and Master_Violation_View.  
 These are separate in order to reduce issues with emulating full outer joins in mySQL and allow all possible results when starting from Citations or Violations as respective inputs.
 
