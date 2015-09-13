@@ -32,7 +32,7 @@ class Payment extends CI_Controller {
 	
 	public function index()
 	{
-		$config['curNav'] = 'payment';
+		$config['curNav'] = 'search';
 		$config['CanVolunteer'] = $this->Payment_model->getCanVolunteer();
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
