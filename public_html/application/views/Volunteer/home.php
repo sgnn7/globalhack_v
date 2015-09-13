@@ -1,4 +1,10 @@
 <script>
+	    $("#myBtn").click(function(){
+        $("#myModal").modal("show");
+    });
+        $("#myModal").on('show.bs.modal', function () {
+            alert('The modal is about to be shown.');
+    });
 	 //$(document).ready(function(){
 	      $(function() {
 		$('#myModal').bind('shown.bs.modal', function (event) {
@@ -29,7 +35,7 @@
             </div>
             <div class="actions">
                 <button type="button" class="btn btn-default btn-prev"><span
-                        class="glyphicon glyphicon-arrow-left"></span>Prev
+                        class="glyphicon glyphicon-arrow-left" id="abc"></span>Prev
                 </button>
                 <button type="button" class="btn btn-default btn-next" data-last="Complete">Next<span
                         class="glyphicon glyphicon-arrow-right"></span></button>
