@@ -82,7 +82,16 @@ public function send_text($to,$message)
 			//check 3rd input value
 			$InputFilter = $InputArray[2];
 			
-			
+			if($InputFilter == 'All'){
+				
+			}
+			else{
+				?>
+				<Response>
+					<Message>Invalid Response, please try again. For more information contact 573-526-2407. </Message>
+				</Response>
+<?
+			}
 			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);
