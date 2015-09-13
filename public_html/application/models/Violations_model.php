@@ -134,7 +134,48 @@ class Violations_model extends CI_Model {
 		return $searchResult;
 	}
 	
-	function 
+	function getName($searchType,$keyword,$SSN)
+	(
+		if($search_type == 'name'){
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->like('citations.last_name', $keyword); 
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
+			
+			$query = $this->db->get();
+			$searchResult = $query->result();
+			return $searchResult;
+		}
+		
+		if($search_type == 'citation_id'){
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
+			$this->db->where('citations.citation_number', $keyword);
+			$query = $this->db->get();
+			$searchResult = $query->result();
+			return $searchResult;
+		}
+		
+		if($search_type == 'drivers_license'){
+			$this->db->select('*');
+			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
+			$this->db->where('citations.drivers_license_number', $keyword);
+			$query = $this->db->get();
+			$searchResult = $query->result();
+			return $searchResult;
+		}
+	)
 	
 //end file	
 }
