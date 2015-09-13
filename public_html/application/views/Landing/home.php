@@ -21,14 +21,12 @@
 <!-- 				<label for="search_type">Search by:</label> -->
 				<h1 style="color:#E5630C">Search by:</h1>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-4">
 				<div class="row" style="margin-top:25px">
 					<input type="text" name="keyword" class="form-control input-lg"/>
 				</div>
-				<div class="row col-lg-offset-2" style="margin-top:15px">
+				<div class="row" style="margin-top:15px; margin-left:-2px">
 					<div class="container">
-						<label>Search Criteria</label>
-
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default active">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
