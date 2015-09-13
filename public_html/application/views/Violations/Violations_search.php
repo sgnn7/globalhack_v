@@ -118,9 +118,8 @@
 							</nobr>
 						</center>
 					</td>
-					<td><a href="<?=base_url;?>" class="btn btn-complete btn-xs" id="<?=$violation->violation_number;?>">
-						
-						</button></td>
+					<td><a href="<?=base_url;?>Payment/<?=$violation->violation_number;?>" class="btn btn-complete btn-xs">PAY NOW</a> | <a href="<?=base_url;?>Information" class="btn btn-primary">How to Resolve</a>
+					</td>
 					<? } ?>
 			</tbody>
 		</table>   

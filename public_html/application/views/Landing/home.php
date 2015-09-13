@@ -16,23 +16,19 @@
 	<form role="form" name="search_form" class="form" id="search_form" action="Landing/verify" method="post">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4">
-<!-- 				<label for="search_type">Search by:</label> -->
-				<h1 style="color:#E5630C">Search:</h1>
+			<div class="col-lg-3" style="margin-top:10p">
+				<h2 style="color:#E5630C">Search:</h2>
 			</div>
-			<div class="col-lg-5">
+			<div class="col-lg-6" style="margin-left: 25px">
 				<div class="row" style="margin-top:25px">
 					<div class="input-group">
-					<input type="text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
-						      <span class="input-group-btn">
-								  <input type="submit" class="btn btn-lg btn-complete btn-default" value="GO"/>
-      							</span>
-					
-						
+						<input type="text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
+						<span class="input-group-btn">
+							<input type="submit" class="btn btn-lg btn-complete btn-default" value="GO"/>
+						</span>
 					</div>
 				</div>
-				<div class="row" style="margin-top:15px; margin-left:-5px">
-					<div class="container">
+				<div class="row" style="margin-top:15px; margin-left:35px">
 						<div class="btn-group" data-toggle="buttons">
 								<label class="btn btn-default btn-lg active">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
@@ -47,7 +43,6 @@
 									Driver's License
 								</label>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>
