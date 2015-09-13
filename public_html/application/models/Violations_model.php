@@ -183,6 +183,7 @@ class Violations_model extends CI_Model {
 		{
 			$this->db->select('*');
 			$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
 			$this->db->where('citations.last_name', $last);
@@ -194,7 +195,7 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
-	function ViolationCount($last,$SSN)
+	function ViolationCount($last,$first,$SSN)
 		{
 			$this->db->select('*');
 			$this->db->from('citations');
@@ -202,6 +203,7 @@ class Violations_model extends CI_Model {
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
 			$this->db->like('citations.last_name', $last); 
+			$this->db->where('citations.first_name', $first);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			
 			$query = $this->db->get();
@@ -209,7 +211,7 @@ class Violations_model extends CI_Model {
 			return $searchResult;
 	}
 	
-	function getWarrantCount($last,$SSN)
+	function getWarrantCount($last,$first,$SSN)
 		{
 			$this->db->select('*');
 			$this->db->from('citations');
@@ -217,6 +219,7 @@ class Violations_model extends CI_Model {
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
 			$this->db->like('citations.last_name', $last); 
+			$this->db->where('citations.first_name', $first);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			$this->db->where('violations.warrant_status','TRUE');
 			
