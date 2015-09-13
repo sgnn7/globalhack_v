@@ -1,4 +1,4 @@
-<header id="header" lang="en">
+<header id="topHeader" lang="en">
 <!-- Landing Header -->
 	<div class="container">
 		<div class="row">
@@ -11,7 +11,6 @@
 			</div>
 		</div>
 	</div>
-
 </header>
 <section id="search">
 	<form role="form" name="search_form" class="form" id="search_form" action="Landing/verify" method="post">

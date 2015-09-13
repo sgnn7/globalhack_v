@@ -134,5 +134,7 @@ class Violations_model extends CI_Model {
 		return $searchResult;
 	}
 	
+	function 
+	
 //end file	
 }

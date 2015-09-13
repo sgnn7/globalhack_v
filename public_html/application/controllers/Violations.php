@@ -59,8 +59,7 @@ class Violations extends CI_Controller {
 		$SSN = $this->security->xss_clean($this->input->post('SSN'));
 		
 		$config['Violations'] = $this->Violations_model->getViolations($search_type, $keyword, $SSN);
-		$config['PersonName'] = $this->Violations_model->getName
-		
+		$config['PersonName'] = $this->Violations_model->getName($search_type,$keyword,$SSN);		
 		$this->load->view('includes/header', $config);
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Violations/Violations_search', $config);
