@@ -79,7 +79,7 @@
                                             <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" 
 														              data-toggle="modal" data-target="#myModal"
 																	  data-volunteer-org-name="<?= $volunteer->Name ?>"	
-																	  data-volunteer-org-desc="<?= $volunteer->Address ?>"	
+																	  data-volunteer-org-desc="<?= $volunteer->Address ?>, <?= $volunteer->city ?> <?= $volunteer->zip_code ?>"	
 																	  data-volunteer-job-name="<?= $volunteer->OpportunityType ?>"	
 																	  data-volunteer-job-desc="<?= $volunteer->OtherInfo ?>"	
 																	  data-volunteer-job-contact="<?= $volunteer->Contact ?>"	

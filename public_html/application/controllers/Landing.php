@@ -41,8 +41,17 @@ class Landing extends CI_Controller {
 	
 	public function verify()
 		{
-		$searchType = $this->input->post('search_type');
-		$keyword = $this->input->post('keyword');
+		$searchType = $this->security->xss_clean($this->input->post('search_type'));
+		$keyword = $this->security->xss_clean($this->input->post('keyword'));
+		
+		$config['searchType'] = $searchType;
+		$config['keyword'] = $keyword;
+		
+		$config['curNav'] = 'search';
+		$this->load->view('includes/header');
+		$this->load->view('includes/nav', $config);
+		$this->load->view('Landing/verify', $config);
+		$this->load->view('includes/footer');
 		
 	}
 	
