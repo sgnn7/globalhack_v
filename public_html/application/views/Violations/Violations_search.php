@@ -68,7 +68,7 @@
 							<center>Violation Description</center>
 						</th>
 						<th>
-							<center>Violations #</center>
+							<center>Violation #</center>
 						</th>
 						<th>
 							<center>Municipality</center>
@@ -123,7 +123,9 @@
 							</center>
 						</td>
 						<td>
-							<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+							<center>
+								<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+							</center>
 						</td>
 						<? } ?>
 				</tbody>
@@ -185,17 +187,19 @@
 							$totalAmount = $fine_amount + $court_cost; ?>
 						<td class='clickable'>
 							<center class='small-text'>
-								<nobr>$
+								<nobr>
 									<?php 
 										if ($totalAmount > 0) {
-											echo $totalAmount;
+											echo "\$$totalAmount";
 										}
 									?>
 								</nobr>
 							</center>
 						</td>
 						<td>
-							<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a>  | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+							<center>
+								<? if($totalAmount > 0) {  ?><a  href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a>  | <? } ?><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/" class="btn btn-primary btn-xs">How to Resolve</a>
+							</center>
 						</td>
 						<? } ?>
 				</tbody>
