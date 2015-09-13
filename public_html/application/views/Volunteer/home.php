@@ -71,15 +71,15 @@
                                     title='Violation'>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
-                                            <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" data-toggle="modal" data-target="#myModal" title='View details'>  Globalhack Inc.</button><?= $volunteer->OpportunityType ?></nobr>
+                                            <nobr><button type="button" class="btn btn-xs btn-info my_popup_open" 
+														              data-toggle="modal" data-target="#myModal"
+														              title='View details'><?= $volunteer->Name ?></button></nobr>
                                         </center>
                                     </td>
                                     <td class='rowlink-skip'>
                                         <center class='small-text'>
                                             <nobr>
-                                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                        data-whatever="<?= $volunteer->Name ?>"><?= $volunteer->Name ?></button>
+												<?= $volunteer->OpportunityType ?>
                                             </nobr>
                                         </center>
                                     </td>
