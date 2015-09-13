@@ -11,13 +11,13 @@
                         <h3>Follow us on Social Media</h3>
                         <ul class="list-inline">
                             <li class="footer-media-buttons">
-                                <a href="https://www.facebook.com/" class="btn-social btn-outline" alt="facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/" class="btn-social btn-outline" alt="facebook"><i class="fa fa-fw fa-facebook" alt="facebook"></i></a>
                             </li>
                             <li>
-                                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" class="btn-social btn-outline" alt="google plus"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" class="btn-social btn-outline" alt="google plus"><i class="fa fa-fw fa-google-plus" alt="google-plus"></i></a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" class="btn-social btn-outline" alt="twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/" class="btn-social btn-outline" alt="twitter"><i class="fa fa-fw fa-twitter" alt="twitter"></i></a>
                             </li>
                         </ul>
                     </div>
