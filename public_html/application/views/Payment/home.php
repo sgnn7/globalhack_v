@@ -133,10 +133,9 @@
 			</div>
 			<div class="modal-body">
 				<h3 id="modal-org-name" class="volunteer-detail-header">Payment was processed successfully!</h3>
-				<span class="fa-stack fa-lg">
-					<i class="fa fa-circle fa-stack-2x fa-5x"></i>
-					<i class="fa fa-check fa-stack-1x fa-5x"></i>
-				</span>
+				<a class="btn btn-lg btn-success" href="#">
+					<i class="fa fa-check fa-5x"></i>
+				</a>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
