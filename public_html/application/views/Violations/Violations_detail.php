@@ -1,15 +1,13 @@
 <div class='container' style="padding-top:170px">
     <div id="citation_header">
-        <h1>Citation Details (#<?php echo $Citations[0]->citation_number; ?>)</h1>
+        <h1>Citation #<?php echo $Citations[0]->citation_number; ?></h1>
 
         <h3><span>Citation date:</span> <span id="citation_date"><?php echo $Citations[0]->citation_date; ?></span>
         </h3>
     </div>
 
     <div id="defendant">
-        <h4>Defendant</h4>
-        <span
-            id="name"><?php echo $Citations[0]->first_name . ' ' . $Citations[0]->last_name; ?></span><br>
+        <span id="name" style="font-weight: bold"><?php echo $Citations[0]->first_name . ' ' . $Citations[0]->last_name; ?></span><br>
         <?php if (strcmp("TRUE", $Violations[0]->warrant_status) == 0) { ?>
             <span id="warrant_status"
                   style="color: #ff0000; font-weight: bold"><?php echo $Violations[0]->status; ?></span> <span
@@ -42,11 +40,11 @@
         <span id="violation_description"><?php echo $Violations[0]->violation_description; ?></span><br>
         <?php if (isset($Violations[0]->fine_amount)) { ?>
             <span id="violation_fine_label">Fine:</span>
-            <span id="violation_fine"><?php echo $Violations[0]->fine_amount; ?></span><br>
+            <span id="violation_fine">$<?php echo $Violations[0]->fine_amount; ?></span><br>
             <span id="violation_cost_label">Court cost:</span>
-            <span id="violation_cost"><?php echo $Violations[0]->court_cost; ?></span><br>
+            <span id="violation_cost">$<?php echo $Violations[0]->court_cost; ?></span><br>
             <span id="total_owed_label">Total owed:</span>
-        <span id="total_owed_label"><?php
+        <span id="total_owed_label">$<?php
             $total = floatval($Violations[0]->fine_amount) + floatval($Violations[0]->court_cost);
             echo number_format($total, 2);
             ?></span><br><br>
