@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location Finder</h3>
-                        <p>Key in Zip Code</p>
+                        <p></p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Follow us on Social Media</h3>
