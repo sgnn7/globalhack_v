@@ -30,16 +30,21 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top:15px; margin-left:35px">
-					<div class="col-md-12">
+					<div class="col-md-12 col-xs-9">
 						<div class="btn-group" data-toggle="buttons">
+							<div class="col-xs-3">
 								<label class="btn btn-default btn-lg active">
 									<input type="radio" checked="checked" name="search_type" value="name"></input>
 									Last Name
 								</label>
+							</div>
+							<div class="col-xs-3">
 								<label class="btn btn-default btn-lg">
 									<input type="radio" name="search_type" value="citation_id"></input>
 									Citation/Ticket #
 								</label>
+							</div>
+							<div class="col-xs-3">
 								<label class="btn btn-default btn-lg">
 									<input type="radio" name="search_type" value="drivers_license"></input>
 									Driver's License
