@@ -34,11 +34,23 @@
 	  <script src="https://www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
 
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-	 
-	<!-- DataTables-->
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.css"/>
- 
-	<script type="text/javascript" src="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.js"></script>
+  
+<!-- Accordian Payment script -->
+    <script>
+      $(function() {
+          $( "#accordion" ).accordion({
+              heightStyle: "content"
+          });
+      });
+    </script>
+    
+    
+
+<!-- DataTables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.css"/>
+    
+    <script type="text/javascript" src="https://cdn.datatables.net/r/bs/dt-1.10.9/datatables.min.js"></script>
+  
 
 	</head>
 	<body>
