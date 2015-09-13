@@ -22,9 +22,9 @@
 			<div class="col-lg-6">
 				<div class="row" style="margin-top:25px">
 					<div class="input-group">
-						<label for="search-input-text" visible="false">Search for:</label>
-						<input type="text" id="search-input-text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
+						<label for="search-input-text" class="hidden" visibility="hidden">Search for:</label>
 						<span class="input-group-btn">
+							<input type="text" id="search-input-text" name="keyword" class="form-control input-lg" placeholder="Enter query here..."/>
 							<input type="submit" class="btn btn-lg btn-complete btn-default" value="GO"/>
 						</span>
 					</div>
