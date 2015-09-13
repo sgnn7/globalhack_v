@@ -118,8 +118,8 @@
 							</nobr>
 						</center>
 					</td>
-					<td><? if($$totalAmount > 0){ ?>
-						<a href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <? } ?><a href="<?=base_url();?>Information" class="btn btn-primary btn-xs">How to Resolve</a>
+					<td>
+						<a <? if($$totalAmount <= 0){ echo 'disabled'; } ?> href="<?=base_url();?>Payment/process_payment/<?=$violation->violation_number;?>" class="btn btn-success btn-xs">PAY NOW</a> | <a href="<?=base_url();?>Information" class="btn btn-primary btn-xs">How to Resolve</a>
 					</td>
 					<? } ?>
 			</tbody>
