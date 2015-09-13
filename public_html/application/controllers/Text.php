@@ -78,6 +78,11 @@ public function send_text($to,$message)
 			
 			if($inputCount > 2){
 				//if more than 3 inputs
+				
+			//check 3rd input value
+			$InputFilter = $InputArray[2];
+			
+			
 			$resp = $this->Violations_model->getViolationName($lastName,$SSN);
 			$i = 1;
 			$msgCount = $this->Violations_model->getViolationCount($lastName,$SSN);

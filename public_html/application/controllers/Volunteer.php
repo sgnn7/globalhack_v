@@ -37,9 +37,6 @@ class Volunteer extends CI_Controller {
 		$this->load->view('includes/header');
 		$this->load->view('includes/nav', $config);
 		$this->load->view('Volunteer/home', $config);
-		$this->load->view('includes/footer');
-		
-	}
-	
-	
+		$this->load->view('includes/footer');	
+	}	
 }
