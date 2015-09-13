@@ -18,3 +18,5 @@ class Information_model extends CI_Model {
 			return $searchResult;
 	}
 }
+
+?>
