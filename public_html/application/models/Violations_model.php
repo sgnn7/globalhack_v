@@ -179,13 +179,14 @@ class Violations_model extends CI_Model {
 		}
 	}
 	
-	function getCitationCount($last,$SSN)
+	function getCitationCount($last,$first,$SSN)
 		{
 			$this->db->select('*');
 			$this->db->from('citations');
 			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
 			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
-			$this->db->like('citations.last_name', $last); 
+			$this->db->where('citations.last_name', $last);
+			$this->db->where('citations.first_name', $first);
 			$this->db->where('socialsecurityauth.last4ssn', $SSN);
 			
 			$query = $this->db->get();
