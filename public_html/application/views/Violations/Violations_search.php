@@ -52,7 +52,7 @@
 				</center>
 			</td>
 			<td class='clickable'>
-				<center class='small-text'>-</center>
+				<center class='small-text'><?=$violation-></center>
 			</td>
 			<?  $fine_amount = $violation->fine_amount;
 			    $court_cost = $violation->court_cost;
