@@ -93,12 +93,12 @@ public function send_text($to,$message)
 						echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 					foreach($resp as $row){
 						$fine_amount = $row->fine_amount;
-						$court_cost = $row[->court_cost;
+						$court_cost = $row->court_cost;
 						$totalAmount = $fine_amount + $court_cost;
 					
 					?>
 					<Response>
-					<Message>Citation#:<?=$row[0]->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$row[0]->court_location;?>| Court Date:<?=$row[0]->court_date;?>.</Message>
+					<Message>Citation#:<?=$row->citation_number;?>| Amount Owed: $<?=$totalAmount;?>| Court Name:<?=$row->court_location;?>| Court Date:<?=$row->court_date;?>.</Message>
 				</Response>
 <?
 					}
