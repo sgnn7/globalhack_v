@@ -213,7 +213,7 @@
 		</div>
 	  </div>
 	</div>
-	
+	<!--
 	<script>
 		$(function() {
 			$('#myModal').bind('show.bs.modal', function (event) {
@@ -221,10 +221,16 @@
 				var modal = $(this);
 
 				modal.find('#modal-citation-id').text(button.data('citation-id'));
+				modal.find('#modal-citation-date').text(button.data('citation-date'));
+				modal.find('#modal-warrant-status').text(button.data('warrant-status'));
+				modal.find('#modal-drivers-license').text(button.data('drivers-license'));
+				modal.find('#modal-citation-id').text(button.data('citation-id'));
+				modal.find('#modal-citation-id').text(button.data('citation-id'));
+				modal.find('#modal-citation-id').text(button.data('citation-id'));
 			})
 		 });
 	</script>
-
+-->
 	
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -235,9 +241,9 @@
 					<h4 class="modal-title" id="modal-title">Citation Info</h4>
 				</div>
 				<div class="modal-body">
-					  <div id="citation_header">
+					  <div id="citation-header">
 						<h1 id="modal-citation-id">Loading...</h1>
-
+						  
 						<h3>
 							<span>Citation date:</span> 
 							<span id="modal-citation-date">Loading...</span>
@@ -247,19 +253,19 @@
 					<div id="defendant">
 						<span id="name" style="font-weight: bold; font-size: large">Loading...</span><br>
 						<?php if (strcmp("TRUE", $Violations[0]->warrant_status) == 0) { ?>
-							<span id="warrant_status"
+							<span id="modal-warrant-status"
 								  style="color: #ff0000; font-weight: bold">Loading...</span> <span
-								id="warrant_info"><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/">(more
+								id="modal-warrant-info"><a href="http://www.dmv.org/articles/handling-a-warrant-for-your-arrest/">(more
 									info)</a></span><br>
 						<?php } ?>
 						<?php if (strlen($Citations[0]->drivers_license_number) > 0) { ?>
-							<span id="drivers_license_label">Driver's license #:</span> <span
-								id="drivers_license"><?php echo $Citations[0]->drivers_license_number; ?></span><br>
+							<span id="modal-drivers-license-label">Driver's license #:</span> <span
+								id="modal-drivers-license"><?php echo $Citations[0]->drivers_license_number; ?></span><br>
 						<?php } ?>
 						<div class="defendant_address">
-							<span id="address_line">Loading...</span><br>
+							<span id="modal-address-line">Loading...</span><br>
 							<span
-								id="address_city_state">Loading...</span><br>
+								id="modal-address-city-state">Loading...</span><br>
 						</div>
 					</div>
 					<br>
