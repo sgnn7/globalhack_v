@@ -45,7 +45,7 @@
 				</div>
 			</div>
 			<div class="col-lg-2"  style="margin-top:25px">
-					<input type="button" id="click_search" class="btn btn-lg btn-complete" value="SEARCH"/>
+					<input type="submit" class="btn btn-lg btn-complete" value="SEARCH"/>
 			</div>
 		</div>
 	</div>
