@@ -2,17 +2,17 @@
 	$(function() {
 		$('#myModal').bind('show.bs.modal', function (event) {
 			var button = $(event.relatedTarget) // Button that triggered the modal
-			var volunteeringOrgName = button.data('volunteer-org-name')
-			var volunteeringOrgDesc = button.data('volunteer-org-desc')
-			var volunteeringJobName = button.data('volunteer-job-name')
-			var volunteeringJobDesc = button.data('volunteer-job-name')
+			var volunteeringOrgName = button.data('volunteer-org-name');
+			var volunteeringOrgDesc = button.data('volunteer-org-desc');
+			var volunteeringJobName = button.data('volunteer-job-name');
+			var volunteeringJobDesc = button.data('volunteer-job-name');
 
-			var modal = $(this)
+			var modal = $(this);
 			
-			modal.find('.modal-org-name').text(volunteeringOrgName)
-			modal.find('.modal-org-desc').text(volunteeringOrgDesc)
-			modal.find('.modal-job-name').text(volunteeringJobName)
-			modal.find('.modal-job-desc').text(volunteeringJobDesc)
+			modal.find('.modal-org-name').text(volunteeringOrgName);
+			modal.find('.modal-org-desc').text(volunteeringOrgDesc);
+			modal.find('.modal-job-name').text(volunteeringJobName);
+			modal.find('.modal-job-desc').text(volunteeringJobDesc);
 		})
 	 });
 </script>
@@ -124,7 +124,7 @@
 			<h4 class="modal-title" id="modal-title">Volunteering Info</h4>
 		</div>
 		<div class="modal-body">
-			<h3 class="volunteer-detail-header">Some organization</h3>
+			<h3 id="modal-org-name" class="volunteer-detail-header">Some organization</h3>
 			<p class="">Organizational description placeholder text</p>
 			<h3 class="volunteer-detail-header">Some job position</h3>
 			<p class="">Job described in more details</p>
