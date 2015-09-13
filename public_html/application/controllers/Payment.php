@@ -42,4 +42,15 @@ class Payment extends CI_Controller {
 		$this->load->view('Payment/home', $config);
 		$this->load->view('includes/footer');	
 	}	
+	
+	public function process_payment($id)
+		{
+		$config['curNav'] = 'search';
+		$config['CanVolunteer'] = $this->Payment_model->getCanVolunteer();
+		$config['Violation'] = $this->Violations_model->getViolationByID($id);
+		$this->load->view('includes/header');
+		$this->load->view('includes/nav', $config);
+		$this->load->view('Payment/home', $config);
+		$this->load->view('includes/footer');	
+	}
 }
