@@ -22,8 +22,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About globalhack app</h3>
-                        <p>our app is used to search for ticket info etc... <a href="http://startbootstrap.com">GlobalHack App</a>.</p>
+                        <h3>About PASHLE</h3>
+                        <p>our app is used to search for ticket info etc... <a href="http://www.pashle.com">PASHLE</a>.</p>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; GlobalHack app
+                        Copyright &copy; PASHLE
                     </div>
                 </div>
             </div>
