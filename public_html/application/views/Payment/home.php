@@ -78,7 +78,7 @@
 			</div>
 			<div class="row">
 			  <div class="col-xs-12">
-				<button class="btn btn-success btn-lg btn-block" data-target="#myModal" type="submit">Pay Now</button>
+				<button class="btn btn-success btn-lg btn-block" data-target="#myModal" data-toggle="modal" type="button">Pay Now</button>
 			  </div>
 			</div>
 			<div class="row" style="display:none;">

@@ -179,5 +179,17 @@ class Violations_model extends CI_Model {
 		}
 	}
 	
+	function getCitationCount($name)
+		{
+		$this->db->from('citations');
+			$this->db->join('violations', 'violations.citation_number = citations.citation_number');
+			$this->db->join('socialsecurityauth','socialsecurityauth.last_name = citations.last_name');
+			//$this->db->join('socialsecurityauth','socialsecurityauth.first_name = citations.first_name');
+			$this->db->where('socialsecurityauth.last4ssn', $SSN);
+			$this->db->where('citations.drivers_license_number', $keyword);
+			$query = $this->db->get();
+			$name = $searchResult[0]->first_name.' '.$searchResult[0]->last_name;
+	}
+	
 //end file	
 }
