@@ -1,6 +1,6 @@
 # GlobalHack V
 
-Source code repository for Justice League code
+Source code repository for Justek code
 
 Auto github push script:
 ```
